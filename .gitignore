@@ -1,0 +1,19 @@
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# mac
+.DS_Store
+
+# vscode
+.vscode/
+
+# Large data (假設您有大圖檔不傳 GitHub)
+data/
+models/*.pth
