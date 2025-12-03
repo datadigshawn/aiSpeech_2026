@@ -17,3 +17,9 @@ venv/
 # Large data (假設您有大圖檔不傳 GitHub)
 data/
 models/*.pth
+
+
+# Google Cloud 憑證（重要！千萬不要上傳）
+google-speech-key.json
+*.json.credentials     # 預防有人改名成 xxx.credentials.json
+service-account-key*.json   # 預防有人用原始檔名
