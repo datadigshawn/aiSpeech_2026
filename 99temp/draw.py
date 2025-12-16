@@ -1,54 +1,85 @@
 import matplotlib.pyplot as plt
+from matplotlib.font_manager import FontProperties
+import platform
+import os
 
 def draw_structure():
+    # 1. 設定中文字體路徑 (核心解決方案)
+    system_name = platform.system()
+    
+    if system_name == "Darwin":  # macOS
+        # Mac 常用的繁體中文字體：蘋方-繁 (PingFang TC)
+        font_path = '/System/Library/Fonts/PingFang.ttc'
+        # 如果找不到 PingFang，嘗試用黑體
+        if not os.path.exists(font_path):
+            font_path = '/System/Library/Fonts/STHeiti Light.ttc'
+            
+    elif system_name == "Windows":  # Windows
+        # Windows 常用的微軟正黑體
+        font_path = r'C:\Windows\Fonts\msjh.ttc'
+        
+    elif system_name == "Linux":  # Linux (例如 Colab 或 Ubuntu)
+        # 嘗試尋找常見的開源中文字體
+        font_path = '/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc'
+    else:
+        font_path = None
+
+    # 載入字體屬性
+    if font_path and os.path.exists(font_path):
+        my_font = FontProperties(fname=font_path)
+        print(f"使用字體: {font_path}")
+    else:
+        # 如果真的找不到，回退到預設(可能還是會亂碼，但至少不會報錯)
+        my_font = FontProperties()
+        print("警告：未找到合適的中文字體，中文可能會顯示為方格。")
+
     # 設定圖表大小與解析度
-    fig, ax = plt.subplots(figsize=(10, 12), dpi=150)
+    fig, ax = plt.subplots(figsize=(12, 14), dpi=150) # 稍微加大寬度以免文字折行
     
     # 目錄結構文字內容
     structure_text = """
-    aiSpeech/ (專案根目錄)
+aiSpeech/
+├── 📄 requirements.txt          # 專案依賴庫 (pandas, jiwer, cn2an, opencc等)
+├── 📄 README.md                 # 專案說明文件
+│
+├── 📂 scripts/                  # 【核心程式碼區】所有Python腳本放這裡
+│   ├── 📄 audio_splitter.py     # 1. 切分音檔與靜音偵測腳本 
+│   ├── 📄 batch_inference.py    # 2. 呼叫三種模型(Gemini, STT, Whisper)的批次推論腳本
+│   ├── 📄 result_merger.py      # 3. 合併結果腳本 (原 asr_results.py) 
+│   └── 📄 evaluator.py          # 4. 評分與繪圖腳本 (原 asr_evaluation.py) 
+│
+├── 📂 utils/                    # 【工具區】共用模組
+│   ├── 📄 text_cleaner.py       # 定義 clean_text 函數 (轉數字、去標點)
+│   └── 📄 config.py             # 設定 API Key 或全域參數
+│
+└── 📂 experiments/              # 【實驗數據區】每個測試案獨立一個資料夾
     │
-    ├── requirements.txt
-    ├── README.md
+    ├── 📂 Test_01_TMRT/         # 測試案1：捷運無線電 (本次範例)
+    │   ├── 📂 source_audio/     # 原始長音檔 (如 TMRT_5min.wav)
+    │   ├── 📂 dataset_chunks/   # 切分後的短音檔 (chunk_001.wav...) 
+    │   │
+    │   ├── 📂 ASR_Evaluation/   # 評測核心資料夾
+    │   │   ├── 📂 ground_truth/      # 人工聽寫的正確文字檔 (chunk_001.txt)
+    │   │   ├── 📂 gemini_output/     # Gemini 辨識結果
+    │   │   ├── 📂 stt_output/        # Google STT 辨識結果
+    │   │   ├── 📂 whisper_output/    # Whisper 辨識結果
+    │   │   │
+    │   │   ├── 📄 asr_results.csv    # 合併後的總表
+    │   │   └── 📄 evaluation_report.csv # 最終 CER 評分報表
     │
-    ├── scripts/ (核心程式碼)
-    │   ├── audio_splitter.py   (切分音檔)
-    │   ├── batch_inference.py  (批次推論: Gemini/STT/Whisper)
-    │   ├── result_merger.py    (合併 CSV)
-    │   └── evaluator.py        (計算 CER 與畫圖)
+    ├── 📂 Test_02_Meeting/      # 測試案2：(預留) 會議記錄
+    │   └── ... (結構同上)
     │
-    ├── utils/ (共用工具)
-    │   ├── text_cleaner.py     (文字標準化: 轉數字/去標點)
-    │   └── config.py           (API Key 設定)
-    │
-    └── experiments/ (多重測試案數據區)
-        │
-        ├── Test_01_TMRT/ (測試案 1)
-        │   ├── source_audio/    (原始長檔)
-        │   ├── dataset_chunks/  (切分短檔)
-        │   └── ASR_Evaluation/
-        │       ├── ground_truth/     (人工聽寫 .txt)
-        │       ├── gemini_output/    (Gemini 輸出 .txt)
-        │       ├── stt_output/       (Google STT 輸出 .txt)
-        │       ├── whisper_output/   (Whisper 輸出 .txt)
-        │       ├── asr_results.csv   (合併總表)
-        │       └── report.csv        (評分結果)
-        │
-        ├── Test_02_Meeting/ (測試案 2)
-        │   └── ...
-        │
-        └── Test_03_Interview/ (測試案 3)
-            └── ...
+    └── 📂 Test_03_Interview/    # 測試案3：(預留) 訪談
+        └── ... (結構同上)
     """
 
     # 繪製文字
-    # 支援中文顯示需確保環境有字型，這裡使用預設字型繪製結構圖
-    # 若需顯示中文註解，請確保系統有支援的中文字型 (如 Microsoft JhengHei 或 Arial Unicode MS)
-    # 這裡為了通用性，使用等寬字體來保持縮排對齊
+    # 關鍵修改：加入 fontproperties=my_font 參數
     ax.text(0.05, 0.95, structure_text, 
             transform=ax.transAxes, 
-            fontsize=12, 
-            family='monospace', 
+            fontsize=11, # 稍微調小字體以容納更多內容
+            fontproperties=my_font, # 這裡指定中文字體
             verticalalignment='top')
 
     # 隱藏座標軸

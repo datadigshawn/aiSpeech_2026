@@ -8,7 +8,7 @@ env/
 venv/
 .venv/
 
-# mac
+# mac 忽略系統檔
 .DS_Store
 
 # vscode
@@ -23,3 +23,12 @@ models/*.pth
 google-speech-key.json
 *.json.credentials     # 預防有人改名成 xxx.credentials.json
 service-account-key*.json   # 預防有人用原始檔名
+
+# 忽略機密金鑰 (非常重要!!!)
+*.json
+*.rtf
+*.key
+.env
+
+# 忽略暫存資料夾 (看您的截圖有這個資料夾)
+99temp/
