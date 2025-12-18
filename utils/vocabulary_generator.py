@@ -95,10 +95,11 @@ class VocabularyGenerator:
             f.write('請勿手動編輯此檔案，請修改 master_vocabulary.csv 後重新產生\n')
             f.write('"""\n\n')
             f.write('# 同音異字修正表\n')
-            f.write('CORRECTION_DICT = {\n')
+            f.write('CORRECTION_DICT = {\n')   # 定義一個名為Correction_Dict的字典，並且把資料寫入
             
-            for wrong, correct in sorted(corrections.items()):
-                f.write(f'    "{wrong}": "{correct}",\n')
+            for wrong, correct in sorted(corrections.items()):   
+                f.write(f'    "{wrong}": "{correct}",\n')       
+                # corrections字典中存儲每個錯誤字串與對應的正確字串，這段程式遍歷correction字典時，將每個錯誤字串給wrong、對應的正確字串給correct
             
             f.write('}\n\n')
             
@@ -224,8 +225,8 @@ class VocabularyGenerator:
             "elasticsearch_queries": es_queries
         }
         
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(output_data, f, ensure_ascii=False, indent=2)
+        with open(output_path, 'w', encoding='utf-8') as f:              # 講指定的output_path檔案以UTF-8編碼開啟，使用with陳述句，會在檔案執行運算後關閉
+            json.dump(output_data, f, ensure_ascii=False, indent=2)    # 使用json.dump將output_data內容寫入該檔案，可確保非ASCII字元不會被轉議，並且已2個空格的縮排方式排版
         
         print(f"✅ 已產生: {output_path}")
         print(f"   → 用途3: Elasticsearch 告警 (緊急:{len(alert_categories['emergency'])} "
@@ -241,7 +242,7 @@ class VocabularyGenerator:
         category_count = {}
         alert_count = {0: 0, 1: 0, 2: 0, 3: 0}
         
-        for item in self.vocabulary:
+        for item in self.vocabulary:   # self.vocabulary 是一個屬性，存儲了從 CSV 檔案讀取的詞彙資料。self.vocabulary 可以在 generate_statistics方法中訪問和使用。
             # 統計類別
             cat = item['category']
             category_count[cat] = category_count.get(cat, 0) + 1

@@ -113,7 +113,8 @@ with open('master_vocabulary.csv', 'w', newline='', encoding='utf-8') as f:
     writer.writerow(['進站', 'status', 10, 0, 'jin4 zhan4', '進站|入站', '列車進站']) 
     writer.writerow(['離站', 'status', 10, 0, 'li2 zhan4', '離站|出站', '列車離站']) 
     writer.writerow(['到站', 'status', 10, 0, 'dao4 zhan4', '到站|抵達', '列車到站']) 
-    writer.writerow(['發車‘, command', 12, 1, 'fa1 che1', '發車|出發', '列車發車'])
+    
+    writer.writerow(['發車', 'command', 12, 1, 'fa1 che1', '發車|出發', '列車發車'])
     writer.writerow(['停靠', 'command', 10, 0, 'ting2 kao4', '停靠|停止', '列車停靠'])
     writer.writerow(['越站', 'status', 15, 2, 'yue4 zhan4', '越站|過站', '列車不停站通過']) 
     writer.writerow(['折返', 'command', 12, 1, 'zhe2 fan3', '折返|回轉', '列車折返']) 
