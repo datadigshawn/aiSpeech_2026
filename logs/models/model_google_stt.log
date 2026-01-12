@@ -1,0 +1,43 @@
+2026-01-08 16:52:46 | [32mINFO[0m | model_google_stt | info:113 | Google STT 客戶端初始化成功
+2026-01-08 16:52:46 | [32mINFO[0m | model_google_stt | info:113 |   專案: dazzling-seat-315406
+2026-01-08 16:52:46 | [32mINFO[0m | model_google_stt | info:113 |   區域: global
+2026-01-08 16:52:46 | [32mINFO[0m | model_google_stt | info:113 |   模型: chirp_3
+2026-01-08 16:52:46 | [32mINFO[0m | model_google_stt | info:113 |   語言: cmn-Hant-TW
+2026-01-08 16:52:46 | [32mINFO[0m | model_google_stt | info:113 | 將使用臨時 RecognitionConfig
+2026-01-08 16:55:31 | [32mINFO[0m | model_google_stt | info:113 | Google STT 客戶端初始化成功
+2026-01-08 16:55:31 | [32mINFO[0m | model_google_stt | info:113 |   專案: dazzling-seat-315406
+2026-01-08 16:55:31 | [32mINFO[0m | model_google_stt | info:113 |   區域: global
+2026-01-08 16:55:31 | [32mINFO[0m | model_google_stt | info:113 |   模型: chirp_3
+2026-01-08 16:55:31 | [32mINFO[0m | model_google_stt | info:113 |   語言: cmn-Hant-TW
+2026-01-08 16:55:31 | [32mINFO[0m | model_google_stt | info:113 | 將使用臨時 RecognitionConfig
+2026-01-08 16:56:18 | [32mINFO[0m | model_google_stt | info:113 | Google STT 客戶端初始化成功
+2026-01-08 16:56:18 | [32mINFO[0m | model_google_stt | info:113 |   專案: dazzling-seat-315406
+2026-01-08 16:56:18 | [32mINFO[0m | model_google_stt | info:113 |   區域: global
+2026-01-08 16:56:18 | [32mINFO[0m | model_google_stt | info:113 |   模型: chirp_3
+2026-01-08 16:56:18 | [32mINFO[0m | model_google_stt | info:113 |   語言: cmn-Hant-TW
+2026-01-08 16:56:18 | [32mINFO[0m | model_google_stt | info:113 | 將使用臨時 RecognitionConfig
+2026-01-08 16:56:19 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222192236.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:19 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222192400.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:19 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222192434.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:19 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222192542.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:19 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222192609.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:20 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222192724.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:20 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222192930.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:20 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222193005.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:20 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222193110.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:21 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222193214.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:21 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222193307.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:21 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222193322.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:21 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222193349.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:21 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222193641.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:21 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222194333.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:21 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222194402.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:22 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222194433.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:22 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222194517.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:22 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222194612.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:22 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222194701.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:23 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222194854.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:23 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222195129.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:23 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222195155.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:23 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222195242.wav): 400 The model "chirp" does not exist in the location named "global"..
+2026-01-08 16:56:23 | [31mERROR[0m | model_google_stt | error:121 | 辨識失敗 (/Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio/UltraLog06320251222195413.wav): 400 The model "chirp" does not exist in the location named "global"..

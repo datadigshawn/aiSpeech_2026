@@ -1,124 +1,193 @@
-anyio==4.11.0
-appnope==0.1.4
-argon2-cffi==25.1.0
-argon2-cffi-bindings==25.1.0
-arrow==1.4.0
-asttokens==3.0.1
-async-lru==2.0.5
-attrs==25.4.0
-babel==2.17.0
-beautifulsoup4==4.14.2
-bleach==6.3.0
-certifi==2025.11.12
-cffi==2.0.0
-charset-normalizer==3.4.4
-comm==0.2.3
-contourpy==1.3.2
-cycler==0.12.1
-debugpy==1.8.17
-decorator==5.2.1
-defusedxml==0.7.1
-exceptiongroup==1.3.1
-executing==2.2.1
-fastjsonschema==2.21.2
-filelock==3.20.0
-fonttools==4.60.1
-fqdn==1.5.1
-fsspec==2025.10.0
-h11==0.16.0
-httpcore==1.0.9
-httpx==0.28.1
-idna==3.11
-ipykernel==7.1.0
-ipython==8.37.0
-ipywidgets==8.1.8
-isoduration==20.11.0
-jedi==0.19.2
-Jinja2==3.1.6
-joblib==1.5.2
-json5==0.12.1
-jsonpointer==3.0.0
-jsonschema==4.25.1
-jsonschema-specifications==2025.9.1
-jupyter==1.1.1
-jupyter-console==6.6.3
-jupyter-events==0.12.0
-jupyter-lsp==2.3.0
-jupyter_client==8.6.3
-jupyter_core==5.9.1
-jupyter_server==2.17.0
-jupyter_server_terminals==0.5.3
-jupyterlab==4.5.0
-jupyterlab_pygments==0.3.0
-jupyterlab_server==2.28.0
-jupyterlab_widgets==3.0.16
-kiwisolver==1.4.9
-lark==1.3.1
-MarkupSafe==3.0.2
-matplotlib==3.10.7
-matplotlib-inline==0.2.1
-mistune==3.1.4
-mpmath==1.3.0
-nbclient==0.10.2
-nbconvert==7.16.6
-nbformat==5.10.4
-nest-asyncio==1.6.0
-networkx==3.4.2
-notebook==7.5.0
-notebook_shim==0.2.4
-numpy==2.1.2
-opencv-python==4.12.0.88
-overrides==7.7.0
-packaging==25.0
-pandas==2.3.3
-pandocfilters==1.5.1
-parso==0.8.5
-pexpect==4.9.0
-pillow==12.0.0
-platformdirs==4.5.0
-prometheus_client==0.23.1
-prompt_toolkit==3.0.52
-psutil==7.1.3
-ptyprocess==0.7.0
-pure_eval==0.2.3
-pycparser==2.23
-Pygments==2.19.2
-pyparsing==3.2.5
-python-dateutil==2.9.0.post0
-python-json-logger==4.0.0
-pytz==2025.2
-PyYAML==6.0.3
-pyzmq==27.1.0
-referencing==0.37.0
-requests==2.32.5
-rfc3339-validator==0.1.4
-rfc3986-validator==0.1.1
-rfc3987-syntax==1.1.0
-rpds-py==0.29.0
-scikit-learn==1.7.2
-scipy==1.15.3
-Send2Trash==1.8.3
-six==1.17.0
-sniffio==1.3.1
-soupsieve==2.8
-stack-data==0.6.3
-sympy==1.14.0
-terminado==0.18.1
-threadpoolctl==3.6.0
-tinycss2==1.4.0
-tomli==2.3.0
-torch==2.10.0.dev20251124
-torchaudio==2.10.0.dev20251124
-torchvision==0.25.0.dev20251124
-tornado==6.5.2
-tqdm==4.67.1
-traitlets==5.14.3
-typing_extensions==4.15.0
-tzdata==2025.2
-uri-template==1.3.0
-urllib3==2.5.0
-wcwidth==0.2.14
-webcolors==25.10.0
-webencodings==0.5.1
-websocket-client==1.9.0
-widgetsnbextension==4.0.15
+# =============================================================================
+# aiSpeech 無線電語音辨識系統 - Python 依賴套件清單 (方案 A: 保守版)
+# =============================================================================
+# 版本: 1.0
+# 更新日期: 2026-01-07
+# Python 版本: 3.11+
+# 說明: 保留原有必要模組 + 補齊缺失的核心模組 + 少量視情況保留的工具
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 語音辨識引擎 (Speech Recognition Engines)
+# -----------------------------------------------------------------------------
+google-cloud-speech==2.26.0          # Google Cloud Speech-to-Text V2 API
+google-generativeai==0.3.2           # Gemini API
+openai-whisper==20231117             # OpenAI Whisper 標準版
+faster-whisper==1.0.3                # Whisper 優化版 (CTranslate2)
+
+# -----------------------------------------------------------------------------
+# 音訊處理 (Audio Processing)
+# -----------------------------------------------------------------------------
+pydub==0.25.1                        # 音訊格式轉換與切割
+librosa==0.10.1                      # 音訊分析與特徵提取
+soundfile==0.12.1                    # 音訊檔案讀寫
+webrtcvad==2.0.10                    # WebRTC VAD (輕量級語音活動檢測)
+
+# -----------------------------------------------------------------------------
+# 深度學習框架 (Deep Learning)
+# -----------------------------------------------------------------------------
+torch==2.10.0.dev20251124            # PyTorch 深度學習框架
+torchaudio==2.10.0.dev20251124       # PyTorch 音訊處理
+# torchvision==0.25.0.dev20251124    # 圖像處理，aiSpeech 不需要，已移除
+
+# -----------------------------------------------------------------------------
+# 數值計算與資料處理 (Numerical Computing & Data Processing)
+# -----------------------------------------------------------------------------
+numpy                                # 數值運算基礎庫
+scipy                                # 科學計算與訊號處理
+pandas                               # 資料框架與 CSV 處理
+
+# -----------------------------------------------------------------------------
+# 機器學習 (Machine Learning)
+# -----------------------------------------------------------------------------
+scikit-learn==1.7.2                  # 機器學習演算法 (用於資料分析)
+joblib==1.5.2                        # scikit-learn 依賴
+threadpoolctl==3.6.0                 # 多執行緒控制
+
+# -----------------------------------------------------------------------------
+# 視覺化 (Visualization)
+# -----------------------------------------------------------------------------
+matplotlib==3.10.7                   # 繪製圖表 (CER/TER 評測)
+seaborn==0.12.2                      # 統計圖表美化
+contourpy==1.3.2                     # matplotlib 依賴 (等高線圖)
+cycler==0.12.1                       # matplotlib 依賴 (色彩循環)
+fonttools==4.60.1                    # matplotlib 依賴 (字型處理)
+kiwisolver==1.4.9                    # matplotlib 依賴 (布局引擎)
+pyparsing==3.2.5                     # matplotlib 依賴 (數學運算式)
+pillow                               # 圖像處理基礎庫
+
+# -----------------------------------------------------------------------------
+# 文字處理 (Text Processing)
+# -----------------------------------------------------------------------------
+cn2an==0.5.22                        # 中文數字轉換 (洞溝→09)
+opencc-python-reimplemented==0.1.7   # 簡繁轉換
+jiwer==3.0.3                         # CER/WER 計算
+python-Levenshtein==0.23.0           # 編輯距離計算
+
+# -----------------------------------------------------------------------------
+# Web 框架與 API (Web Framework & API)
+# -----------------------------------------------------------------------------
+streamlit==1.29.0                    # 快速開發監控介面
+fastapi==0.108.0                     # 高效能 Web API 框架
+uvicorn[standard]==0.25.0            # ASGI 伺服器 (FastAPI 專用)
+websockets==12.0                     # WebSocket 協定
+httpx==0.28.1                        # 非同步 HTTP 客戶端
+httpcore==1.0.9                      # httpx 依賴
+h11==0.16.0                          # HTTP/1.1 協定
+anyio==4.11.0                        # 非同步抽象層
+sniffio==1.3.1                       # 非同步庫偵測
+
+# -----------------------------------------------------------------------------
+# 資料庫 (Database)
+# -----------------------------------------------------------------------------
+psycopg2-binary==2.9.9               # PostgreSQL 驅動
+sqlalchemy==2.0.23                   # ORM 框架
+# oracledb==2.0.1                    # Oracle 驅動 (未來遷移時安裝)
+
+# -----------------------------------------------------------------------------
+# HTTP 請求與網路 (HTTP & Network)
+# -----------------------------------------------------------------------------
+requests==2.32.5                     # HTTP 客戶端
+urllib3==2.5.0                       # requests 底層依賴
+certifi==2025.11.12                  # HTTPS 憑證驗證
+charset-normalizer==3.4.4            # 字元編碼偵測
+idna==3.11                           # 國際化域名支援
+
+# -----------------------------------------------------------------------------
+# 資料格式處理 (Data Formats)
+# -----------------------------------------------------------------------------
+PyYAML==6.0.3                        # YAML 設定檔讀取
+Jinja2==3.1.6                        # 模板引擎 (報告生成)
+MarkupSafe==3.0.2                    # Jinja2 依賴
+
+# -----------------------------------------------------------------------------
+# 系統工具 (System Utilities)
+# -----------------------------------------------------------------------------
+psutil==7.1.3                        # 系統效能監控
+tqdm==4.67.1                         # 進度條
+python-dotenv==1.0.0                 # 環境變數管理 (.env 檔案)
+filelock==3.20.0                     # 檔案鎖定 (多程序安全)
+
+# -----------------------------------------------------------------------------
+# 日期時間處理 (Date & Time)
+# -----------------------------------------------------------------------------
+python-dateutil==2.9.0.post0         # 日期時間工具
+pytz==2025.2                         # 時區處理
+tzdata==2025.2                       # 時區資料庫
+
+# -----------------------------------------------------------------------------
+# 型別與相容性 (Type Hints & Compatibility)
+# -----------------------------------------------------------------------------
+typing_extensions==4.15.0            # Python 型別提示擴充
+exceptiongroup==1.3.1                # 例外群組 (Python 3.11+ 向下相容)
+six==1.17.0                          # Python 2/3 相容層 (某些舊套件需要)
+
+# -----------------------------------------------------------------------------
+# 套件管理 (Package Management)
+# -----------------------------------------------------------------------------
+packaging                            # 版本比較與套件管理
+platformdirs==4.5.0                  # 跨平台目錄路徑
+fsspec==2025.10.0                    # 檔案系統抽象 (某些套件需要)
+
+# -----------------------------------------------------------------------------
+# 安全與加密 (Security & Encryption)
+# -----------------------------------------------------------------------------
+cffi                                 # C 語言外部函數介面
+pycparser==2.23                      # cffi 依賴
+
+# =============================================================================
+# 移除的模組說明
+# =============================================================================
+# 
+# 以下模組已從原 requirements.txt 移除:
+#
+# 【Jupyter 全家桶 (約 50 個)】
+# - 所有 jupyter*, ipython*, notebook* 相關套件
+# - 原因: aiSpeech 是生產系統，不需要 Notebook 開發環境
+#
+# 【HTML/Web 處理 (約 8 個)】
+# - beautifulsoup4, bleach, webcolors 等
+# - 原因: 專案不涉及網頁爬蟲或 HTML 解析
+#
+# 【電腦視覺】
+# - opencv-python, torchvision
+# - 原因: aiSpeech 專注於音訊處理，不處理影像
+#
+# 【過度的 JSON Schema 驗證 (約 10 個)】
+# - jsonschema 全家桶、RFC 驗證器
+# - 原因: FastAPI 已內建 Pydantic 驗證，功能重複
+#
+# 【其他不必要工具】
+# - sympy (符號數學)、networkx (圖論)、arrow (時間處理重複)
+# - 原因: 目前專案不需要這些進階功能
+#
+# =============================================================================
+# 安裝說明
+# =============================================================================
+#
+# 1. 建立虛擬環境:
+#    python -m venv venv
+#    source venv/bin/activate  # Linux/Mac
+#    venv\Scripts\activate     # Windows
+#
+# 2. 升級 pip:
+#    pip install --upgrade pip
+#
+# 3. 安裝套件:
+#    pip install -r requirements.txt
+#
+# 4. GPU 支援 (如果有 RTX 3090):
+#    # PyTorch 已包含在 requirements.txt 中
+#    # 確保系統已安裝 CUDA Toolkit 11.8+
+#
+# 5. 系統依賴:
+#    # Ubuntu/Debian:
+#    sudo apt-get install ffmpeg portaudio19-dev
+#
+#    # macOS:
+#    brew install ffmpeg portaudio
+#
+# 6. Google Cloud 認證:
+#    export GOOGLE_APPLICATION_CREDENTIALS=/path/to/key.json
+#
+# =============================================================================

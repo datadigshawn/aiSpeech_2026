@@ -1,0 +1,141 @@
+================================================================================
+GOOGLE_STT 批次辨識結果摘要
+測試案例: Test_02_TMRT
+生成時間: 2026-01-08 16:56:23
+================================================================================
+
+統計資訊:
+  總檔案數: 25
+  成功: 0
+  跳過: 0
+  失敗: 25
+  總耗時: 0:00:05.113567
+  平均每檔: 0:00:00.204543
+
+================================================================================
+
+1. 檔案: UltraLog06320251222192236
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+2. 檔案: UltraLog06320251222192400
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+3. 檔案: UltraLog06320251222192434
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+4. 檔案: UltraLog06320251222192542
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+5. 檔案: UltraLog06320251222192609
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+6. 檔案: UltraLog06320251222192724
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+7. 檔案: UltraLog06320251222192930
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+8. 檔案: UltraLog06320251222193005
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+9. 檔案: UltraLog06320251222193110
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+10. 檔案: UltraLog06320251222193214
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+11. 檔案: UltraLog06320251222193307
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+12. 檔案: UltraLog06320251222193322
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+13. 檔案: UltraLog06320251222193349
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+14. 檔案: UltraLog06320251222193641
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+15. 檔案: UltraLog06320251222194333
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+16. 檔案: UltraLog06320251222194402
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+17. 檔案: UltraLog06320251222194433
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+18. 檔案: UltraLog06320251222194517
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+19. 檔案: UltraLog06320251222194612
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+20. 檔案: UltraLog06320251222194701
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+21. 檔案: UltraLog06320251222194854
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+22. 檔案: UltraLog06320251222195129
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+23. 檔案: UltraLog06320251222195155
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+24. 檔案: UltraLog06320251222195242
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------
+25. 檔案: UltraLog06320251222195413
+   狀態: failed
+   內容: 
+   錯誤: 400 The model "chirp" does not exist in the location named "global"..
+--------------------------------------------------------------------------------

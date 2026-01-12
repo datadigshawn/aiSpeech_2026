@@ -49,3 +49,26 @@ def transcribe_with_whisper(audio_path, model_size = "large-v3"):
         initial_prompt=prompt_text,
     )
     return result['text']
+
+
+# ✅ 動態產生 prompt
+def generate_whisper_prompt():
+    """從詞彙表動態產生 Whisper 的 initial_prompt"""
+    import json
+    from pathlib import Path
+    
+    phrases_path = Path(__file__).parent.parent / 'vocabulary' / 'google_phrases.json'
+    
+    with open(phrases_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    
+    # 取前 20 個最高權重的術語
+    top_terms = sorted(
+        data['phrases'], 
+        key=lambda x: x['boost'], 
+        reverse=True
+    )[:20]
+    
+    terms_str = "、".join([t['value'] for t in top_terms])
+    
+    return f"這是一段台灣捷運無線電通訊。術語包含：{terms_str}。"

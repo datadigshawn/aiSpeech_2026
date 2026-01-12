@@ -1,0 +1,4 @@
+2026-01-08 15:33:36 | DEBUG    | test_module | debug:109 | 這是 DEBUG 級別訊息
+2026-01-08 15:33:36 | [32mINFO[0m | test_module | info:113 | 這是 INFO 級別訊息
+2026-01-08 15:33:36 | [33mWARNING[0m | test_module | warning:117 | 這是 WARNING 級別訊息
+2026-01-08 15:33:36 | [31mERROR[0m | test_module | error:121 | 這是 ERROR 級別訊息

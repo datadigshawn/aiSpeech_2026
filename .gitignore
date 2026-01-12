@@ -7,9 +7,22 @@ __pycache__/
 env/
 venv/
 .venv/
+*.pyc
+*.pyo
+*.pyd
 
-# mac 忽略系統檔
+
+# IDE 設定檔
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 作業系統檔案
 .DS_Store
+Thumbs.db
+desktop.ini
 
 # vscode
 .vscode/
@@ -17,6 +30,15 @@ venv/
 # Large data (假設您有大圖檔不傳 GitHub)
 data/
 models/*.pth
+experiments/*/source_audio/*.wav
+experiments/*/source_audio/*.mp3
+experiments/*/dataset_chunks/*.wav
+*.wav
+*.mp3
+*.m4a
+*.model
+*.pt
+*.onnx
 
 
 # Google Cloud 憑證（重要！千萬不要上傳）
@@ -24,11 +46,18 @@ google-speech-key.json
 *.json.credentials     # 預防有人改名成 xxx.credentials.json
 service-account-key*.json   # 預防有人用原始檔名
 
+
 # 忽略機密金鑰 (非常重要!!!)
 *.json
 *.rtf
 *.key
 .env
+!requirements.txt
+credentials/
+keys/
+
 
 # 忽略暫存資料夾 (看您的截圖有這個資料夾)
 99temp/
+【語音原始檔】/
+beckup/
