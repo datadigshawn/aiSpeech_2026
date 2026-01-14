@@ -1,4 +1,7 @@
 .
+├── __pycache__
+│   ├── config.cpython-310.pyc
+│   └── model.cpython-310.pyc
 ├── 99temp
 │   ├── aiSpeech_structure_old.jpg
 │   ├── check_gcs_permission.py
@@ -8,10 +11,13 @@
 │   └── train.py
 ├── app_webInterface.py
 ├── backup
-│   └── 20260108
-│       ├── config.py
-│       ├── text_cleaner.py
-│       └── vad_processor.py
+│   ├── 20260108
+│   │   ├── config.py
+│   │   ├── text_cleaner.py
+│   │   └── vad_processor.py
+│   └── 20260112
+│       └── model_google_stt.py
+├── config
 ├── docs
 ├── experiments
 │   ├── Test_01_TMRT
@@ -27,7 +33,11 @@
 │   │   ├── stt_output
 │   │   └── whisper_output
 │   └── Test_02_TMRT
-│       └── souce_audio
+│       ├── ASR_Evaluation
+│       │   ├── google_stt_output
+│       │   │   └── google_stt_results_full.json
+│       │   └── google_stt_summary.txt
+│       └── source_audio
 │           ├── UltraLog06320251222192236.wav
 │           ├── UltraLog06320251222192400.wav
 │           ├── UltraLog06320251222192434.wav
@@ -54,6 +64,8 @@
 │           ├── UltraLog06320251222195242.wav
 │           └── UltraLog06320251222195413.wav
 ├── logs
+│   ├── __main___errors.log
+│   ├── __main__.log
 │   ├── models
 │   │   ├── model_gemini_errors.log
 │   │   ├── model_gemini.log
@@ -66,16 +78,30 @@
 │   ├── utils.vad_processor_errors.log
 │   └── utils.vad_processor.log
 ├── project_structure.txt
+├── project_structure2.txt
 ├── requirements.txt
+├── run_test02_google_stt.sh
 ├── scripts
+│   ├── __pycache__
+│   │   ├── audio_splitter.cpython-310.pyc
+│   │   ├── evaluator.cpython-310.pyc
+│   │   ├── evaluator.cpython-312.pyc
+│   │   ├── model_whisper.cpython-310.pyc
+│   │   └── result_merger.cpython-310.pyc
 │   ├── audio_spiltter.py
 │   ├── audio_splitter.py
 │   ├── batch_inference_old.py
 │   ├── batch_inference.py
 │   ├── evaluator.py
 │   ├── models
+│   │   ├── __pycache__
+│   │   │   ├── model_gemini.cpython-310.pyc
+│   │   │   ├── model_gemini.cpython-312.pyc
+│   │   │   ├── model_google_stt.cpython-310.pyc
+│   │   │   └── model_google_stt.cpython-312.pyc
 │   │   ├── _init_.py
 │   │   ├── model_gemini.py
+│   │   ├── model_google_stt_odd.py
 │   │   ├── model_google_stt.py
 │   │   ├── model_whisper_old.py
 │   │   └── model_whisper.py
@@ -111,7 +137,19 @@
 │   ├── check env.py
 │   └── test modules.py
 ├── utils
+│   ├── __pycache__
+│   │   ├── config.cpython-310.pyc
+│   │   ├── config.cpython-312.pyc
+│   │   ├── logger.cpython-310.pyc
+│   │   ├── logger.cpython-312.pyc
+│   │   ├── text_cleaner.cpython-310.pyc
+│   │   ├── text_cleaner.cpython-312.pyc
+│   │   ├── timestamp_manager.cpython-310.pyc
+│   │   ├── timestamp_manager.cpython-312.pyc
+│   │   ├── vad_processor.cpython-310.pyc
+│   │   └── vad_processor.cpython-312.pyc
 │   ├── config.py
+│   ├── google_stt_config_manager.py
 │   ├── google-gemini-key.rtf
 │   ├── google-speech-key.json
 │   ├── logger.py
@@ -844,4 +882,4 @@
 │               └── USPlayer.html
 └── 語音測試稿文本.docx
 
-47 directories, 798 files
+55 directories, 828 files

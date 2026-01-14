@@ -66,7 +66,7 @@ def test_imports():
     # 2. 測試 AI 模型模組
     print("\n[2/5] 測試 AI 模型模組...")
     try:
-        from scripts.models.model_google_stt import GoogleSTTModel
+        from aiSpeech.scripts.models.model_google_stt_odd import GoogleSTTModel
         print("  ✅ model_google_stt.py")
         tests.append(("model_google_stt", True, None))
     except Exception as e:

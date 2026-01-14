@@ -17,7 +17,7 @@ class Config:
         """初始化配置"""
         # 專案根目錄
         self.PROJECT_ROOT = Path(__file__).parent.parent
-        
+                
         # 環境變數
         self.GOOGLE_APPLICATION_CREDENTIALS = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
         self.GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
