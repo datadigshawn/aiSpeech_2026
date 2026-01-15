@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 批次推論引擎 (Batch Inference Engine)
-版本: 2.0 (2025年1月修正版)
+版本: 2.1 (2025年1月修正版 - 認證系統強化)
 
 功能:
 1. ✅ 支援 Google STT V2 API (Chirp 3/Telephony/2)
@@ -11,6 +11,13 @@
 5. ✅ 後處理修正 (text_cleaner.fix_radio_jargon)
 6. ✅ 支援 --test-case 自動路徑生成
 7. ✅ 支援 --stt-model 指定 STT 子模型
+8. ✅ 強化認證系統 (自動驗證服務帳戶金鑰)
+
+更新紀錄 (v2.1):
+- 修正 setup_google_credentials() 函數，增加金鑰驗證
+- 自動過濾配置檔案，只使用有效的服務帳戶金鑰
+- 移除 Chirp 3 不支援的 speaker diarization 參數
+- 自動設定 GOOGLE_CLOUD_PROJECT 環境變數
 
 使用範例:
     # 使用 Chirp 3
@@ -39,21 +46,68 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 
 # ============================================================================
-# 內建認證設定
+# 內建認證設定 (修正版 - 增加金鑰驗證)
 # ============================================================================
 def setup_google_credentials():
-    """自動設定 Google Cloud 認證"""
+    """
+    自動設定 Google Cloud 認證（修正版）
+    
+    改進:
+    - 驗證服務帳戶金鑰格式
+    - 自動過濾配置檔案
+    - 設定專案 ID
+    """
+    # 如果環境變數已設定且有效，直接使用
+    existing_creds = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
+    if existing_creds and Path(existing_creds).exists():
+        # 驗證是否為有效的服務帳戶金鑰
+        try:
+            with open(existing_creds, 'r') as f:
+                key_data = json.load(f)
+            if key_data.get('type') == 'service_account':
+                # 環境變數有效，直接使用
+                return True
+        except:
+            # 環境變數指向的金鑰無效，繼續搜尋
+            pass
+    
+    # 自動搜尋金鑰檔案
     possible_paths = [
         PROJECT_ROOT / "utils" / "google-speech-key.json",
         PROJECT_ROOT / "config" / "google-speech-key.json",
+        PROJECT_ROOT / "google-speech-key.json",
     ]
     
-    if not os.getenv('GOOGLE_APPLICATION_CREDENTIALS'):
-        for key_path in possible_paths:
-            if key_path.exists():
-                os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = str(key_path)
-                return True
-    return bool(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
+    for key_path in possible_paths:
+        if not key_path.exists():
+            continue
+        
+        # 驗證是否為有效的服務帳戶金鑰
+        try:
+            with open(key_path, 'r') as f:
+                key_data = json.load(f)
+            
+            # 必須是服務帳戶金鑰
+            if key_data.get('type') != 'service_account':
+                continue
+            
+            # 檢查必要欄位
+            required_fields = ['project_id', 'private_key', 'client_email']
+            if not all(field in key_data for field in required_fields):
+                continue
+            
+            # 設定環境變數
+            os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = str(key_path)
+            if 'project_id' in key_data:
+                os.environ['GOOGLE_CLOUD_PROJECT'] = key_data['project_id']
+            
+            return True
+        
+        except Exception:
+            continue
+    
+    # 找不到有效的金鑰
+    return False
 
 
 # 在 import 之前設定認證
@@ -121,7 +175,7 @@ class BatchInference:
             model_type: 模型類型 (whisper, google_stt, gemini)
             vocabulary_file: 詞彙表檔案路徑
             stt_model: Google STT 子模型 (chirp_3, chirp_telephony, chirp_2)
-            stt_region: Google STT 區域 (us, eu, us-central1)
+            stt_region: Google STT 區域 (us, eu, us-central1, asia-southeast1, asia-northeast1, europe-west4)
             language_code: 語言代碼
         """
         self.input_dir = Path(input_dir)
@@ -295,12 +349,10 @@ class BatchInference:
         return self.model.transcribe_file(
             str(audio_file),
             phrases=phrases_list,
-            enable_word_time_offsets=True,         # 講者識別通常需要時間戳
-            enable_automatic_punctuation=True,     # 啟用自動斷句
-            enable_speaker_diarization=True,       # 新增：啟用講者識別
-            min_speaker_count=1,                   # 新增：最少講者
-            max_speaker_count=3                    # 新增：最多講者
-
+            enable_word_time_offsets=True,         # 啟用時間戳
+            enable_automatic_punctuation=True      # 啟用自動斷句
+            # 注意: Chirp 3 不支援 speaker diarization 參數
+            # 如需講者識別，請使用 chirp_2 或 latest_long 模型
         )
     
     def _transcribe_gemini(self, audio_file: Path) -> dict:
@@ -444,14 +496,14 @@ def main():
     # Google STT 專用參數
     parser.add_argument(
         "--stt-model",
-        choices=["chirp_3", "chirp_telephony", "chirp_2", "chirp", "latest_long", "latest_short"],
+        choices=["chirp_3", "chirp_telephony", "chirp_2", "chirp", "latest_long", "latest_short", "telephony"],
         default="chirp_3",
         help="Google STT 子模型 (預設: chirp_3)"
     )
     
     parser.add_argument(
         "--stt-region",
-        choices=["us", "eu", "us-central1", "asia-southeast1", "europe-west4"],
+        choices=["us", "eu", "us-central1", "asia-southeast1", "asia-northeast1", "europe-west4"],
         default=None,
         help="Google STT 區域 (預設: 自動選擇)"
     )

@@ -18,6 +18,7 @@
 │   └── 20260112
 │       └── model_google_stt.py
 ├── config
+│   └── google_stt_config.json
 ├── docs
 ├── experiments
 │   ├── Test_01_TMRT
@@ -34,9 +35,25 @@
 │   │   └── whisper_output
 │   └── Test_02_TMRT
 │       ├── ASR_Evaluation
-│       │   ├── google_stt_output
-│       │   │   └── google_stt_results_full.json
-│       │   └── google_stt_summary.txt
+│       │   └── google_stt_output
+│       │       ├── google_stt_results_20260112_152402.json
+│       │       ├── google_stt_results_20260112_155244.json
+│       │       ├── google_stt_results_20260112_162727.json
+│       │       ├── google_stt_results_20260112_163456.json
+│       │       ├── google_stt_results_20260112_163627.json
+│       │       ├── google_stt_results_20260112_163935.json
+│       │       ├── google_stt_results_20260112_165808.json
+│       │       ├── google_stt_results_20260112_170201.json
+│       │       ├── google_stt_results_20260114_105230.json
+│       │       ├── google_stt_results_20260114_105434.json
+│       │       ├── google_stt_results_20260114_111446.json
+│       │       ├── UltraLog06320251222192236.txt
+│       │       ├── UltraLog06320251222192400.txt
+│       │       ├── UltraLog06320251222192434.txt
+│       │       ├── UltraLog06320251222192542.txt
+│       │       ├── UltraLog06320251222192609.txt
+│       │       ├── UltraLog06320251222192724.txt
+│       │       └── UltraLog06320251222192930.txt
 │       └── source_audio
 │           ├── UltraLog06320251222192236.wav
 │           ├── UltraLog06320251222192400.wav
@@ -44,28 +61,14 @@
 │           ├── UltraLog06320251222192542.wav
 │           ├── UltraLog06320251222192609.wav
 │           ├── UltraLog06320251222192724.wav
-│           ├── UltraLog06320251222192930.wav
-│           ├── UltraLog06320251222193005.wav
-│           ├── UltraLog06320251222193110.wav
-│           ├── UltraLog06320251222193214.wav
-│           ├── UltraLog06320251222193307.wav
-│           ├── UltraLog06320251222193322.wav
-│           ├── UltraLog06320251222193349.wav
-│           ├── UltraLog06320251222193641.wav
-│           ├── UltraLog06320251222194333.wav
-│           ├── UltraLog06320251222194402.wav
-│           ├── UltraLog06320251222194433.wav
-│           ├── UltraLog06320251222194517.wav
-│           ├── UltraLog06320251222194612.wav
-│           ├── UltraLog06320251222194701.wav
-│           ├── UltraLog06320251222194854.wav
-│           ├── UltraLog06320251222195129.wav
-│           ├── UltraLog06320251222195155.wav
-│           ├── UltraLog06320251222195242.wav
-│           └── UltraLog06320251222195413.wav
+│           └── UltraLog06320251222192930.wav
 ├── logs
 │   ├── __main___errors.log
 │   ├── __main__.log
+│   ├── GoogleSTTConfigManager_errors.log
+│   ├── GoogleSTTConfigManager.log
+│   ├── GoogleSTTModel_errors.log
+│   ├── GoogleSTTModel.log
 │   ├── models
 │   │   ├── model_gemini_errors.log
 │   │   ├── model_gemini.log
@@ -73,12 +76,14 @@
 │   │   └── model_google_stt.log
 │   ├── test_module_errors.log
 │   ├── test_module.log
+│   ├── utils.google_stt_config_manager_errors.log
+│   ├── utils.google_stt_config_manager.log
 │   ├── utils.timestamp_manager_errors.log
 │   ├── utils.timestamp_manager.log
 │   ├── utils.vad_processor_errors.log
 │   └── utils.vad_processor.log
+├── project_structure_20260112.txt
 ├── project_structure.txt
-├── project_structure2.txt
 ├── requirements.txt
 ├── run_test02_google_stt.sh
 ├── scripts
@@ -90,8 +95,10 @@
 │   │   └── result_merger.cpython-310.pyc
 │   ├── audio_spiltter.py
 │   ├── audio_splitter.py
+│   ├── batch_inference_odd2.py
 │   ├── batch_inference_old.py
 │   ├── batch_inference.py
+│   ├── batch_inference.py.backup
 │   ├── evaluator.py
 │   ├── models
 │   │   ├── __pycache__
@@ -102,6 +109,7 @@
 │   │   ├── _init_.py
 │   │   ├── model_gemini.py
 │   │   ├── model_google_stt_odd.py
+│   │   ├── model_google_stt_odd2.py
 │   │   ├── model_google_stt.py
 │   │   ├── model_whisper_old.py
 │   │   └── model_whisper.py
@@ -135,11 +143,14 @@
 ├── tools
 │   ├── buildCSV.py
 │   ├── check env.py
-│   └── test modules.py
+│   ├── diagnose_404_error.py
+│   ├── test modules.py
+│   └── test_google_stt_chirp3.py
 ├── utils
 │   ├── __pycache__
 │   │   ├── config.cpython-310.pyc
 │   │   ├── config.cpython-312.pyc
+│   │   ├── google_stt_config_manager.cpython-310.pyc
 │   │   ├── logger.cpython-310.pyc
 │   │   ├── logger.cpython-312.pyc
 │   │   ├── text_cleaner.cpython-310.pyc
@@ -149,6 +160,8 @@
 │   │   ├── vad_processor.cpython-310.pyc
 │   │   └── vad_processor.cpython-312.pyc
 │   ├── config.py
+│   ├── diagnose_recognizers.py
+│   ├── google_stt_config_manager_odd.py
 │   ├── google_stt_config_manager.py
 │   ├── google-gemini-key.rtf
 │   ├── google-speech-key.json
@@ -882,4 +895,4 @@
 │               └── USPlayer.html
 └── 語音測試稿文本.docx
 
-55 directories, 828 files
+55 directories, 841 files

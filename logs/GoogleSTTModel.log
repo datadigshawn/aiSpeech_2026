@@ -735,3 +735,933 @@
 2026-01-12 17:01:58 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
 2026-01-12 17:01:58 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
 2026-01-12 17:02:01 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The language "cmn-Hant-TW" is not supported by the model "chirp_telephony" in the location named "us-central1".
+2026-01-13 17:23:21 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-13 17:23:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ Google STT 初始化失敗: File /完整路徑/aiSpeech/utils/google-speech-key.json was not found.
+2026-01-14 10:51:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 10:51:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 10:51:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 10:51:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us
+2026-01-14 10:51:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-speech.googleapis.com
+2026-01-14 10:51:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-14 10:51:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 10:51:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 10:51:51 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:51:52 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp3n_qr2_0.wav
+2026-01-14 10:51:52 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:51:52 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:51:52 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 10:51:58 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 10:51:58 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:51:59 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpp9m_otk3.wav
+2026-01-14 10:51:59 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:51:59 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:51:59 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 10:52:02 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 10:52:02 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:52:02 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmptkf3fgn2.wav
+2026-01-14 10:52:02 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:52:02 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:52:02 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 10:52:06 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 10:52:06 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:52:06 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp1z1ln_3l.wav
+2026-01-14 10:52:06 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:52:06 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:52:06 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 10:52:08 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 10:52:08 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:52:08 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpx9j5o3jp.wav
+2026-01-14 10:52:08 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:52:08 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:52:08 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 10:52:15 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 10:52:15 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:52:15 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp4gehssxs.wav
+2026-01-14 10:52:15 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:52:15 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:52:15 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 10:52:28 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 10:52:28 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:52:28 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmphdihkstj.wav
+2026-01-14 10:52:28 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:52:28 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:52:28 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 10:52:30 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 10:53:56 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 10:53:56 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 10:53:56 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 10:53:56 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us
+2026-01-14 10:53:56 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-speech.googleapis.com
+2026-01-14 10:53:56 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-14 10:53:56 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 10:53:56 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 10:53:56 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:53:56 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp3cmycvm5.wav
+2026-01-14 10:53:56 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:53:56 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:53:56 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 10:54:01 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 10:54:01 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:54:02 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmplzx0c65y.wav
+2026-01-14 10:54:02 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:54:02 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:54:02 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 10:54:04 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 10:54:04 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:54:05 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpf6se0ii5.wav
+2026-01-14 10:54:05 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:54:05 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:54:05 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 10:54:09 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 10:54:09 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:54:09 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpvn00m8kv.wav
+2026-01-14 10:54:09 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:54:09 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:54:09 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 10:54:12 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 10:54:12 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:54:12 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpj4u0p3y8.wav
+2026-01-14 10:54:12 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:54:12 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:54:12 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 10:54:19 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 10:54:19 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:54:19 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpjyvzmivv.wav
+2026-01-14 10:54:19 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:54:19 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:54:19 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 10:54:32 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 10:54:32 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 10:54:32 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpkvkvvkxf.wav
+2026-01-14 10:54:32 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 10:54:32 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 10:54:32 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 10:54:34 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 11:14:08 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 11:14:08 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 11:14:08 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 11:14:08 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us
+2026-01-14 11:14:08 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-speech.googleapis.com
+2026-01-14 11:14:08 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-14 11:14:08 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 11:14:08 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 11:14:08 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:14:09 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp6s6luxhu.wav
+2026-01-14 11:14:09 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:14:09 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:14:09 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 11:14:14 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 11:14:14 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:14:14 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpyixw89b6.wav
+2026-01-14 11:14:14 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:14:14 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:14:14 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 11:14:17 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 11:14:17 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:14:17 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp889c36e0.wav
+2026-01-14 11:14:17 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:14:17 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:14:17 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 11:14:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 11:14:21 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:14:21 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpp8ovk2y2.wav
+2026-01-14 11:14:21 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:14:21 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:14:21 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 11:14:24 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 11:14:24 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:14:24 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp50b53pf0.wav
+2026-01-14 11:14:24 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:14:24 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:14:24 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 11:14:30 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 11:14:30 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:14:31 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpftf0lm1x.wav
+2026-01-14 11:14:31 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:14:31 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:14:31 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 11:14:44 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 11:14:44 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:14:44 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpzyco6p1_.wav
+2026-01-14 11:14:44 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:14:44 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:14:44 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 11:14:46 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-speech.googleapis.com
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us-central1
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-central1-speech.googleapis.com
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us-central1
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-central1-speech.googleapis.com
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_2
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us-central1
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-central1-speech.googleapis.com
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: latest_long
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-speech.googleapis.com
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 11:53:51 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:53:51 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpc95831ko.wav
+2026-01-14 11:53:51 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:53:51 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 11:53:55 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192930.wav (信心度: 0.00%)
+2026-01-14 11:53:55 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 11:53:55 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 11:53:55 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 11:53:55 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us-central1
+2026-01-14 11:53:55 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-central1-speech.googleapis.com
+2026-01-14 11:53:55 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-14 11:53:55 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 11:53:55 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 11:53:55 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:53:55 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp834dqcoi.wav
+2026-01-14 11:53:55 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 11:53:55 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 11:53:59 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The model "chirp_3" does not exist in the location named "us-central1"..
+2026-01-14 11:53:59 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'us-central1' 失敗，嘗試回退區域...
+2026-01-14 11:53:59 | [32mINFO[0m | GoogleSTTModel | info:113 | 嘗試回退區域: eu
+2026-01-14 11:53:59 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:53:59 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpqjbuk_s0.wav
+2026-01-14 11:53:59 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 11:53:59 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 11:54:06 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192930.wav (信心度: 0.00%)
+2026-01-14 11:54:06 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 回退成功！使用區域: eu
+2026-01-14 11:57:27 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 11:57:27 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 11:57:27 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 11:57:27 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us
+2026-01-14 11:57:27 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-speech.googleapis.com
+2026-01-14 11:57:27 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-14 11:57:27 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 11:57:27 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 11:57:27 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:57:27 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp_bjv0j00.wav
+2026-01-14 11:57:27 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:57:27 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:57:27 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 11:57:33 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 11:57:33 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:57:33 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp2e3tmqyh.wav
+2026-01-14 11:57:33 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:57:33 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:57:33 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 11:57:35 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 11:57:35 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:57:36 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpqhd99rkd.wav
+2026-01-14 11:57:36 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:57:36 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:57:36 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 11:57:40 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 11:57:40 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:57:40 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpxhb2jg6d.wav
+2026-01-14 11:57:40 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:57:40 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:57:40 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 11:57:42 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 11:57:42 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:57:42 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpr4qtavb9.wav
+2026-01-14 11:57:42 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:57:42 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:57:42 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 11:57:49 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 11:57:49 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:57:49 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpw3ur35lw.wav
+2026-01-14 11:57:49 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:57:49 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:57:49 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 11:58:02 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 11:58:02 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 11:58:02 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpc7hxtz74.wav
+2026-01-14 11:58:02 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 11:58:02 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 11:58:02 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 11:58:05 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 13:13:55 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 13:13:55 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 13:13:55 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 13:13:55 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us
+2026-01-14 13:13:55 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-speech.googleapis.com
+2026-01-14 13:13:55 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-14 13:13:55 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 13:13:55 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 13:13:55 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:13:56 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpayumo0ap.wav
+2026-01-14 13:13:56 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:13:56 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:13:56 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 13:13:56 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:13:56 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpi4t5e18m.wav
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 13:13:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:13:57 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp_xyp0sj8.wav
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 13:13:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:13:57 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpafwaqjeo.wav
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 13:13:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:13:57 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpkvl4udke.wav
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 13:13:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:13:57 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpam3jb0nt.wav
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 13:13:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:13:57 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp6zjaes_2.wav
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:13:57 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 13:13:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:18:08 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 13:18:08 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 13:18:08 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 13:18:08 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us
+2026-01-14 13:18:08 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-speech.googleapis.com
+2026-01-14 13:18:08 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-14 13:18:08 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 13:18:08 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 13:18:08 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:18:08 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpduh07ujr.wav
+2026-01-14 13:18:08 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:18:08 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:18:08 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 13:18:14 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 13:18:14 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:18:14 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpfh2i7h38.wav
+2026-01-14 13:18:14 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:18:14 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:18:14 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 13:18:16 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 13:18:16 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:18:17 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpmw98lqbm.wav
+2026-01-14 13:18:17 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:18:17 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:18:17 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 13:18:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 13:18:21 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:18:21 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmply9u7wdt.wav
+2026-01-14 13:18:21 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:18:21 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:18:21 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 13:18:23 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 13:18:23 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:18:23 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp4q2x4pdz.wav
+2026-01-14 13:18:23 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:18:23 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:18:23 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 13:18:30 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 13:18:30 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:18:30 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpwxbk5jtc.wav
+2026-01-14 13:18:30 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:18:30 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:18:30 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 13:18:43 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 13:18:43 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:18:43 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpxm4_x4av.wav
+2026-01-14 13:18:43 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:18:43 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:18:43 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 13:18:46 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 13:29:26 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 13:29:26 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 13:29:26 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 13:29:26 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us-central1
+2026-01-14 13:29:26 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-central1-speech.googleapis.com
+2026-01-14 13:29:26 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_2
+2026-01-14 13:29:26 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 13:29:26 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 13:29:26 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:29:26 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmptn1pn2fp.wav
+2026-01-14 13:29:26 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 13:29:26 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:29:26 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 13:29:37 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192236.wav (信心度: 65.54%)
+2026-01-14 13:29:37 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:29:37 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpbf1zqd25.wav
+2026-01-14 13:29:37 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 13:29:37 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:29:37 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 13:29:42 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192400.wav (信心度: 69.36%)
+2026-01-14 13:29:42 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:29:42 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp7dbbwx81.wav
+2026-01-14 13:29:42 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 13:29:42 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:29:42 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 13:29:50 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192434.wav (信心度: 69.90%)
+2026-01-14 13:29:50 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:29:50 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpw7y1c75i.wav
+2026-01-14 13:29:50 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 13:29:50 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:29:50 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 13:29:55 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192542.wav (信心度: 55.62%)
+2026-01-14 13:29:55 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:29:55 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpgo0rsn8q.wav
+2026-01-14 13:29:55 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 13:29:55 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:29:55 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 13:30:12 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192609.wav (信心度: 80.56%)
+2026-01-14 13:30:12 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:30:12 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpu2bcqmcs.wav
+2026-01-14 13:30:12 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 13:30:12 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:30:12 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 13:30:28 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 13:30:28 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:30:29 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpp8e_aw7a.wav
+2026-01-14 13:30:29 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 13:30:29 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:30:29 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 13:30:34 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192930.wav (信心度: 54.49%)
+2026-01-14 13:47:31 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 13:47:31 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 13:47:31 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 13:47:31 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us
+2026-01-14 13:47:31 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-speech.googleapis.com
+2026-01-14 13:47:31 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_2
+2026-01-14 13:47:31 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 13:47:31 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 13:47:31 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:47:31 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp8zl_xh87.wav
+2026-01-14 13:47:31 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 13:47:31 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:47:31 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 13:47:36 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The model "chirp_2" does not exist in the location named "us"..
+2026-01-14 13:47:36 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'us' 失敗，嘗試回退區域...
+2026-01-14 13:47:36 | [32mINFO[0m | GoogleSTTModel | info:113 | 嘗試回退區域: eu
+2026-01-14 13:47:36 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:47:36 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpnxi60uc7.wav
+2026-01-14 13:47:36 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 13:47:36 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:47:36 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 13:47:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:47:47 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 13:47:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:47:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:47:47 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:48:50 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp4w27igam.wav
+2026-01-14 13:48:50 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 13:48:50 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:48:50 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 13:48:55 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:48:55 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 13:48:55 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:48:55 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:48:56 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpbyeq363a.wav
+2026-01-14 13:48:56 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 13:48:56 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:48:56 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 13:49:04 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:49:04 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 13:49:04 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:49:04 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:49:04 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpr5zq3cop.wav
+2026-01-14 13:49:04 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 13:49:04 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:49:04 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 13:49:08 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:49:08 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 13:49:08 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:49:08 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:49:08 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmphq0zicpy.wav
+2026-01-14 13:49:08 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 13:49:08 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:49:08 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 13:49:22 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:49:22 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 13:49:22 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:49:22 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:49:22 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmppf3yds9f.wav
+2026-01-14 13:49:22 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 13:49:22 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:49:22 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 13:49:49 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:49:49 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 13:49:49 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:49:49 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:49:49 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpqhysofl3.wav
+2026-01-14 13:49:49 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 13:49:49 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:49:49 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 13:49:54 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:49:54 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 13:49:54 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:53:37 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 13:53:37 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 13:53:37 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 13:53:37 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: asia-southeast1
+2026-01-14 13:53:37 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: asia-southeast1-speech.googleapis.com
+2026-01-14 13:53:37 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-14 13:53:37 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 13:53:37 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 13:53:37 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:53:37 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp8geuhpfu.wav
+2026-01-14 13:53:37 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 13:53:37 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:53:37 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 13:53:40 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 13:53:40 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:53:40 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpo30fx36x.wav
+2026-01-14 13:53:40 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 13:53:40 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:53:40 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 13:53:41 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 13:53:41 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:53:41 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp2877epn_.wav
+2026-01-14 13:53:41 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 13:53:41 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:53:41 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 13:53:43 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 13:53:43 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:53:43 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpdi5ehb93.wav
+2026-01-14 13:53:43 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 13:53:43 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:53:43 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 13:53:44 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 13:53:44 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:53:44 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpqcc6lblq.wav
+2026-01-14 13:53:44 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 13:53:44 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:53:44 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 13:53:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 13:53:47 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:53:47 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpdtiwahd0.wav
+2026-01-14 13:53:47 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 13:53:47 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:53:47 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 13:53:52 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 13:53:52 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:53:52 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpavn5e1v2.wav
+2026-01-14 13:53:52 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 13:53:52 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:53:52 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 13:53:53 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 13:56:09 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 13:56:09 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 13:56:09 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 13:56:09 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: asia-northeast1
+2026-01-14 13:56:09 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: asia-northeast1-speech.googleapis.com
+2026-01-14 13:56:09 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-14 13:56:09 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 13:56:09 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 13:56:09 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:56:09 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp5d1jbfln.wav
+2026-01-14 13:56:09 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-northeast1/recognizers/_
+2026-01-14 13:56:09 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:56:09 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 13:56:11 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 13:56:11 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:56:11 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp4pf3jm21.wav
+2026-01-14 13:56:11 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-northeast1/recognizers/_
+2026-01-14 13:56:11 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:56:11 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 13:56:12 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 13:56:12 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:56:12 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpvfap8qr0.wav
+2026-01-14 13:56:12 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-northeast1/recognizers/_
+2026-01-14 13:56:12 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:56:12 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 13:56:14 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 13:56:14 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:56:14 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpa5fux0go.wav
+2026-01-14 13:56:14 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-northeast1/recognizers/_
+2026-01-14 13:56:14 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:56:14 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 13:56:15 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 13:56:15 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:56:15 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpuxexwwny.wav
+2026-01-14 13:56:15 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-northeast1/recognizers/_
+2026-01-14 13:56:15 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:56:15 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 13:56:17 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 13:56:17 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:56:17 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpy7xr92er.wav
+2026-01-14 13:56:17 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-northeast1/recognizers/_
+2026-01-14 13:56:17 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:56:17 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 13:56:22 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 13:56:22 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 13:56:22 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp6kyzpv4x.wav
+2026-01-14 13:56:22 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-northeast1/recognizers/_
+2026-01-14 13:56:22 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 13:56:22 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 13:56:23 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 14:07:14 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 14:07:14 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 14:07:14 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 14:07:14 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us
+2026-01-14 14:07:14 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-speech.googleapis.com
+2026-01-14 14:07:14 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_2
+2026-01-14 14:07:14 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 14:07:14 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 14:07:14 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:07:14 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpln8inrrr.wav
+2026-01-14 14:07:14 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-14 14:07:14 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:07:14 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 14:07:20 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The model "chirp_2" does not exist in the location named "us"..
+2026-01-14 14:07:20 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'us' 失敗，嘗試回退區域...
+2026-01-14 14:07:20 | [32mINFO[0m | GoogleSTTModel | info:113 | 嘗試回退區域: eu
+2026-01-14 14:07:20 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:07:20 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpxlkutbzo.wav
+2026-01-14 14:07:20 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 14:07:20 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:07:20 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 14:07:31 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:07:31 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 14:07:31 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:07:31 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:07:31 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:07:31 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp3o4thrza.wav
+2026-01-14 14:07:31 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 14:07:31 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:07:31 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 14:07:36 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:07:36 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 14:07:36 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:07:36 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:07:36 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp1qqv0y6e.wav
+2026-01-14 14:07:36 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 14:07:36 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:07:36 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 14:07:45 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:07:45 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 14:07:45 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:07:45 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:07:45 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpq5uh3w8c.wav
+2026-01-14 14:07:45 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 14:07:45 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:07:45 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 14:07:50 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:07:50 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 14:07:50 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:07:50 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:07:50 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpremkja6v.wav
+2026-01-14 14:07:50 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 14:07:50 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:07:50 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 14:08:04 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:08:04 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 14:08:04 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:08:04 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:08:04 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmprsy5rge0.wav
+2026-01-14 14:08:04 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 14:08:04 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:08:04 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 14:08:31 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:08:31 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 14:08:31 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:08:31 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:08:31 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpr1yjo0em.wav
+2026-01-14 14:08:31 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 14:08:31 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:08:31 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 14:08:37 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:08:37 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'eu' 失敗，嘗試回退區域...
+2026-01-14 14:08:37 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:12:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 14:12:51 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 14:12:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 14:12:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: asia-southeast1
+2026-01-14 14:12:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: asia-southeast1-speech.googleapis.com
+2026-01-14 14:12:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_2
+2026-01-14 14:12:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 14:12:51 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 14:12:51 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:12:51 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpcdmb2849.wav
+2026-01-14 14:12:51 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:12:51 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:12:51 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 14:12:56 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192236.wav (信心度: 65.53%)
+2026-01-14 14:12:56 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:12:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpj_zaikx8.wav
+2026-01-14 14:12:57 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:12:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:12:57 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 14:13:00 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192400.wav (信心度: 69.36%)
+2026-01-14 14:13:00 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:13:00 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpmdbvigx1.wav
+2026-01-14 14:13:00 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:13:00 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:13:00 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 14:13:04 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192434.wav (信心度: 69.90%)
+2026-01-14 14:13:04 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:13:04 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp9wq7cn35.wav
+2026-01-14 14:13:04 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:13:04 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:13:04 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 14:13:07 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192542.wav (信心度: 62.85%)
+2026-01-14 14:13:07 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:13:07 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpbi8j988m.wav
+2026-01-14 14:13:07 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:13:07 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:13:07 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 14:13:15 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192609.wav (信心度: 80.56%)
+2026-01-14 14:13:15 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:13:15 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp1dk44yl6.wav
+2026-01-14 14:13:15 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:13:15 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:13:15 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 14:13:20 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 14:13:20 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:13:20 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpn0b5f3zf.wav
+2026-01-14 14:13:20 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:13:20 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:13:20 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 14:13:22 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192930.wav (信心度: 54.49%)
+2026-01-14 14:22:43 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 14:22:43 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 14:22:43 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 14:22:43 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us-central1
+2026-01-14 14:22:43 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-central1-speech.googleapis.com
+2026-01-14 14:22:43 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: latest_long
+2026-01-14 14:22:43 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 14:22:43 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 14:22:43 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:22:43 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpt86zg1mb.wav
+2026-01-14 14:22:43 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:22:43 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:22:43 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 14:22:50 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:22:50 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:22:50 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpbfbp67vf.wav
+2026-01-14 14:22:50 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:22:50 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:22:50 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 14:22:54 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:22:54 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:22:54 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpv3tjv2sd.wav
+2026-01-14 14:22:54 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:22:54 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:22:54 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 14:22:59 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:22:59 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:22:59 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpl_sec2c1.wav
+2026-01-14 14:22:59 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:22:59 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:22:59 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 14:23:02 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:23:02 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:23:02 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp2zy2ed4c.wav
+2026-01-14 14:23:02 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:23:02 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:23:02 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 14:23:11 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:23:11 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:23:11 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp34146q6_.wav
+2026-01-14 14:23:11 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:23:11 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:23:11 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 14:23:29 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:23:29 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:23:29 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmphqqxmo8s.wav
+2026-01-14 14:23:29 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:23:29 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:23:29 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 14:23:32 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:42:42 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 14:42:42 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 14:42:42 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 14:42:42 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us-central1
+2026-01-14 14:42:42 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-central1-speech.googleapis.com
+2026-01-14 14:42:42 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-14 14:42:42 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 14:42:42 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 14:42:42 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:42:43 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp_gxnyo5d.wav
+2026-01-14 14:42:43 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:42:43 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:42:43 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 14:42:49 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The model "chirp_3" does not exist in the location named "us-central1"..
+2026-01-14 14:42:49 | [33mWARNING[0m | GoogleSTTModel | warning:117 | ⚠️ 當前區域 'us-central1' 失敗，嘗試回退區域...
+2026-01-14 14:42:49 | [32mINFO[0m | GoogleSTTModel | info:113 | 嘗試回退區域: eu
+2026-01-14 14:42:49 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:42:50 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpbs5xhamm.wav
+2026-01-14 14:42:50 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/eu/recognizers/_
+2026-01-14 14:42:50 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:42:50 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 14:43:01 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 14:43:01 | [32mINFO[0m | GoogleSTTModel | info:113 | 嘗試回退區域: asia-southeast1
+2026-01-14 14:43:01 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:44:03 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp2xbf41v8.wav
+2026-01-14 14:44:03 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:44:03 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:44:03 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 14:44:06 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 14:44:06 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:44:06 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:44:06 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpg2vml_1s.wav
+2026-01-14 14:44:06 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:44:06 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:44:06 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 14:44:07 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 14:44:07 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:44:07 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpky5xkn8i.wav
+2026-01-14 14:44:07 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:44:07 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:44:07 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 14:44:09 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 14:44:09 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:44:09 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpw97f93mp.wav
+2026-01-14 14:44:09 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:44:09 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:44:09 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 14:44:10 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 14:44:10 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:44:10 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp1uqnczuc.wav
+2026-01-14 14:44:10 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:44:10 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:44:10 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 14:44:14 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 14:44:14 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:44:16 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpsaqpbf29.wav
+2026-01-14 14:44:16 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:44:16 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:44:16 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 14:44:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 14:44:21 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:44:21 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp6q8pc2xy.wav
+2026-01-14 14:44:21 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 14:44:21 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:44:21 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 14:44:22 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 14:56:46 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 14:56:47 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 14:56:47 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 14:56:47 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us-central1
+2026-01-14 14:56:47 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-central1-speech.googleapis.com
+2026-01-14 14:56:47 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: telephony
+2026-01-14 14:56:47 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 14:56:47 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 14:56:47 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:56:47 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmppoqwd6bf.wav
+2026-01-14 14:56:47 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:56:47 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:56:47 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 14:56:54 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 14:56:54 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:56:54 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp0gfcjd7m.wav
+2026-01-14 14:56:54 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:56:54 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:56:54 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 14:56:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 14:56:57 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:56:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp5ddy0fwm.wav
+2026-01-14 14:56:57 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:56:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:56:57 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 14:57:02 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 14:57:02 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:57:02 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp3f8bhiuf.wav
+2026-01-14 14:57:02 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:57:02 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:57:02 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 14:57:05 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 14:57:05 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:57:06 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp587g_2gf.wav
+2026-01-14 14:57:06 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:57:06 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:57:06 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 14:57:14 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 14:57:14 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:57:14 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp6j694p_5.wav
+2026-01-14 14:57:14 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:57:14 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:57:14 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 14:57:32 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 14:57:32 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 14:57:35 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpe1ynw9na.wav
+2026-01-14 14:57:35 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us-central1/recognizers/_
+2026-01-14 14:57:35 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 14:57:35 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 14:57:38 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 15:03:01 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-14 15:03:01 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-14 15:03:01 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-14 15:03:01 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: asia-southeast1
+2026-01-14 15:03:01 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: asia-southeast1-speech.googleapis.com
+2026-01-14 15:03:01 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: telephony
+2026-01-14 15:03:01 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-14 15:03:01 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-14 15:03:01 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 15:03:01 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpznc9fhi9.wav
+2026-01-14 15:03:01 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 15:03:01 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 15:03:01 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236.wav
+2026-01-14 15:03:03 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-14 15:03:03 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 15:03:03 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmp2sxy9fpe.wav
+2026-01-14 15:03:03 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 15:03:03 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 15:03:03 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400.wav
+2026-01-14 15:03:04 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-14 15:03:04 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 15:03:04 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpi6ls2331.wav
+2026-01-14 15:03:04 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 15:03:04 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 15:03:04 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434.wav
+2026-01-14 15:03:05 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-14 15:03:05 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 15:03:06 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmphznsbpsy.wav
+2026-01-14 15:03:06 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 15:03:06 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 15:03:06 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542.wav
+2026-01-14 15:03:07 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-14 15:03:07 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 15:03:07 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmps0suj8z6.wav
+2026-01-14 15:03:07 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 15:03:07 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 15:03:07 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609.wav
+2026-01-14 15:03:09 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-14 15:03:09 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 15:03:09 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpc870jayd.wav
+2026-01-14 15:03:09 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 15:03:09 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 15:03:09 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724.wav
+2026-01-14 15:03:14 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-14 15:03:14 | [32mINFO[0m | GoogleSTTModel | info:113 | 🔄 音訊需要轉換: 格式不相容
+2026-01-14 15:03:14 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 音訊已轉換: /var/folders/xr/rhd4f0dx3jv9x87lk6p19_h40000gn/T/tmpo_x9bxnb.wav
+2026-01-14 15:03:14 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-14 15:03:14 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-14 15:03:14 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
+2026-01-14 15:03:15 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".

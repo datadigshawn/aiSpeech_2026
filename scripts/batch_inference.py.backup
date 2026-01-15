@@ -1,0 +1,318 @@
+#!/usr/bin/env python3
+"""
+batch_inference.py 認證修正補丁
+版本: 1.0
+
+使用方式:
+1. 備份原始檔案:
+   cp scripts/batch_inference.py scripts/batch_inference.py.backup
+
+2. 用這個檔案替換 scripts/batch_inference.py 中的 setup_google_credentials 函數
+   (第 44-56 行)
+"""
+
+# ============================================================================
+# 修正 1: setup_google_credentials 函數（完整替換）
+# ============================================================================
+
+def setup_google_credentials():
+    """
+    自動設定 Google Cloud 認證（修正版）
+    
+    改進:
+    - 搜尋並驗證服務帳戶金鑰
+    - 自動過濾配置檔案
+    - 不依賴 /完整路徑/ 等佔位符
+    """
+    from pathlib import Path
+    import json
+    
+    # 如果環境變數已設定且有效，直接使用
+    existing_creds = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
+    if existing_creds and Path(existing_creds).exists():
+        # 驗證是否為有效的服務帳戶金鑰
+        try:
+            with open(existing_creds, 'r') as f:
+                key_data = json.load(f)
+            if key_data.get('type') == 'service_account':
+                return True
+        except:
+            pass
+    
+    # 自動搜尋金鑰檔案
+    possible_paths = [
+        PROJECT_ROOT / "utils" / "google-speech-key.json",
+        PROJECT_ROOT / "config" / "google-speech-key.json",
+        PROJECT_ROOT / "google-speech-key.json",
+    ]
+    
+    for key_path in possible_paths:
+        if not key_path.exists():
+            continue
+        
+        # 驗證是否為有效的服務帳戶金鑰
+        try:
+            with open(key_path, 'r') as f:
+                key_data = json.load(f)
+            
+            # 必須是服務帳戶金鑰
+            if key_data.get('type') != 'service_account':
+                continue
+            
+            # 檢查必要欄位
+            required_fields = ['project_id', 'private_key', 'client_email']
+            if not all(field in key_data for field in required_fields):
+                continue
+            
+            # 設定環境變數
+            os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = str(key_path)
+            if 'project_id' in key_data:
+                os.environ['GOOGLE_CLOUD_PROJECT'] = key_data['project_id']
+            
+            return True
+        
+        except Exception:
+            continue
+    
+    # 找不到有效的金鑰
+    return False
+
+
+# ============================================================================
+# 完整的修正版 batch_inference.py（關鍵部分）
+# ============================================================================
+
+"""
+以下是完整的修正說明：
+
+1. 找到 scripts/batch_inference.py
+2. 找到第 44-56 行的 setup_google_credentials 函數
+3. 用上面的新版本完整替換
+
+原始版本（第 44-56 行）:
+```python
+def setup_google_credentials():
+    # 自動設定 Google Cloud 認證
+    possible_paths = [
+        PROJECT_ROOT / "utils" / "google-speech-key.json",
+        PROJECT_ROOT / "config" / "google-speech-key.json",
+    ]
+    
+    if not os.getenv('GOOGLE_APPLICATION_CREDENTIALS'):
+        for key_path in possible_paths:
+            if key_path.exists():
+                os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = str(key_path)
+                return True
+    return bool(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
+```
+
+修正版本（用上面的函數替換）:
+- 增加服務帳戶金鑰驗證
+- 過濾配置檔案
+- 自動設定專案 ID
+"""
+
+
+# ============================================================================
+# 或者：直接使用這個完整的修正版 batch_inference.py 片段
+# ============================================================================
+
+"""
+將以下內容完整複製，替換 scripts/batch_inference.py 的第 26-60 行
+"""
+
+import os
+import sys
+import json
+import argparse
+from pathlib import Path
+from datetime import datetime
+
+# ============================================================================
+# 設定路徑
+# ============================================================================
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_ROOT = SCRIPT_DIR.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
+
+# ============================================================================
+# 內建認證設定（修正版）
+# ============================================================================
+def setup_google_credentials():
+    """
+    自動設定 Google Cloud 認證（修正版）
+    
+    功能:
+    - 自動搜尋有效的服務帳戶金鑰
+    - 驗證金鑰格式
+    - 設定環境變數
+    """
+    # 如果環境變數已設定且有效，直接使用
+    existing_creds = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
+    if existing_creds and Path(existing_creds).exists():
+        # 驗證是否為有效的服務帳戶金鑰
+        try:
+            with open(existing_creds, 'r') as f:
+                key_data = json.load(f)
+            if key_data.get('type') == 'service_account':
+                return True
+        except:
+            pass
+    
+    # 自動搜尋金鑰檔案
+    possible_paths = [
+        PROJECT_ROOT / "utils" / "google-speech-key.json",
+        PROJECT_ROOT / "config" / "google-speech-key.json",
+        PROJECT_ROOT / "google-speech-key.json",
+    ]
+    
+    for key_path in possible_paths:
+        if not key_path.exists():
+            continue
+        
+        # 驗證是否為有效的服務帳戶金鑰
+        try:
+            with open(key_path, 'r') as f:
+                key_data = json.load(f)
+            
+            # 必須是服務帳戶金鑰
+            if key_data.get('type') != 'service_account':
+                continue
+            
+            # 檢查必要欄位
+            required_fields = ['project_id', 'private_key', 'client_email']
+            if not all(field in key_data for field in required_fields):
+                continue
+            
+            # 設定環境變數
+            os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = str(key_path)
+            if 'project_id' in key_data:
+                os.environ['GOOGLE_CLOUD_PROJECT'] = key_data['project_id']
+            
+            return True
+        
+        except Exception:
+            continue
+    
+    # 找不到有效的金鑰
+    return False
+
+
+# 在 import 之前設定認證
+setup_google_credentials()
+
+
+# ============================================================================
+# 快速修正腳本（自動化）
+# ============================================================================
+
+if __name__ == "__main__":
+    """
+    自動修正 batch_inference.py
+    
+    使用方式:
+        python fix_batch_inference_credentials.py
+    """
+    import re
+    from pathlib import Path
+    
+    # 讀取原始檔案
+    batch_inference_path = Path(__file__).parent.parent / "scripts" / "batch_inference.py"
+    
+    if not batch_inference_path.exists():
+        print(f"❌ 找不到檔案: {batch_inference_path}")
+        print("請確認您在專案根目錄執行此腳本")
+        exit(1)
+    
+    print(f"讀取檔案: {batch_inference_path}")
+    
+    with open(batch_inference_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # 備份原始檔案
+    backup_path = batch_inference_path.with_suffix('.py.backup')
+    with open(backup_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+    print(f"✅ 已備份至: {backup_path}")
+    
+    # 新的 setup_google_credentials 函數
+    new_function = '''def setup_google_credentials():
+    """自動設定 Google Cloud 認證（修正版）"""
+    # 如果環境變數已設定且有效，直接使用
+    existing_creds = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
+    if existing_creds and Path(existing_creds).exists():
+        # 驗證是否為有效的服務帳戶金鑰
+        try:
+            with open(existing_creds, 'r') as f:
+                key_data = json.load(f)
+            if key_data.get('type') == 'service_account':
+                return True
+        except:
+            pass
+    
+    # 自動搜尋金鑰檔案
+    possible_paths = [
+        PROJECT_ROOT / "utils" / "google-speech-key.json",
+        PROJECT_ROOT / "config" / "google-speech-key.json",
+        PROJECT_ROOT / "google-speech-key.json",
+    ]
+    
+    for key_path in possible_paths:
+        if not key_path.exists():
+            continue
+        
+        # 驗證是否為有效的服務帳戶金鑰
+        try:
+            with open(key_path, 'r') as f:
+                key_data = json.load(f)
+            
+            # 必須是服務帳戶金鑰
+            if key_data.get('type') != 'service_account':
+                continue
+            
+            # 檢查必要欄位
+            required_fields = ['project_id', 'private_key', 'client_email']
+            if not all(field in key_data for field in required_fields):
+                continue
+            
+            # 設定環境變數
+            os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = str(key_path)
+            if 'project_id' in key_data:
+                os.environ['GOOGLE_CLOUD_PROJECT'] = key_data['project_id']
+            
+            return True
+        
+        except Exception:
+            continue
+    
+    # 找不到有效的金鑰
+    return False'''
+    
+    # 使用正則表達式替換函數
+    pattern = r'def setup_google_credentials\(\):.*?return bool\(os\.getenv\(\'GOOGLE_APPLICATION_CREDENTIALS\'\)\)'
+    
+    new_content = re.sub(pattern, new_function, content, flags=re.DOTALL)
+    
+    if new_content == content:
+        print("⚠️  未找到要替換的函數，嘗試其他模式...")
+        
+        # 嘗試更寬鬆的模式
+        pattern2 = r'def setup_google_credentials\(\):.*?(?=\n\n# 在 import 之前設定認證|\nsetup_google_credentials\(\))'
+        new_content = re.sub(pattern2, new_function, content, flags=re.DOTALL)
+    
+    if new_content != content:
+        # 寫入修正後的檔案
+        with open(batch_inference_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        
+        print(f"✅ 已修正檔案: {batch_inference_path}")
+        print("\n請重新執行批次處理:")
+        print("  python scripts/batch_inference.py \\")
+        print("      --test-case Test_02_TMRT \\")
+        print("      --model google_stt \\")
+        print("      --stt-model chirp_3")
+    else:
+        print("❌ 修正失敗，請手動替換函數")
+        print(f"\n請編輯 {batch_inference_path}")
+        print("找到 setup_google_credentials 函數並用上面的新版本替換")

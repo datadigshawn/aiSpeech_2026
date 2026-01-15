@@ -312,8 +312,9 @@ class GoogleSTTModel:
         audio_file: str,
         phrases: List[Dict] = None,
         enable_word_time_offsets: bool = True, # 支援標點符號 
+        enable_automatic_punctuation: bool = True,
         **kwargs # 接收並忽略不支援的參數 (例如 diarization)
-        # 17:10增加參數
+        
     ) -> Dict:
         """
         辨識音檔（修正版 v2）
@@ -322,6 +323,8 @@ class GoogleSTTModel:
             audio_file: 音檔路徑
             phrases: 詞彙表列表 [{"value": "詞彙", "boost": 10}, ...]
             enable_word_time_offsets: 是否啟用字詞時間戳
+            enable_automatic_punctuation: 是否啟用自動標點符號
+            **kwargs: 其他參數（會被忽略，如 speaker diarization 相關）   
         
         Returns:
             辨識結果字典

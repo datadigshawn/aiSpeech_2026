@@ -211,3 +211,126 @@
 2026-01-12 17:01:41 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 400 The language "cmn-Hant-TW" is not supported by the model "chirp_telephony" in the location named "us-central1".
 2026-01-12 17:01:58 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 The language "cmn-Hant-TW" is not supported by the model "chirp_telephony" in the location named "us-central1".
 2026-01-12 17:02:01 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The language "cmn-Hant-TW" is not supported by the model "chirp_telephony" in the location named "us-central1".
+2026-01-13 17:23:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ Google STT 初始化失敗: File /完整路徑/aiSpeech/utils/google-speech-key.json was not found.
+2026-01-14 10:51:58 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 10:52:02 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 10:52:06 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 10:52:08 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 10:52:15 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 10:52:28 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 10:52:30 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 10:54:01 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 10:54:04 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 10:54:09 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 10:54:12 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 10:54:19 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 10:54:32 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 10:54:34 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 11:14:14 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 11:14:17 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 11:14:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 11:14:24 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 11:14:30 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 11:14:44 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 11:14:46 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 11:53:59 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The model "chirp_3" does not exist in the location named "us-central1"..
+2026-01-14 11:57:33 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 11:57:35 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 11:57:40 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 11:57:42 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 11:57:49 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 11:58:02 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 11:58:05 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 13:13:56 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:13:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:13:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:13:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:13:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:13:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:13:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 503 DNS resolution failed for us-speech.googleapis.com:443: C-ares status is not ARES_SUCCESS qtype=SRV name=_grpclb._tcp.us-speech.googleapis.com: Could not contact DNS servers
+2026-01-14 13:18:14 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 13:18:16 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 13:18:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 13:18:23 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 13:18:30 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 13:18:43 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 13:18:46 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 13:30:28 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 13:47:36 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The model "chirp_2" does not exist in the location named "us"..
+2026-01-14 13:47:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:47:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:47:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:48:55 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:48:55 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:49:04 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:49:04 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:49:08 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:49:08 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:49:22 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:49:22 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:49:49 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:49:49 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:49:54 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 13:49:54 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 13:53:40 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 13:53:41 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 13:53:43 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 13:53:44 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 13:53:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 13:53:52 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 13:53:53 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 13:56:11 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 13:56:12 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 13:56:14 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 13:56:15 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 13:56:17 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 13:56:22 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 13:56:23 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 14:07:20 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The model "chirp_2" does not exist in the location named "us"..
+2026-01-14 14:07:31 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:07:31 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:07:31 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:07:36 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:07:36 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:07:45 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:07:45 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:07:50 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:07:50 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:08:04 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:08:04 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:08:31 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:08:31 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:08:37 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The model "chirp_2" does not exist in the location named "eu"..
+2026-01-14 14:08:37 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:13:20 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 14:22:50 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:22:54 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:22:59 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:23:02 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:23:11 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:23:29 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:23:32 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The language "cmn-Hant-TW" is not supported by the model "latest_long" in the location named "us-central1".
+2026-01-14 14:42:49 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The model "chirp_3" does not exist in the location named "us-central1"..
+2026-01-14 14:43:01 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 14:44:06 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-14 14:44:06 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 所有回退區域都失敗
+2026-01-14 14:44:07 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-14 14:44:09 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-14 14:44:10 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-14 14:44:14 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-14 14:44:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
+2026-01-14 14:44:22 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-14 14:56:54 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 14:56:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 14:57:02 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 14:57:05 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 14:57:14 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 14:57:32 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 14:57:38 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "us-central1".
+2026-01-14 15:03:03 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-14 15:03:04 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-14 15:03:05 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-14 15:03:07 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-14 15:03:09 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-14 15:03:14 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-14 15:03:15 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
