@@ -1665,3 +1665,243 @@
 2026-01-14 15:03:14 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
 2026-01-14 15:03:14 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930.wav
 2026-01-14 15:03:15 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-15 11:06:21 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-15 11:06:21 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-15 11:06:21 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-15 11:06:21 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: asia-southeast1
+2026-01-15 11:06:21 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: asia-southeast1-speech.googleapis.com
+2026-01-15 11:06:21 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_2
+2026-01-15 11:06:21 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-15 11:06:21 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-15 11:06:21 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:21 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:21 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236_chunk_001.wav
+2026-01-15 11:06:23 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192236_chunk_001.wav (信心度: 75.87%)
+2026-01-15 11:06:23 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:23 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:23 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236_chunk_002.wav
+2026-01-15 11:06:28 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192236_chunk_002.wav (信心度: 74.92%)
+2026-01-15 11:06:28 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:28 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:28 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236_chunk_003.wav
+2026-01-15 11:06:30 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192236_chunk_003.wav (信心度: 57.09%)
+2026-01-15 11:06:30 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:30 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:30 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400_chunk_001.wav
+2026-01-15 11:06:33 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192400_chunk_001.wav (信心度: 68.04%)
+2026-01-15 11:06:33 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:33 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:33 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434_chunk_001.wav
+2026-01-15 11:06:38 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192434_chunk_001.wav (信心度: 69.75%)
+2026-01-15 11:06:38 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:38 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:38 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542_chunk_001.wav
+2026-01-15 11:06:39 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192542_chunk_001.wav (信心度: 62.77%)
+2026-01-15 11:06:39 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:39 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:39 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542_chunk_002.wav
+2026-01-15 11:06:40 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192542_chunk_002.wav (信心度: 50.97%)
+2026-01-15 11:06:40 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:40 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:40 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609_chunk_001.wav
+2026-01-15 11:06:42 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192609_chunk_001.wav (信心度: 69.65%)
+2026-01-15 11:06:42 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:42 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:42 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609_chunk_002.wav
+2026-01-15 11:06:43 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192609_chunk_002.wav (信心度: 59.97%)
+2026-01-15 11:06:43 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:43 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:43 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609_chunk_003.wav
+2026-01-15 11:06:45 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192609_chunk_003.wav (信心度: 61.89%)
+2026-01-15 11:06:45 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:45 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:45 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609_chunk_004.wav
+2026-01-15 11:06:47 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192609_chunk_004.wav (信心度: 72.90%)
+2026-01-15 11:06:47 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:47 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:47 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609_chunk_005.wav
+2026-01-15 11:06:53 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192609_chunk_005.wav (信心度: 94.19%)
+2026-01-15 11:06:53 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:53 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:53 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_001.wav
+2026-01-15 11:06:55 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192724_chunk_001.wav (信心度: 73.76%)
+2026-01-15 11:06:55 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:55 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:55 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_002.wav
+2026-01-15 11:06:58 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192724_chunk_002.wav (信心度: 73.44%)
+2026-01-15 11:06:58 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:06:58 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:06:58 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_003.wav
+2026-01-15 11:07:03 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192724_chunk_003.wav (信心度: 65.21%)
+2026-01-15 11:07:03 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:07:03 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:07:03 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_004.wav
+2026-01-15 11:07:04 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192724_chunk_004.wav (信心度: 78.49%)
+2026-01-15 11:07:04 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:07:04 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:07:04 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_005.wav
+2026-01-15 11:07:06 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192724_chunk_005.wav (信心度: 70.60%)
+2026-01-15 11:07:06 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:07:06 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:07:06 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_006.wav
+2026-01-15 11:07:08 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192724_chunk_006.wav (信心度: 85.90%)
+2026-01-15 11:07:08 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:07:08 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:07:08 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_007.wav
+2026-01-15 11:07:09 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192724_chunk_007.wav (信心度: 53.33%)
+2026-01-15 11:07:09 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:07:09 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:07:09 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_008.wav
+2026-01-15 11:07:09 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_008.wav
+2026-01-15 11:07:09 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:07:09 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:07:09 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_009.wav
+2026-01-15 11:07:10 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_009.wav
+2026-01-15 11:07:10 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:07:10 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:07:10 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_010.wav
+2026-01-15 11:07:10 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_010.wav
+2026-01-15 11:07:10 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:07:10 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:07:10 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_011.wav
+2026-01-15 11:07:11 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_011.wav
+2026-01-15 11:07:11 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:07:11 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:07:11 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_012.wav
+2026-01-15 11:07:11 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_012.wav
+2026-01-15 11:07:11 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:07:11 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:07:11 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_013.wav
+2026-01-15 11:07:12 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_013.wav
+2026-01-15 11:07:12 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:07:12 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:07:12 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_014.wav
+2026-01-15 11:07:12 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_014.wav
+2026-01-15 11:07:12 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:07:12 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:07:12 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_015.wav
+2026-01-15 11:07:13 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_015.wav
+2026-01-15 11:07:13 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/asia-southeast1/recognizers/_
+2026-01-15 11:07:13 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 11:07:13 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930_chunk_001.wav
+2026-01-15 11:07:15 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 辨識成功: UltraLog06320251222192930_chunk_001.wav (信心度: 70.03%)
+2026-01-15 16:30:28 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-15 16:30:28 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-15 16:30:28 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-15 16:30:28 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us
+2026-01-15 16:30:28 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-speech.googleapis.com
+2026-01-15 16:30:28 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-15 16:30:28 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-15 16:30:28 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用
+2026-01-15 16:30:28 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:28 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:28 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236_chunk_001.wav
+2026-01-15 16:30:29 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236_chunk_001.wav): 404 Requested entity was not found.
+2026-01-15 16:30:29 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:29 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:29 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236_chunk_002.wav
+2026-01-15 16:30:32 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236_chunk_002.wav): 404 Requested entity was not found.
+2026-01-15 16:30:32 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:32 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:32 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192236_chunk_003.wav
+2026-01-15 16:30:33 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236_chunk_003.wav): 404 Requested entity was not found.
+2026-01-15 16:30:33 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:33 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:33 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192400_chunk_001.wav
+2026-01-15 16:30:34 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400_chunk_001.wav): 404 Requested entity was not found.
+2026-01-15 16:30:34 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:34 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:34 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192434_chunk_001.wav
+2026-01-15 16:30:37 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434_chunk_001.wav): 404 Requested entity was not found.
+2026-01-15 16:30:37 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:37 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:37 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542_chunk_001.wav
+2026-01-15 16:30:38 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542_chunk_001.wav): 404 Requested entity was not found.
+2026-01-15 16:30:38 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:38 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:38 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192542_chunk_002.wav
+2026-01-15 16:30:39 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542_chunk_002.wav): 404 Requested entity was not found.
+2026-01-15 16:30:39 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:39 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:39 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609_chunk_001.wav
+2026-01-15 16:30:40 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609_chunk_001.wav): 404 Requested entity was not found.
+2026-01-15 16:30:40 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:40 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:40 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609_chunk_002.wav
+2026-01-15 16:30:41 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609_chunk_002.wav): 404 Requested entity was not found.
+2026-01-15 16:30:41 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:41 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:41 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609_chunk_003.wav
+2026-01-15 16:30:42 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609_chunk_003.wav): 404 Requested entity was not found.
+2026-01-15 16:30:42 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:42 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:42 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609_chunk_004.wav
+2026-01-15 16:30:43 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609_chunk_004.wav): 404 Requested entity was not found.
+2026-01-15 16:30:43 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:43 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:43 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192609_chunk_005.wav
+2026-01-15 16:30:44 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609_chunk_005.wav): 404 Requested entity was not found.
+2026-01-15 16:30:44 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:44 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:44 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_001.wav
+2026-01-15 16:30:45 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_001.wav): 404 Requested entity was not found.
+2026-01-15 16:30:45 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:45 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:45 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_002.wav
+2026-01-15 16:30:46 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_002.wav): 404 Requested entity was not found.
+2026-01-15 16:30:46 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:46 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:46 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_003.wav
+2026-01-15 16:30:49 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_003.wav): 404 Requested entity was not found.
+2026-01-15 16:30:49 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:49 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:49 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_004.wav
+2026-01-15 16:30:50 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_004.wav): 404 Requested entity was not found.
+2026-01-15 16:30:50 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:50 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:50 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_005.wav
+2026-01-15 16:30:51 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_005.wav): 404 Requested entity was not found.
+2026-01-15 16:30:51 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:51 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:51 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_006.wav
+2026-01-15 16:30:52 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_006.wav): 404 Requested entity was not found.
+2026-01-15 16:30:52 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:52 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:52 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_007.wav
+2026-01-15 16:30:53 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_007.wav): 404 Requested entity was not found.
+2026-01-15 16:30:53 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:53 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:53 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_008.wav
+2026-01-15 16:30:54 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_008.wav
+2026-01-15 16:30:54 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:54 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:54 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_009.wav
+2026-01-15 16:30:54 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_009.wav
+2026-01-15 16:30:54 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:54 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:54 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_010.wav
+2026-01-15 16:30:55 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_010.wav
+2026-01-15 16:30:55 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:55 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:55 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_011.wav
+2026-01-15 16:30:56 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_011.wav
+2026-01-15 16:30:56 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:56 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:56 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_012.wav
+2026-01-15 16:30:57 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_012.wav
+2026-01-15 16:30:57 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:57 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_013.wav
+2026-01-15 16:30:57 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_013.wav
+2026-01-15 16:30:57 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:57 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:57 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_014.wav
+2026-01-15 16:30:58 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_014.wav
+2026-01-15 16:30:58 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:58 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:58 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192724_chunk_015.wav
+2026-01-15 16:30:59 | [33mWARNING[0m | GoogleSTTModel | warning:117 | 辨識結果為空: experiments/Test_02_TMRT/vad_chunks/UltraLog06320251222192724_chunk_015.wav
+2026-01-15 16:30:59 | DEBUG    | GoogleSTTModel | debug:109 | Recognizer 路徑: projects/dazzling-seat-315406/locations/us/recognizers/_
+2026-01-15 16:30:59 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
+2026-01-15 16:30:59 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930_chunk_001.wav
+2026-01-15 16:31:00 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930_chunk_001.wav): 404 Requested entity was not found.

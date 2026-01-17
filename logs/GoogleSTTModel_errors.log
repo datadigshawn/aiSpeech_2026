@@ -334,3 +334,23 @@
 2026-01-14 15:03:09 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
 2026-01-14 15:03:14 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
 2026-01-14 15:03:15 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 400 The language "cmn-Hant-TW" is not supported by the model "telephony" in the location named "asia-southeast1".
+2026-01-15 16:30:29 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236_chunk_001.wav): 404 Requested entity was not found.
+2026-01-15 16:30:32 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236_chunk_002.wav): 404 Requested entity was not found.
+2026-01-15 16:30:33 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236_chunk_003.wav): 404 Requested entity was not found.
+2026-01-15 16:30:34 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400_chunk_001.wav): 404 Requested entity was not found.
+2026-01-15 16:30:37 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434_chunk_001.wav): 404 Requested entity was not found.
+2026-01-15 16:30:38 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542_chunk_001.wav): 404 Requested entity was not found.
+2026-01-15 16:30:39 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542_chunk_002.wav): 404 Requested entity was not found.
+2026-01-15 16:30:40 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609_chunk_001.wav): 404 Requested entity was not found.
+2026-01-15 16:30:41 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609_chunk_002.wav): 404 Requested entity was not found.
+2026-01-15 16:30:42 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609_chunk_003.wav): 404 Requested entity was not found.
+2026-01-15 16:30:43 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609_chunk_004.wav): 404 Requested entity was not found.
+2026-01-15 16:30:44 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609_chunk_005.wav): 404 Requested entity was not found.
+2026-01-15 16:30:45 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_001.wav): 404 Requested entity was not found.
+2026-01-15 16:30:46 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_002.wav): 404 Requested entity was not found.
+2026-01-15 16:30:49 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_003.wav): 404 Requested entity was not found.
+2026-01-15 16:30:50 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_004.wav): 404 Requested entity was not found.
+2026-01-15 16:30:51 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_005.wav): 404 Requested entity was not found.
+2026-01-15 16:30:52 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_006.wav): 404 Requested entity was not found.
+2026-01-15 16:30:53 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724_chunk_007.wav): 404 Requested entity was not found.
+2026-01-15 16:31:00 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930_chunk_001.wav): 404 Requested entity was not found.

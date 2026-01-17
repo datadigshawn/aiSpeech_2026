@@ -6,6 +6,9 @@ Google Gemini 模型模組
 - 檔案上傳 (File API)
 - 帶上下文辨識
 - 自定義提示詞
+(2026/1/15 下午更新)
+支援功能:
+- 自動從 utils/api_keys.py 讀取 API key
 """
 
 import json
@@ -16,9 +19,16 @@ import os
 
 import google.generativeai as genai
 
-from utils.logger import get_model_logger
+# 修正後的 logger 導入（加入 fallback 機制）
+try:
+    from utils.logger import get_logger
+except ImportError:
+    import logging
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    def get_logger(name):
+        return logging.getLogger(name)
 
-logger = get_model_logger('gemini')
+logger = get_logger('gemini')
 
 
 class GeminiModel:
@@ -41,18 +51,20 @@ class GeminiModel:
         初始化 Gemini 模型
         
         Args:
-            api_key: Gemini API 金鑰 (可從環境變數 GEMINI_API_KEY 讀取)
+            api_key: Gemini API 金鑰
             model: 模型名稱
             temperature: 溫度參數 (0.0-1.0，0.0 為最確定性)
+        
+        API Key 載入優先順序：
+        1. 直接傳入的 api_key 參數
+        2. 環境變數 GEMINI_API_KEY
+        3. utils/api_keys.py 配置檔案
         """
         self.model_name = model
         self.temperature = temperature
         
-        # 取得 API 金鑰
-        if api_key is None:
-            api_key = os.environ.get('GEMINI_API_KEY')
-            if api_key is None:
-                raise ValueError("請提供 API 金鑰或設定 GEMINI_API_KEY 環境變數")
+        # 取得 API 金鑰（多層級 fallback）
+        api_key = self._get_api_key(api_key)
         
         # 設定 API
         genai.configure(api_key=api_key)
@@ -77,6 +89,52 @@ class GeminiModel:
         except Exception as e:
             logger.error(f"初始化 Gemini 模型失敗: {e}")
             raise
+    
+    def _get_api_key(self, api_key: Optional[str] = None) -> str:
+        """
+        取得 API 金鑰（多層級 fallback）
+        
+        優先順序：
+        1. 直接傳入的參數
+        2. 環境變數 GEMINI_API_KEY
+        3. utils/api_keys.py 配置檔案
+        
+        Returns:
+            API 金鑰字串
+        
+        Raises:
+            ValueError: 所有方式都無法取得 API 金鑰
+        """
+        # 優先級 1: 直接傳入的參數
+        if api_key is not None:
+            logger.info("✅ 使用傳入的 API key")
+            return api_key
+        
+        # 優先級 2: 環境變數
+        api_key = os.environ.get('GEMINI_API_KEY')
+        if api_key is not None:
+            logger.info("✅ 使用環境變數 GEMINI_API_KEY")
+            return api_key
+        
+        # 優先級 3: utils/api_keys.py 配置檔案
+        try:
+            from utils.api_keys import get_gemini_api_key
+            api_key = get_gemini_api_key()
+            if api_key:
+                logger.info("✅ 從 utils/api_keys.py 載入 API key")
+                return api_key
+        except ImportError:
+            logger.debug("utils/api_keys.py 不存在，跳過")
+        except Exception as e:
+            logger.warning(f"從 utils/api_keys.py 讀取失敗: {e}")
+        
+        # 所有方式都失敗，拋出錯誤
+        raise ValueError(
+            "無法取得 Gemini API 金鑰！請使用以下任一方式設定：\n"
+            "1. 直接傳入參數：GeminiModel(api_key='your-key')\n"
+            "2. 設定環境變數：export GEMINI_API_KEY='your-key'\n"
+            "3. 在 utils/api_keys.py 中配置 GEMINI_API_KEY"
+        )
     
     def upload_audio_file(self, audio_file: str, display_name: Optional[str] = None) -> object:
         """
@@ -286,16 +344,16 @@ if __name__ == "__main__":
     # 測試 Gemini 模型
     import sys
     
-    # 檢查環境變數
-    if 'GEMINI_API_KEY' not in os.environ:
-        print("請設定 GEMINI_API_KEY 環境變數")
+    # 初始化模型（會自動從 utils/api_keys.py 讀取 API key）
+    try:
+        model = GeminiModel(
+            model="gemini-2.0-flash-exp",
+            temperature=0.0
+        )
+        print("✅ Gemini 模型初始化成功")
+    except ValueError as e:
+        print(f"❌ 初始化失敗: {e}")
         sys.exit(1)
-    
-    # 初始化模型
-    model = GeminiModel(
-        model="gemini-2.0-flash-exp",
-        temperature=0.0
-    )
     
     # 測試辨識
     test_audio = "experiments/Test_01_TMRT/batch_processing/dataset_chunks/chunk_001.wav"

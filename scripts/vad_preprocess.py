@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-VAD 預處理腳本 - 完整實作
-用於處理無線電音訊，去除靜音和噪音，切分音檔
+VAD 預處理腳本 - 修正版
+解決 ffmpeg 編碼器問題，使用 soundfile 直接處理
 """
 
 import argparse
@@ -9,8 +9,7 @@ import sys
 from pathlib import Path
 from typing import List, Tuple, Dict
 import numpy as np
-from pydub import AudioSegment
-from pydub.silence import detect_nonsilent
+import soundfile as sf
 import json
 from datetime import datetime
 import logging
@@ -31,25 +30,17 @@ except ImportError:
     WEBRTC_AVAILABLE = False
     logger.warning("WebRTC VAD 未安裝，將使用基於能量的 VAD")
 
-# 嘗試導入 Silero VAD
-try:
-    import torch
-    SILERO_AVAILABLE = True
-except ImportError:
-    SILERO_AVAILABLE = False
-    logger.warning("Silero VAD 未安裝 (需要 PyTorch)")
-
 
 class VADPreprocessor:
-    """VAD 預處理器"""
+    """VAD 預處理器 - 使用 soundfile"""
     
     def __init__(
         self,
-        vad_method: str = "energy",  # "energy", "webrtc", "silero"
+        vad_method: str = "energy",
         vad_threshold: float = 0.5,
-        min_speech_duration: float = 0.3,  # 最短語音段（秒）
-        min_silence_duration: float = 0.5,  # 最短靜音段（秒）
-        max_chunk_length: float = 50.0,    # 最大切段長度（秒）
+        min_speech_duration: float = 0.3,
+        min_silence_duration: float = 0.5,
+        max_chunk_length: float = 50.0,
         sample_rate: int = 16000
     ):
         """初始化 VAD 預處理器"""
@@ -58,242 +49,244 @@ class VADPreprocessor:
         self.min_speech_duration = min_speech_duration
         self.min_silence_duration = min_silence_duration
         self.max_chunk_length = max_chunk_length
-        self.sample_rate = sample_rate
+        self.target_sample_rate = sample_rate
         
-        # 初始化對應的 VAD
+        # 初始化 WebRTC VAD
         if vad_method == "webrtc":
             if not WEBRTC_AVAILABLE:
                 logger.warning("WebRTC VAD 不可用，回退到能量檢測")
                 self.vad_method = "energy"
             else:
-                # aggressiveness: 0=寬鬆, 3=嚴格
-                # vad_threshold 0.6 對應 aggressiveness 2-3
                 aggressiveness = min(3, max(0, int(vad_threshold * 4)))
                 self.vad = webrtcvad.Vad(aggressiveness)
                 logger.info(f"✅ 使用 WebRTC VAD (aggressiveness={aggressiveness})")
-        
-        elif vad_method == "silero":
-            if not SILERO_AVAILABLE:
-                logger.warning("Silero VAD 不可用，回退到能量檢測")
-                self.vad_method = "energy"
-            else:
-                self._init_silero()
-                logger.info("✅ 使用 Silero VAD")
-        
         else:
             logger.info("✅ 使用基於能量的 VAD")
     
-    def _init_silero(self):
-        """初始化 Silero VAD"""
-        try:
-            model, utils = torch.hub.load(
-                repo_or_dir='snakers4/silero-vad',
-                model='silero_vad',
-                force_reload=False,
-                onnx=False
-            )
-            self.silero_model = model
-            self.get_speech_timestamps = utils[0]
-            logger.info("Silero VAD 模型載入成功")
-        except Exception as e:
-            logger.error(f"Silero VAD 載入失敗: {e}")
-            logger.warning("回退到能量檢測")
-            self.vad_method = "energy"
+    def resample_audio(self, audio: np.ndarray, orig_sr: int, target_sr: int) -> np.ndarray:
+        """簡單的重採樣（使用線性插值）"""
+        if orig_sr == target_sr:
+            return audio
+        
+        # 計算重採樣比例
+        ratio = target_sr / orig_sr
+        
+        # 使用 numpy 的插值
+        orig_length = len(audio)
+        target_length = int(orig_length * ratio)
+        
+        # 線性插值
+        orig_indices = np.arange(orig_length)
+        target_indices = np.linspace(0, orig_length - 1, target_length)
+        resampled = np.interp(target_indices, orig_indices, audio)
+        
+        return resampled.astype(audio.dtype)
     
-    def detect_speech_segments_energy(
+    def detect_speech_energy(
         self, 
-        audio: AudioSegment
+        audio: np.ndarray,
+        sample_rate: int
     ) -> List[Tuple[int, int]]:
         """
         使用能量檢測法檢測語音段
         
         Returns:
-            List of (start_ms, end_ms) tuples
+            List of (start_sample, end_sample) tuples
         """
-        # 計算靜音閾值
-        # dBFS 通常在 -60 到 0 之間
-        # vad_threshold 0.5 → -40 dBFS
-        # vad_threshold 0.6 → -35 dBFS
-        silence_thresh = -60 + (self.vad_threshold * 50)
+        # 計算音框能量
+        frame_length = int(sample_rate * 0.03)  # 30ms
+        hop_length = int(sample_rate * 0.01)    # 10ms
         
-        # 使用 pydub 的 detect_nonsilent
-        speech_segments = detect_nonsilent(
-            audio,
-            min_silence_len=int(self.min_silence_duration * 1000),  # 轉為毫秒
-            silence_thresh=silence_thresh,
-            seek_step=10  # 10ms 步長
-        )
+        # 計算每幀的 RMS 能量
+        energy = []
+        for i in range(0, len(audio) - frame_length, hop_length):
+            frame = audio[i:i + frame_length]
+            rms = np.sqrt(np.mean(frame**2))
+            energy.append(rms)
         
-        # 過濾太短的語音段
-        min_speech_ms = int(self.min_speech_duration * 1000)
-        filtered_segments = [
-            (start, end) for start, end in speech_segments
-            if (end - start) >= min_speech_ms
-        ]
+        energy = np.array(energy)
         
-        logger.info(f"   檢測到 {len(filtered_segments)} 個語音段")
-        return filtered_segments
+        # 計算閾值
+        # 使用百分位數作為閾值
+        percentile = self.vad_threshold * 100
+        threshold = np.percentile(energy, percentile)
+        
+        # 如果閾值太低，使用最大值的比例
+        max_energy = np.max(energy)
+        min_threshold = max_energy * 0.1  # 至少是最大值的 10%
+        threshold = max(threshold, min_threshold)
+        
+        # 檢測語音段
+        is_speech = energy > threshold
+        
+        # 找到連續的語音段
+        segments = []
+        start_frame = None
+        
+        min_speech_frames = int(self.min_speech_duration * sample_rate / hop_length)
+        min_silence_frames = int(self.min_silence_duration * sample_rate / hop_length)
+        
+        silence_counter = 0
+        
+        for i, speech in enumerate(is_speech):
+            if speech:
+                if start_frame is None:
+                    start_frame = i
+                silence_counter = 0
+            else:
+                if start_frame is not None:
+                    silence_counter += 1
+                    if silence_counter >= min_silence_frames:
+                        # 語音段結束
+                        if (i - start_frame) >= min_speech_frames:
+                            start_sample = start_frame * hop_length
+                            end_sample = (i - silence_counter) * hop_length
+                            segments.append((start_sample, end_sample))
+                        start_frame = None
+                        silence_counter = 0
+        
+        # 處理最後一段
+        if start_frame is not None:
+            if (len(is_speech) - start_frame) >= min_speech_frames:
+                start_sample = start_frame * hop_length
+                end_sample = len(audio)
+                segments.append((start_sample, end_sample))
+        
+        logger.info(f"   檢測到 {len(segments)} 個語音段")
+        return segments
     
-    def detect_speech_segments_webrtc(
-        self, 
-        audio: AudioSegment
+    def detect_speech_webrtc(
+        self,
+        audio: np.ndarray,
+        sample_rate: int
     ) -> List[Tuple[int, int]]:
         """
         使用 WebRTC VAD 檢測語音段
         
         Returns:
-            List of (start_ms, end_ms) tuples
+            List of (start_sample, end_sample) tuples
         """
-        # WebRTC VAD 需要 16-bit PCM
-        # 轉換音訊
-        audio = audio.set_frame_rate(16000).set_channels(1).set_sample_width(2)
+        # WebRTC VAD 要求 16kHz, mono, int16
+        if sample_rate != 16000:
+            audio = self.resample_audio(audio, sample_rate, 16000)
+            sample_rate = 16000
         
-        # 準備音訊數據
-        raw_data = audio.raw_data
-        sample_rate = audio.frame_rate
+        # 轉換為 int16
+        if audio.dtype != np.int16:
+            audio = (audio * 32767).astype(np.int16)
         
         # WebRTC VAD 使用 10/20/30ms 幀
         frame_duration_ms = 30
-        frame_size = int(sample_rate * frame_duration_ms / 1000) * 2  # 2 bytes per sample
+        frame_samples = int(sample_rate * frame_duration_ms / 1000)
         
-        # 檢測語音
+        # 檢測語音幀
         speech_frames = []
-        for i in range(0, len(raw_data), frame_size):
-            frame = raw_data[i:i + frame_size]
-            if len(frame) < frame_size:
-                break
+        for i in range(0, len(audio), frame_samples):
+            frame = audio[i:i + frame_samples]
+            if len(frame) < frame_samples:
+                # 填充到完整幀
+                frame = np.pad(frame, (0, frame_samples - len(frame)), mode='constant')
             
-            is_speech = self.vad.is_speech(frame, sample_rate)
+            frame_bytes = frame.tobytes()
+            is_speech = self.vad.is_speech(frame_bytes, sample_rate)
             speech_frames.append(is_speech)
         
-        # 合併連續的語音幀
+        # 合併連續語音幀
         segments = []
         start_frame = None
         
+        min_speech_frames = int(self.min_speech_duration * 1000 / frame_duration_ms)
+        min_silence_frames = int(self.min_silence_duration * 1000 / frame_duration_ms)
+        
+        silence_counter = 0
+        
         for i, is_speech in enumerate(speech_frames):
-            if is_speech and start_frame is None:
-                start_frame = i
-            elif not is_speech and start_frame is not None:
-                # 語音段結束
-                start_ms = start_frame * frame_duration_ms
-                end_ms = i * frame_duration_ms
-                
-                # 檢查長度
-                if (end_ms - start_ms) >= (self.min_speech_duration * 1000):
-                    segments.append((start_ms, end_ms))
-                
-                start_frame = None
+            if is_speech:
+                if start_frame is None:
+                    start_frame = i
+                silence_counter = 0
+            else:
+                if start_frame is not None:
+                    silence_counter += 1
+                    if silence_counter >= min_silence_frames:
+                        if (i - start_frame) >= min_speech_frames:
+                            start_sample = start_frame * frame_samples
+                            end_sample = (i - silence_counter) * frame_samples
+                            segments.append((start_sample, end_sample))
+                        start_frame = None
+                        silence_counter = 0
         
         # 處理最後一段
         if start_frame is not None:
-            start_ms = start_frame * frame_duration_ms
-            end_ms = len(speech_frames) * frame_duration_ms
-            if (end_ms - start_ms) >= (self.min_speech_duration * 1000):
-                segments.append((start_ms, end_ms))
-        
-        logger.info(f"   檢測到 {len(segments)} 個語音段")
-        return segments
-    
-    def detect_speech_segments_silero(
-        self, 
-        audio: AudioSegment
-    ) -> List[Tuple[int, int]]:
-        """
-        使用 Silero VAD 檢測語音段
-        
-        Returns:
-            List of (start_ms, end_ms) tuples
-        """
-        # 轉換為 Silero 所需格式
-        audio = audio.set_frame_rate(16000).set_channels(1)
-        
-        # 轉換為 float32 numpy array
-        samples = np.array(audio.get_array_of_samples()).astype(np.float32) / 32768.0
-        audio_tensor = torch.from_numpy(samples)
-        
-        # 檢測語音時間戳
-        speech_timestamps = self.get_speech_timestamps(
-            audio_tensor,
-            self.silero_model,
-            threshold=self.vad_threshold,
-            min_speech_duration_ms=int(self.min_speech_duration * 1000),
-            min_silence_duration_ms=int(self.min_silence_duration * 1000),
-            sampling_rate=16000
-        )
-        
-        # 轉換為毫秒格式
-        segments = [
-            (int(seg['start'] / 16), int(seg['end'] / 16))  # samples to ms
-            for seg in speech_timestamps
-        ]
+            if (len(speech_frames) - start_frame) >= min_speech_frames:
+                start_sample = start_frame * frame_samples
+                end_sample = len(audio)
+                segments.append((start_sample, end_sample))
         
         logger.info(f"   檢測到 {len(segments)} 個語音段")
         return segments
     
     def split_long_segments(
-        self, 
-        segments: List[Tuple[int, int]]
+        self,
+        segments: List[Tuple[int, int]],
+        sample_rate: int
     ) -> List[Tuple[int, int]]:
-        """
-        切分過長的語音段
-        
-        Args:
-            segments: List of (start_ms, end_ms)
-        
-        Returns:
-            切分後的語音段
-        """
-        max_length_ms = int(self.max_chunk_length * 1000)
+        """切分過長的語音段"""
+        max_samples = int(self.max_chunk_length * sample_rate)
         split_segments = []
         
-        for start_ms, end_ms in segments:
-            duration = end_ms - start_ms
+        for start, end in segments:
+            duration_samples = end - start
             
-            if duration <= max_length_ms:
-                split_segments.append((start_ms, end_ms))
+            if duration_samples <= max_samples:
+                split_segments.append((start, end))
             else:
                 # 需要切分
-                num_chunks = int(np.ceil(duration / max_length_ms))
-                chunk_length = duration / num_chunks
+                num_chunks = int(np.ceil(duration_samples / max_samples))
+                chunk_samples = duration_samples / num_chunks
                 
                 for i in range(num_chunks):
-                    chunk_start = start_ms + int(i * chunk_length)
-                    chunk_end = start_ms + int((i + 1) * chunk_length)
+                    chunk_start = start + int(i * chunk_samples)
+                    chunk_end = start + int((i + 1) * chunk_samples)
                     split_segments.append((chunk_start, chunk_end))
                 
-                logger.info(f"   長音段 ({duration/1000:.1f}s) 切分為 {num_chunks} 段")
+                logger.info(f"   長音段 ({duration_samples/sample_rate:.1f}s) 切分為 {num_chunks} 段")
         
         return split_segments
     
     def process_audio_file(
-        self, 
+        self,
         input_path: Path,
         output_dir: Path
     ) -> Dict:
-        """
-        處理單個音訊檔案
-        
-        Returns:
-            處理結果字典
-        """
+        """處理單個音訊檔案"""
         logger.info(f"處理: {input_path.name}")
         
         try:
-            # 載入音訊
-            audio = AudioSegment.from_wav(input_path)
-            original_duration = len(audio) / 1000.0  # 秒
+            # 使用 soundfile 載入音訊
+            audio, sample_rate = sf.read(input_path)
+            
+            # 轉換為 mono
+            if len(audio.shape) > 1:
+                audio = np.mean(audio, axis=1)
+            
+            original_duration = len(audio) / sample_rate
             
             logger.info(f"   原始長度: {original_duration:.2f}秒")
-            logger.info(f"   取樣率: {audio.frame_rate} Hz")
-            logger.info(f"   聲道數: {audio.channels}")
+            logger.info(f"   取樣率: {sample_rate} Hz")
+            logger.info(f"   音訊格式: {audio.dtype}")
+            
+            # 正規化到 [-1, 1]
+            if audio.dtype == np.int16:
+                audio = audio.astype(np.float32) / 32768.0
+            elif audio.dtype == np.int32:
+                audio = audio.astype(np.float32) / 2147483648.0
             
             # 檢測語音段
             if self.vad_method == "webrtc":
-                segments = self.detect_speech_segments_webrtc(audio)
-            elif self.vad_method == "silero":
-                segments = self.detect_speech_segments_silero(audio)
+                segments = self.detect_speech_webrtc(audio, sample_rate)
             else:
-                segments = self.detect_speech_segments_energy(audio)
+                segments = self.detect_speech_energy(audio, sample_rate)
             
             if not segments:
                 logger.warning(f"   ⚠️  未檢測到語音段")
@@ -305,21 +298,26 @@ class VADPreprocessor:
                 }
             
             # 切分長音段
-            segments = self.split_long_segments(segments)
+            segments = self.split_long_segments(segments, sample_rate)
             
             # 儲存切分後的音檔
             chunks_info = []
-            for i, (start_ms, end_ms) in enumerate(segments):
-                chunk = audio[start_ms:end_ms]
+            for i, (start_sample, end_sample) in enumerate(segments):
+                chunk = audio[start_sample:end_sample]
                 
-                # 檔名格式: original_name_chunk_001.wav
+                # 檔名
                 chunk_filename = f"{input_path.stem}_chunk_{i+1:03d}.wav"
                 chunk_path = output_dir / chunk_filename
                 
-                # 匯出
-                chunk.export(chunk_path, format="wav")
+                # 使用 soundfile 儲存
+                # 轉換回 int16 以節省空間
+                chunk_int16 = (chunk * 32767).astype(np.int16)
+                sf.write(chunk_path, chunk_int16, sample_rate)
                 
-                chunk_duration = (end_ms - start_ms) / 1000.0
+                chunk_duration = len(chunk) / sample_rate
+                start_ms = int(start_sample * 1000 / sample_rate)
+                end_ms = int(end_sample * 1000 / sample_rate)
+                
                 chunks_info.append({
                     "filename": chunk_filename,
                     "start_ms": start_ms,
@@ -347,6 +345,8 @@ class VADPreprocessor:
         
         except Exception as e:
             logger.error(f"   ❌ 處理失敗: {e}")
+            import traceback
+            logger.error(traceback.format_exc())
             return {
                 "filename": input_path.name,
                 "status": "error",
@@ -358,12 +358,7 @@ class VADPreprocessor:
         input_dir: Path,
         output_dir: Path
     ) -> Dict:
-        """
-        處理整個目錄
-        
-        Returns:
-            處理結果統計
-        """
+        """處理整個目錄"""
         # 創建輸出目錄
         output_dir.mkdir(parents=True, exist_ok=True)
         
@@ -435,7 +430,8 @@ class VADPreprocessor:
         logger.info(f"生成切段: {total_chunks}")
         logger.info(f"原始總長: {total_original_duration:.2f}秒")
         logger.info(f"語音總長: {total_speech_duration:.2f}秒")
-        logger.info(f"語音比例: {(total_speech_duration/total_original_duration)*100:.1f}%")
+        if total_original_duration > 0:
+            logger.info(f"語音比例: {(total_speech_duration/total_original_duration)*100:.1f}%")
         logger.info(f"處理報告: {report_path}")
         logger.info(f"{'='*70}\n")
         
@@ -445,89 +441,18 @@ class VADPreprocessor:
 def main():
     """主程式"""
     parser = argparse.ArgumentParser(
-        description="VAD 預處理 - 語音活動檢測與音訊切分",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-使用範例:
-  # 基本使用（能量檢測）
-  python vad_preprocess.py \\
-      --input-dir experiments/Test_02_TMRT/source_audio \\
-      --output-dir experiments/Test_02_TMRT/vad_chunks
-  
-  # 使用 WebRTC VAD（更準確）
-  python vad_preprocess.py \\
-      --input-dir experiments/Test_02_TMRT/source_audio \\
-      --output-dir experiments/Test_02_TMRT/vad_chunks \\
-      --vad-method webrtc \\
-      --vad-threshold 0.6
-  
-  # 調整參數
-  python vad_preprocess.py \\
-      --input-dir experiments/Test_02_TMRT/source_audio \\
-      --output-dir experiments/Test_02_TMRT/vad_chunks \\
-      --vad-threshold 0.6 \\
-      --min-speech-duration 0.3 \\
-      --min-silence-duration 0.5 \\
-      --max-chunk-length 50
-        """
+        description="VAD 預處理 - 語音活動檢測與音訊切分 (修正版)",
+        formatter_class=argparse.RawDescriptionHelpFormatter
     )
     
-    parser.add_argument(
-        "--input-dir",
-        type=Path,
-        required=True,
-        help="輸入音訊目錄"
-    )
-    
-    parser.add_argument(
-        "--output-dir",
-        type=Path,
-        required=True,
-        help="輸出切分音訊目錄"
-    )
-    
-    parser.add_argument(
-        "--vad-method",
-        type=str,
-        default="energy",
-        choices=["energy", "webrtc", "silero"],
-        help="VAD 方法 (預設: energy)"
-    )
-    
-    parser.add_argument(
-        "--vad-threshold",
-        type=float,
-        default=0.5,
-        help="VAD 閾值，0.5-0.7 較合適 (預設: 0.5)"
-    )
-    
-    parser.add_argument(
-        "--min-speech-duration",
-        type=float,
-        default=0.3,
-        help="最短語音段長度（秒）(預設: 0.3)"
-    )
-    
-    parser.add_argument(
-        "--min-silence-duration",
-        type=float,
-        default=0.5,
-        help="最短靜音段長度（秒）(預設: 0.5)"
-    )
-    
-    parser.add_argument(
-        "--max-chunk-length",
-        type=float,
-        default=50.0,
-        help="最大切段長度（秒）(預設: 50)"
-    )
-    
-    parser.add_argument(
-        "--sample-rate",
-        type=int,
-        default=16000,
-        help="目標取樣率 (預設: 16000)"
-    )
+    parser.add_argument("--input-dir", type=Path, required=True, help="輸入音訊目錄")
+    parser.add_argument("--output-dir", type=Path, required=True, help="輸出切分音訊目錄")
+    parser.add_argument("--vad-method", type=str, default="energy", choices=["energy", "webrtc"], help="VAD 方法")
+    parser.add_argument("--vad-threshold", type=float, default=0.5, help="VAD 閾值 (0.5-0.7)")
+    parser.add_argument("--min-speech-duration", type=float, default=0.3, help="最短語音段（秒）")
+    parser.add_argument("--min-silence-duration", type=float, default=0.5, help="最短靜音段（秒）")
+    parser.add_argument("--max-chunk-length", type=float, default=50.0, help="最大切段長度（秒）")
+    parser.add_argument("--sample-rate", type=int, default=16000, help="目標取樣率")
     
     args = parser.parse_args()
     

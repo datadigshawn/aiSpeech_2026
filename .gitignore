@@ -24,22 +24,26 @@ venv/
 Thumbs.db
 desktop.ini
 
-# vscode
-.vscode/
-
 # Large data (假設您有大圖檔不傳 GitHub)
 data/
 models/*.pth
 experiments/*/source_audio/*.wav
 experiments/*/source_audio/*.mp3
 experiments/*/dataset_chunks/*.wav
+experiments/*/google_gemini_output/*.wav
+experiments/*/google_stt_output/*.wav
 *.wav
 *.mp3
 *.m4a
 *.model
+*.flac
+*.ogg
 *.pt
 *.onnx
 
+# 日誌檔案
+logs/
+*.log
 
 # Google Cloud 憑證（重要！千萬不要上傳）
 google-speech-key.json
@@ -52,6 +56,8 @@ service-account-key*.json   # 預防有人用原始檔名
 *.rtf
 *.key
 .env
+utils/google-speech-key.json
+utils/google-gemini-key.rtf
 !requirements.txt
 credentials/
 keys/
