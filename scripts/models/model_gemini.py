@@ -8,7 +8,7 @@ Google Gemini 模型模組
 - 自定義提示詞
 (2026/1/15 下午更新)
 支援功能:
-- 自動從 utils/api_keys.py 讀取 API key
+- 自動從 utils/api_keys.py 或 utils/api_keys.json 讀取 API key
 """
 
 import json
@@ -35,10 +35,11 @@ class GeminiModel:
     """Google Gemini 模型封裝"""
     
     # 支援的模型
-    MODELS = {
+    MODELS =  {
         'gemini-2.0-flash-exp': 'gemini-2.0-flash-exp',
-        'gemini-1.5-pro': 'gemini-1.5-pro-latest',
-        'gemini-1.5-flash': 'gemini-1.5-flash-latest'
+        'gemini-1.5-pro': 'gemini-1.5-pro',           # ⭐ 修正：移除 -latest
+        'gemini-1.5-flash': 'gemini-1.5-flash',       # ⭐ 修正：移除 -latest
+        'gemini-1.5-flash-8b': 'gemini-1.5-flash-8b'  # ⭐ 新增：8B 輕量版
     }
     
     def __init__(
@@ -58,7 +59,9 @@ class GeminiModel:
         API Key 載入優先順序：
         1. 直接傳入的 api_key 參數
         2. 環境變數 GEMINI_API_KEY
-        3. utils/api_keys.py 配置檔案
+        3. utils/api_keys.json 配置檔案 ⭐ JSON 支援
+        4. utils/api_keys.py 配置檔案
+        
         """
         self.model_name = model
         self.temperature = temperature
@@ -97,7 +100,8 @@ class GeminiModel:
         優先順序：
         1. 直接傳入的參數
         2. 環境變數 GEMINI_API_KEY
-        3. utils/api_keys.py 配置檔案
+        3. utils/api_keys.json 配置檔案 ⭐ 新增
+        4. utils/api_keys.py 配置檔案
         
         Returns:
             API 金鑰字串
@@ -116,7 +120,33 @@ class GeminiModel:
             logger.info("✅ 使用環境變數 GEMINI_API_KEY")
             return api_key
         
-        # 優先級 3: utils/api_keys.py 配置檔案
+        # 優先級 3: utils/api_keys.json 配置檔案
+        try:
+            # 嘗試多個可能的路徑
+            possible_json_paths = [
+                Path(__file__).parent.parent / "utils" / "api_keys.json",
+                Path("utils/api_keys.json"),
+                Path("../utils/api_keys.json"),
+            ]
+            
+            for json_path in possible_json_paths:
+                if json_path.exists():
+                    with open(json_path, 'r', encoding='utf-8') as f:
+                        config = json.load(f)
+                    
+                    api_key = config.get('GEMINI_API_KEY')
+                    if api_key:
+                        logger.info(f"✅ 從 {json_path.name} 載入 API key")
+                        return api_key
+        
+        except FileNotFoundError:
+            logger.debug("utils/api_keys.json 不存在，跳過")
+        except json.JSONDecodeError as e:
+            logger.warning(f"utils/api_keys.json 格式錯誤: {e}")
+        except Exception as e:
+            logger.warning(f"從 utils/api_keys.json 讀取失敗: {e}")
+        
+        # 優先級 4: utils/api_keys.py 配置檔案（向後相容）
         try:
             from utils.api_keys import get_gemini_api_key
             api_key = get_gemini_api_key()
@@ -133,7 +163,8 @@ class GeminiModel:
             "無法取得 Gemini API 金鑰！請使用以下任一方式設定：\n"
             "1. 直接傳入參數：GeminiModel(api_key='your-key')\n"
             "2. 設定環境變數：export GEMINI_API_KEY='your-key'\n"
-            "3. 在 utils/api_keys.py 中配置 GEMINI_API_KEY"
+            "3. 建立 utils/api_keys.json 檔案（推薦）\n"
+            "4. 建立 utils/api_keys.py 配置檔案"
         )
     
     def upload_audio_file(self, audio_file: str, display_name: Optional[str] = None) -> object:

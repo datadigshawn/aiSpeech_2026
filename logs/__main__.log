@@ -1150,3 +1150,100 @@
 2026-01-15 16:46:41 | [32mINFO[0m | __main__ | info:113 | 自動載入詞彙表: /Users/apple/Projects/aiSpeech/vocabulary/google_phrases.json
 2026-01-15 16:46:41 | [32mINFO[0m | __main__ | info:113 | ✅ 載入詞彙表: 120 個詞彙
 2026-01-15 16:46:48 | [32mINFO[0m | __main__ | info:113 | 初始化 Gemini: gemini-2.0-flash-exp
+2026-01-18 09:21:37 | [31mERROR[0m | __main__ | error:121 | 找不到 Gemini 模組: No module named 'google.generativeai'
+2026-01-18 09:24:55 | [31mERROR[0m | __main__ | error:121 | 找不到 Gemini 模組: No module named 'google'
+2026-01-18 13:18:00 | [32mINFO[0m | __main__ | info:113 | 初始化 Gemini: gemini-1.5-pro
+2026-01-18 13:24:27 | [32mINFO[0m | __main__ | info:113 | 初始化 Gemini: gemini-1.5-pro
+2026-01-18 15:42:30 | [32mINFO[0m | __main__ | info:113 | 初始化 Gemini: gemini-1.5-pro
+2026-01-18 15:42:30 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 15:42:30 | [32mINFO[0m | __main__ | info:113 | 批次推論引擎初始化完成
+2026-01-18 15:42:30 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 15:42:30 | [32mINFO[0m | __main__ | info:113 | 模型類型: gemini
+2026-01-18 15:42:30 | [32mINFO[0m | __main__ | info:113 | Gemini 模型: gemini-1.5-pro
+2026-01-18 15:42:30 | [32mINFO[0m | __main__ | info:113 | 輸入目錄: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\source_audio
+2026-01-18 15:42:30 | [32mINFO[0m | __main__ | info:113 | 輸出目錄: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\ASR_Evaluation\gemini_gemini_1_5_pro_output
+2026-01-18 15:42:30 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 15:42:30 | [32mINFO[0m | __main__ | info:113 | 找到 7 個音檔，開始處理...
+2026-01-18 15:42:30 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192236.wav): <HttpError 400 when requesting https://generativelanguage.googleapis.com/$discovery/rest?version=v1beta&key=AIzaSyDqYz0NnMDV1vad-zCMrwciFWtEhqc_Qd4 returned "API key expired. Please renew the API key.". Details: "[{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]">
+2026-01-18 15:42:31 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192400.wav): <HttpError 400 when requesting https://generativelanguage.googleapis.com/$discovery/rest?version=v1beta&key=AIzaSyDqYz0NnMDV1vad-zCMrwciFWtEhqc_Qd4 returned "API key expired. Please renew the API key.". Details: "[{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]">
+2026-01-18 15:42:31 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192434.wav): <HttpError 400 when requesting https://generativelanguage.googleapis.com/$discovery/rest?version=v1beta&key=AIzaSyDqYz0NnMDV1vad-zCMrwciFWtEhqc_Qd4 returned "API key expired. Please renew the API key.". Details: "[{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]">
+2026-01-18 15:42:31 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192542.wav): <HttpError 400 when requesting https://generativelanguage.googleapis.com/$discovery/rest?version=v1beta&key=AIzaSyDqYz0NnMDV1vad-zCMrwciFWtEhqc_Qd4 returned "API key expired. Please renew the API key.". Details: "[{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]">
+2026-01-18 15:42:31 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192609.wav): <HttpError 400 when requesting https://generativelanguage.googleapis.com/$discovery/rest?version=v1beta&key=AIzaSyDqYz0NnMDV1vad-zCMrwciFWtEhqc_Qd4 returned "API key expired. Please renew the API key.". Details: "[{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]">
+2026-01-18 15:42:31 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192724.wav): <HttpError 400 when requesting https://generativelanguage.googleapis.com/$discovery/rest?version=v1beta&key=AIzaSyDqYz0NnMDV1vad-zCMrwciFWtEhqc_Qd4 returned "API key expired. Please renew the API key.". Details: "[{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]">
+2026-01-18 15:42:32 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192930.wav): <HttpError 400 when requesting https://generativelanguage.googleapis.com/$discovery/rest?version=v1beta&key=AIzaSyDqYz0NnMDV1vad-zCMrwciFWtEhqc_Qd4 returned "API key expired. Please renew the API key.". Details: "[{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]">
+2026-01-18 15:42:32 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 15:42:32 | [32mINFO[0m | __main__ | info:113 | 批次推論完成
+2026-01-18 15:42:32 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 15:42:32 | [32mINFO[0m | __main__ | info:113 | 成功: 0/7
+2026-01-18 15:42:32 | [32mINFO[0m | __main__ | info:113 | 失敗: 7/7
+2026-01-18 15:42:32 | [32mINFO[0m | __main__ | info:113 | 結果已儲存: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\ASR_Evaluation\gemini_gemini_1_5_pro_output
+2026-01-18 15:42:32 | [32mINFO[0m | __main__ | info:113 | 詳細 JSON: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\ASR_Evaluation\gemini_gemini_1_5_pro_output\gemini_results_20260118_154232.json
+2026-01-18 15:42:32 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 15:48:20 | [32mINFO[0m | __main__ | info:113 | 初始化 Gemini: gemini-1.5-pro
+2026-01-18 15:48:20 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 15:48:20 | [32mINFO[0m | __main__ | info:113 | 批次推論引擎初始化完成
+2026-01-18 15:48:20 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 15:48:20 | [32mINFO[0m | __main__ | info:113 | 模型類型: gemini
+2026-01-18 15:48:20 | [32mINFO[0m | __main__ | info:113 | Gemini 模型: gemini-1.5-pro
+2026-01-18 15:48:20 | [32mINFO[0m | __main__ | info:113 | 輸入目錄: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\source_audio
+2026-01-18 15:48:20 | [32mINFO[0m | __main__ | info:113 | 輸出目錄: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\ASR_Evaluation\gemini_gemini_1_5_pro_output
+2026-01-18 15:48:20 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 15:48:20 | [32mINFO[0m | __main__ | info:113 | 找到 7 個音檔，開始處理...
+2026-01-18 15:48:25 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192236.wav): 404 models/gemini-1.5-pro-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 15:48:30 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192400.wav): 404 models/gemini-1.5-pro-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 15:48:35 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192434.wav): 404 models/gemini-1.5-pro-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 15:48:40 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192542.wav): 404 models/gemini-1.5-pro-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 15:48:46 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192609.wav): 404 models/gemini-1.5-pro-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 15:48:51 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192724.wav): 404 models/gemini-1.5-pro-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 15:48:56 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192930.wav): 404 models/gemini-1.5-pro-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 15:48:56 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 15:48:56 | [32mINFO[0m | __main__ | info:113 | 批次推論完成
+2026-01-18 15:48:56 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 15:48:56 | [32mINFO[0m | __main__ | info:113 | 成功: 0/7
+2026-01-18 15:48:56 | [32mINFO[0m | __main__ | info:113 | 失敗: 7/7
+2026-01-18 15:48:56 | [32mINFO[0m | __main__ | info:113 | 結果已儲存: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\ASR_Evaluation\gemini_gemini_1_5_pro_output
+2026-01-18 15:48:56 | [32mINFO[0m | __main__ | info:113 | 詳細 JSON: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\ASR_Evaluation\gemini_gemini_1_5_pro_output\gemini_results_20260118_154856.json
+2026-01-18 15:48:56 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 16:10:52 | [32mINFO[0m | __main__ | info:113 | 初始化 Gemini: gemini-1.5-pro
+2026-01-18 16:10:52 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 16:10:52 | [32mINFO[0m | __main__ | info:113 | 批次推論引擎初始化完成
+2026-01-18 16:10:52 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 16:10:52 | [32mINFO[0m | __main__ | info:113 | 模型類型: gemini
+2026-01-18 16:10:52 | [32mINFO[0m | __main__ | info:113 | Gemini 模型: gemini-1.5-pro
+2026-01-18 16:10:52 | [32mINFO[0m | __main__ | info:113 | 輸入目錄: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\source_audio
+2026-01-18 16:10:52 | [32mINFO[0m | __main__ | info:113 | 輸出目錄: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\ASR_Evaluation\gemini_gemini_1_5_pro_output
+2026-01-18 16:10:52 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 16:10:52 | [32mINFO[0m | __main__ | info:113 | 找到 7 個音檔，開始處理...
+2026-01-18 16:10:58 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192236.wav): 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 16:11:03 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192400.wav): 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 16:11:08 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192434.wav): 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 16:11:14 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192542.wav): 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 16:11:18 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192609.wav): 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 16:11:23 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192724.wav): 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 16:11:28 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192930.wav): 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-18 16:11:28 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 16:11:28 | [32mINFO[0m | __main__ | info:113 | 批次推論完成
+2026-01-18 16:11:28 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 16:11:28 | [32mINFO[0m | __main__ | info:113 | 成功: 0/7
+2026-01-18 16:11:28 | [32mINFO[0m | __main__ | info:113 | 失敗: 7/7
+2026-01-18 16:11:28 | [32mINFO[0m | __main__ | info:113 | 結果已儲存: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\ASR_Evaluation\gemini_gemini_1_5_pro_output
+2026-01-18 16:11:28 | [32mINFO[0m | __main__ | info:113 | 詳細 JSON: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\ASR_Evaluation\gemini_gemini_1_5_pro_output\gemini_results_20260118_161128.json
+2026-01-18 16:11:28 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 16:12:58 | [32mINFO[0m | __main__ | info:113 | 初始化 Gemini: gemini-2.0-flash-exp
+2026-01-18 16:12:58 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 16:12:58 | [32mINFO[0m | __main__ | info:113 | 批次推論引擎初始化完成
+2026-01-18 16:12:58 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 16:12:58 | [32mINFO[0m | __main__ | info:113 | 模型類型: gemini
+2026-01-18 16:12:58 | [32mINFO[0m | __main__ | info:113 | Gemini 模型: gemini-2.0-flash-exp
+2026-01-18 16:12:58 | [32mINFO[0m | __main__ | info:113 | 輸入目錄: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\source_audio
+2026-01-18 16:12:58 | [32mINFO[0m | __main__ | info:113 | 輸出目錄: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\ASR_Evaluation\gemini_gemini_2_0_flash_exp_output
+2026-01-18 16:12:58 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 16:12:58 | [32mINFO[0m | __main__ | info:113 | 找到 7 個音檔，開始處理...
+2026-01-18 16:13:46 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 16:13:46 | [32mINFO[0m | __main__ | info:113 | 批次推論完成
+2026-01-18 16:13:46 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-18 16:13:46 | [32mINFO[0m | __main__ | info:113 | 成功: 7/7
+2026-01-18 16:13:46 | [32mINFO[0m | __main__ | info:113 | 失敗: 0/7
+2026-01-18 16:13:46 | [32mINFO[0m | __main__ | info:113 | 結果已儲存: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\ASR_Evaluation\gemini_gemini_2_0_flash_exp_output
+2026-01-18 16:13:46 | [32mINFO[0m | __main__ | info:113 | 詳細 JSON: y:\Projects\aiSpeech_2026\experiments\Test_02_TMRT\ASR_Evaluation\gemini_gemini_2_0_flash_exp_output\gemini_results_20260118_161346.json
+2026-01-18 16:13:46 | [32mINFO[0m | __main__ | info:113 | ============================================================

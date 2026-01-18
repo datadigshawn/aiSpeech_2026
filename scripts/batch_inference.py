@@ -19,15 +19,24 @@
 - 移除 Chirp 3 不支援的 speaker diarization 參數
 - 自動設定 GOOGLE_CLOUD_PROJECT 環境變數
 
-使用範例:
-    # 使用 Chirp 3
-    python scripts/batch_inference.py --test-case Test_02_TMRT --model google_stt --stt-model chirp_3
+更新紀錄 (v2.2)_2026.01.18
+1. 新增互動式操作介面
+    a. 選擇路徑模式(測試案例/手動路徑)
+    b. 選擇模型(Google STT/Gemini/Whisper)
+    c. 選擇子模型
+    d. 確認執行
+2. 新增Gemini子模型
+    a. gemini-2.0-flash-exp (最新、快速、成本低，適用日常測試)
+    b. gemini-1.5-pro (穩定、準確性最高，重要任務、生產環境)
+    c. gemini-1.5-flash (最快、成本最低，大量檔案處理)
+
+使用方式:
+    # 方式 1: 互動式介面（推薦新手）
+    python scripts/batch_inference.py
     
-    # 使用電話/無線電專用模型
-    python scripts/batch_inference.py --test-case Test_02_TMRT --model google_stt --stt-model chirp_telephony
-    
-    # 使用 Whisper
-    python scripts/batch_inference.py --test-case Test_02_TMRT --model whisper
+    # 方式 2: 命令列參數（推薦進階用戶）
+    python scripts/batch_inference.py --test-case Test_02_TMRT --model gemini --gemini-model 2.0-flash-exp
+
 """
 
 import os
@@ -142,6 +151,207 @@ except ImportError:
 
 logger = get_logger(__name__)
 
+# ============================================================================
+# 互動式介面
+# ============================================================================
+def interactive_mode():
+    """
+    互動式操作引導
+    
+    當不提供命令列參數時自動啟動，引導用戶完成設定
+    """
+    print("\n" + "=" * 70)
+    print("🎯 批次推論引擎 - 互動式設定")
+    print("=" * 70)
+    print()
+    
+    # ========================================================================
+    # 步驟 1: 選擇路徑模式
+    # ========================================================================
+    print("【步驟 1/4】選擇路徑模式")
+    print("-" * 70)
+    print("1. 使用測試案例 (推薦)")
+    print("   - 自動從 experiments/{測試案例名稱}/ 讀取音檔")
+    print("   - 自動儲存結果到 ASR_Evaluation/ 目錄")
+    print()
+    print("2. 手動指定路徑")
+    print("   - 自行指定輸入和輸出目錄")
+    print()
+    
+    while True:
+        choice = input("請選擇模式 [1/2]: ").strip()
+        if choice in ['1', '2']:
+            break
+        print("❌ 請輸入 1 或 2")
+    
+    if choice == '1':
+        # 模式 1: 測試案例
+        print()
+        print("📁 可用的測試案例:")
+        
+        # 列出可用的測試案例
+        experiments_dir = PROJECT_ROOT / "experiments"
+        if experiments_dir.exists():
+            test_cases = [d.name for d in experiments_dir.iterdir() if d.is_dir()]
+            if test_cases:
+                for i, tc in enumerate(sorted(test_cases), 1):
+                    print(f"   {i}. {tc}")
+            else:
+                print("   (未找到測試案例)")
+        
+        print()
+        test_case = input("請輸入測試案例名稱 (例: Test_02_TMRT): ").strip()
+        
+        input_dir = PROJECT_ROOT / "experiments" / test_case / "source_audio"
+        output_base = PROJECT_ROOT / "experiments" / test_case / "ASR_Evaluation"
+        
+        # 檢查輸入目錄
+        if not input_dir.exists():
+            print(f"\n❌ 錯誤: 找不到音檔目錄: {input_dir}")
+            print("   請確認測試案例名稱是否正確")
+            sys.exit(1)
+        
+    else:
+        # 模式 2: 手動路徑
+        print()
+        input_dir = Path(input("請輸入音檔目錄路徑: ").strip())
+        output_dir = Path(input("請輸入輸出目錄路徑: ").strip())
+        
+        if not input_dir.exists():
+            print(f"\n❌ 錯誤: 輸入目錄不存在: {input_dir}")
+            sys.exit(1)
+    
+    # ========================================================================
+    # 步驟 2: 選擇模型類型
+    # ========================================================================
+    print()
+    print("【步驟 2/4】選擇語音辨識模型")
+    print("-" * 70)
+    print("1. Google STT (Cloud Speech-to-Text)")
+    print("   - 優點: 穩定、快速、支援專業詞彙")
+    print("   - 適合: 生產環境、大量音檔")
+    print()
+    print("2. Google Gemini")
+    print("   - 優點: 最新技術、強大的上下文理解")
+    print("   - 適合: 測試、複雜對話")
+    print()
+    print("3. Whisper (OpenAI)")
+    print("   - 優點: 本地運行、無 API 成本")
+    print("   - 適合: 離線環境、隱私需求")
+    print()
+    
+    while True:
+        model_choice = input("請選擇模型 [1/2/3]: ").strip()
+        if model_choice in ['1', '2', '3']:
+            break
+        print("❌ 請輸入 1、2 或 3")
+    
+    model_map = {'1': 'google_stt', '2': 'gemini', '3': 'whisper'}
+    model_type = model_map[model_choice]
+    
+    # ========================================================================
+    # 步驟 3: 選擇子模型（如適用）
+    # ========================================================================
+    stt_model = "chirp_3"
+    gemini_model = "gemini-2.0-flash-exp"
+    
+    if model_type == 'google_stt':
+        print()
+        print("【步驟 3/4】選擇 Google STT 子模型")
+        print("-" * 70)
+        print("1. Chirp 3 (推薦)")
+        print("   - 最新模型，準確度高")
+        print()
+        print("2. Chirp Telephony")
+        print("   - 電話/無線電專用")
+        print()
+        print("3. Chirp 2")
+        print("   - 支援講者識別")
+        print()
+        
+        while True:
+            stt_choice = input("請選擇子模型 [1/2/3，直接Enter使用預設]: ").strip() or '1'
+            if stt_choice in ['1', '2', '3']:
+                break
+            print("❌ 請輸入 1、2 或 3")
+        
+        stt_map = {'1': 'chirp_3', '2': 'chirp_telephony', '3': 'chirp_2'}
+        stt_model = stt_map[stt_choice]
+        
+        if choice == '1':
+            output_dir = output_base / f"google_stt_{stt_model}_output"
+        
+    elif model_type == 'gemini':
+        print()
+        print("【步驟 3/4】選擇 Gemini 模型")
+        print("-" * 70)
+        print("1. Gemini 2.0 Flash Exp (推薦)")
+        print("   - 最新實驗版本")
+        print("   - 速度快、成本低")
+        print()
+        print("2. Gemini 1.5 Pro")
+        print("   - 穩定版本")
+        print("   - 準確度高、功能完整")
+        print()
+        print("3. Gemini 1.5 Flash")
+        print("   - 輕量版本")
+        print("   - 速度最快")
+        print()
+        
+        while True:
+            gemini_choice = input("請選擇模型 [1/2/3，直接Enter使用預設]: ").strip() or '1'
+            if gemini_choice in ['1', '2', '3']:
+                break
+            print("❌ 請輸入 1、2 或 3")
+        
+        gemini_map = {
+            '1': 'gemini-2.0-flash-exp',
+            '2': 'gemini-1.5-pro',
+            '3': 'gemini-1.5-flash'
+        }
+        gemini_model = gemini_map[gemini_choice]
+        
+        if choice == '1':
+            output_dir = output_base / f"gemini_{gemini_model.replace('.', '_').replace('-', '_')}_output"
+    
+    else:  # whisper
+        if choice == '1':
+            output_dir = output_base / "whisper_output"
+    
+    # ========================================================================
+    # 步驟 4: 確認設定
+    # ========================================================================
+    print()
+    print("【步驟 4/4】確認設定")
+    print("-" * 70)
+    print(f"輸入目錄: {input_dir}")
+    print(f"輸出目錄: {output_dir}")
+    print(f"模型類型: {model_type}")
+    if model_type == 'google_stt':
+        print(f"STT 模型: {stt_model}")
+    elif model_type == 'gemini':
+        print(f"Gemini 模型: {gemini_model}")
+    print()
+    
+    confirm = input("確認開始執行? [Y/n]: ").strip().lower()
+    if confirm and confirm not in ['y', 'yes', '是']:
+        print("\n❌ 已取消")
+        sys.exit(0)
+    
+    print()
+    print("=" * 70)
+    print("🚀 開始執行批次推論...")
+    print("=" * 70)
+    print()
+    
+    return {
+        'input_dir': str(input_dir),
+        'output_dir': str(output_dir),
+        'model_type': model_type,
+        'stt_model': stt_model,
+        'gemini_model': gemini_model
+    }
+
 
 class BatchInference:
     """
@@ -150,7 +360,7 @@ class BatchInference:
     支援的模型:
     - whisper: OpenAI Whisper (large-v3, turbo, medium)
     - google_stt: Google Cloud Speech-to-Text V2 (chirp_3, chirp_telephony, chirp_2)
-    - gemini: Google Gemini (2.0-flash-exp)
+    - gemini: Google Gemini (2.0-flash-exp, 1.5-pro, 1.5-flash)
     """
     
     # 支援的音檔格式
@@ -164,6 +374,7 @@ class BatchInference:
         vocabulary_file: str = None,
         stt_model: str = "chirp_3",
         stt_region: str = None,
+        gemini_model: str = "gemini-2.0-flash-exp",
         language_code: str = "cmn-Hant-TW"
     ):
         """
@@ -175,7 +386,8 @@ class BatchInference:
             model_type: 模型類型 (whisper, google_stt, gemini)
             vocabulary_file: 詞彙表檔案路徑
             stt_model: Google STT 子模型 (chirp_3, chirp_telephony, chirp_2)
-            stt_region: Google STT 區域 (us, eu, us-central1, asia-southeast1, asia-northeast1, europe-west4)
+            stt_region: Google STT 區域
+            gemini_model: Gemini 模型 (gemini-2.0-flash-exp, gemini-1.5-pro, gemini-1.5-flash)
             language_code: 語言代碼
         """
         self.input_dir = Path(input_dir)
@@ -184,6 +396,7 @@ class BatchInference:
         self.vocabulary_file = vocabulary_file
         self.stt_model = stt_model
         self.stt_region = stt_region
+        self.gemini_model = gemini_model
         self.language_code = language_code
         
         # 建立輸出目錄
@@ -203,6 +416,8 @@ class BatchInference:
         if model_type == "google_stt":
             logger.info(f"STT 模型: {stt_model}")
             logger.info(f"STT 區域: {stt_region or '自動'}")
+        elif model_type == "gemini":
+            logger.info(f"Gemini 模型: {gemini_model}")
         logger.info(f"輸入目錄: {self.input_dir}")
         logger.info(f"輸出目錄: {self.output_dir}")
         if self.phrases:
@@ -288,11 +503,10 @@ class BatchInference:
         try:
             from scripts.models.model_gemini import GeminiModel
             
-            model_name = os.getenv('GEMINI_MODEL', 'gemini-2.0-flash-exp')
-            logger.info(f"初始化 Gemini: {model_name}")
+            logger.info(f"初始化 Gemini: {self.gemini_model}")
             
             return GeminiModel(
-                model=model_name,
+                model=self.gemini_model,
                 temperature=0.0
             )
         
@@ -357,7 +571,7 @@ class BatchInference:
     
     def _transcribe_gemini(self, audio_file: Path) -> dict:
         """使用 Gemini 辨識"""
-        context = "這是台灣捷運無線電通訊錄音。"
+        context = "這是台中捷運無線電通訊錄音。"
         
         if self.phrases:
             top_terms = [p.get('value', p) if isinstance(p, dict) else p 
@@ -466,22 +680,58 @@ class BatchInference:
 
 def main():
     """命令列介面"""
+    # 檢查是否有命令列參數
+    if len(sys.argv) == 1:
+        # 無參數，啟動互動模式
+        config = interactive_mode()
+        
+        # 自動尋找詞彙表
+        vocabulary_file = None
+        possible_vocab_paths = [
+            PROJECT_ROOT / "vocabulary" / "google_phrases.json",
+            PROJECT_ROOT / "config" / "google_phrases.json",
+        ]
+        for vocab_path in possible_vocab_paths:
+            if vocab_path.exists():
+                vocabulary_file = str(vocab_path)
+                logger.info(f"自動載入詞彙表: {vocab_path}")
+                break
+        
+        # 建立並執行推論引擎
+        engine = BatchInference(
+            input_dir=config['input_dir'],
+            output_dir=config['output_dir'],
+            model_type=config['model_type'],
+            vocabulary_file=vocabulary_file,
+            stt_model=config['stt_model'],
+            gemini_model=config['gemini_model'],
+            language_code="cmn-Hant-TW"
+        )
+        
+        results = engine.run()
+        print(f"\n✨ 處理完成！共 {len(results)} 個檔案")
+        return
+    
+    # 有參數，使用標準 argparse
     parser = argparse.ArgumentParser(
         description="批次推論引擎 - 支援 Whisper / Google STT / Gemini",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 使用範例:
-  # 使用 Chirp 3 (推薦)
+  # 互動式介面（推薦新手）
+  python scripts/batch_inference.py
+
+  # 使用 Chirp 3
   python scripts/batch_inference.py --test-case Test_02_TMRT --model google_stt --stt-model chirp_3
 
-  # 使用電話/無線電專用模型
-  python scripts/batch_inference.py --test-case Test_02_TMRT --model google_stt --stt-model chirp_telephony
+  # 使用 Gemini 2.0
+  python scripts/batch_inference.py --test-case Test_02_TMRT --model gemini --gemini-model gemini-2.0-flash-exp
+
+  # 使用 Gemini 1.5 Pro
+  python scripts/batch_inference.py --test-case Test_02_TMRT --model gemini --gemini-model gemini-1.5-pro
 
   # 使用 Whisper
   python scripts/batch_inference.py --test-case Test_02_TMRT --model whisper
-
-  # 手動指定路徑
-  python scripts/batch_inference.py --input-dir audio/ --output-dir results/ --model google_stt
         """
     )
     
@@ -506,6 +756,14 @@ def main():
         choices=["us", "eu", "us-central1", "asia-southeast1", "asia-northeast1", "europe-west4"],
         default=None,
         help="Google STT 區域 (預設: 自動選擇)"
+    )
+
+    # Gemini 專用參數
+    parser.add_argument(
+        "--gemini-model",
+        choices=["gemini-2.0-flash-exp", "gemini-1.5-pro", "gemini-1.5-flash"],
+        default="gemini-2.0-flash-exp",
+        help="Gemini 模型 (預設: gemini-2.0-flash-exp)"
     )
     
     # 路徑設定
@@ -559,7 +817,8 @@ def main():
         print("❌ 錯誤: 請提供以下其中一組參數：")
         print("  模式 1: --test-case TEST_NAME")
         print("  模式 2: --input-dir INPUT_PATH --output-dir OUTPUT_PATH")
-        print("\n執行 --help 查看完整說明")
+        print("\n或直接執行不帶參數進入互動模式：")
+        print("  python scripts/batch_inference.py")
         return
     
     # 檢查輸入目錄
@@ -589,6 +848,7 @@ def main():
         vocabulary_file=args.vocabulary,
         stt_model=args.stt_model,
         stt_region=args.stt_region,
+        gemini_model=args.gemini_model,
         language_code=args.language
     )
     

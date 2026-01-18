@@ -10,16 +10,20 @@
 # -----------------------------------------------------------------------------
 # 語音辨識引擎 (Speech Recognition Engines)
 # -----------------------------------------------------------------------------
-google-cloud-speech==2.26.0          # Google Cloud Speech-to-Text V2 API
-google-generativeai==0.3.2           # Gemini API
-openai-whisper==20231117             # OpenAI Whisper 標準版
-faster-whisper==1.0.3                # Whisper 優化版 (CTranslate2)
+google-cloud-speech                  # Google Cloud Speech-to-Text V2 API
+google-generativeai                  # Gemini API
+openai-whisper                       # OpenAI Whisper 標準版
+faster-whisper                       # Whisper 優化版 (CTranslate2)
 
 # -----------------------------------------------------------------------------
 # 音訊處理 (Audio Processing)
 # -----------------------------------------------------------------------------
 pydub==0.25.1                        # 音訊格式轉換與切割
-librosa==0.10.1                      # 音訊分析與特徵提取
+librosa                              # 音訊分析與特徵提取
+# (MFCC (梅爾頻率倒譜係數)：語音辨識、情感分析、性別辨識中最關鍵的特徵
+# Mel Spectrogram (梅爾頻譜)：模擬人類聽覺的頻譜，常用於深度學習分類模型。
+# Chroma (柯roma特徵)：用於識別音樂的調性、旋律與和弦。
+# 過零率 (Zero Crossing Rate)：判別噪音或打擊聲。)
 soundfile==0.12.1                    # 音訊檔案讀寫(即時語音轉換)
 webrtcvad==2.0.10                    # WebRTC VAD (輕量級語音活動檢測)
 
@@ -104,8 +108,8 @@ MarkupSafe==3.0.2                    # Jinja2 依賴
 # 系統工具 (System Utilities)
 # -----------------------------------------------------------------------------
 psutil==7.1.3                        # 系統效能監控
-tqdm==4.67.1                         # 進度條
-python-dotenv==1.0.0                 # 環境變數管理 (.env 檔案)
+tqdm                                 # 進度條
+python-dotenv                        # 環境變數管理 (.env 檔案)
 filelock==3.20.0                     # 檔案鎖定 (多程序安全)
 
 # -----------------------------------------------------------------------------
