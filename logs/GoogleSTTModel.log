@@ -1905,3 +1905,11 @@
 2026-01-15 16:30:59 | DEBUG    | GoogleSTTModel | debug:109 | ✅ 載入 120 個詞彙提示
 2026-01-15 16:30:59 | DEBUG    | GoogleSTTModel | debug:109 | 發送辨識請求: UltraLog06320251222192930_chunk_001.wav
 2026-01-15 16:31:00 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930_chunk_001.wav): 404 Requested entity was not found.
+2026-01-19 21:52:26 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ 使用動態配置管理
+2026-01-19 21:52:26 | [32mINFO[0m | GoogleSTTModel | info:113 | ✅ Google STT 初始化成功
+2026-01-19 21:52:26 | [32mINFO[0m | GoogleSTTModel | info:113 |    專案: dazzling-seat-315406
+2026-01-19 21:52:26 | [32mINFO[0m | GoogleSTTModel | info:113 |    區域: us
+2026-01-19 21:52:26 | [32mINFO[0m | GoogleSTTModel | info:113 |    端點: us-speech.googleapis.com
+2026-01-19 21:52:26 | [32mINFO[0m | GoogleSTTModel | info:113 |    模型: chirp_3
+2026-01-19 21:52:26 | [32mINFO[0m | GoogleSTTModel | info:113 |    語言: cmn-Hant-TW
+2026-01-19 21:52:26 | [32mINFO[0m | GoogleSTTModel | info:113 |    自動轉檔: ✅ 啟用

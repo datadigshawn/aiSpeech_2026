@@ -47,6 +47,7 @@ setup_credentials()
 from google.cloud.speech_v2 import SpeechClient
 from google.cloud.speech_v2.types import cloud_speech
 from google.api_core.client_options import ClientOptions
+from radio_stt_config import RadioSTTConfig
 
 try:
     from utils.logger import get_logger
@@ -352,14 +353,12 @@ class GoogleSTTModel:
                 audio_channel_count=1
             )
             
-            config = cloud_speech.RecognitionConfig(
-                explicit_decoding_config=explicit_decoding,
-                language_codes=[self.language_code],
-                model=self.model,
-                features=cloud_speech.RecognitionFeatures(
-                    enable_word_time_offsets=enable_word_time_offsets,
-                    enable_automatic_punctuation=False
-                )
+            config = RadioSTTConfig.create_radio_optimized_config(
+            model=self.model,
+            language_code=self.language_code,
+            phrases=phrases,  # 已載入的詞彙表
+            enable_diarization=(self.model == 'chirp_2'),
+            sample_rate=audio_info.get('sample_rate', 16000)
             )
             
             # 如果有詞彙表，使用 inline phrase_hints

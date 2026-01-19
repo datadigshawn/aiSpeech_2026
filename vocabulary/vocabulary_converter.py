@@ -8,6 +8,7 @@
    a) Google STT PhraseSet JSON（pre-recognition）
    b) Python 修正字典（post-recognition）
    c) Elasticsearch 關鍵字 JSON（alerting）
+3.保留舊版的統計摘要報告(.txt)
 
 新增優化：
 - 階層式 boost 權重（Alert Level 3 = boost 20, Level 2 = boost 15...）
@@ -23,7 +24,7 @@ import re
 
 
 class VocabularyConverter:
-    """詞彙表轉換器"""
+    """詞彙表轉換器 v2.1 - 整合統計報告功能"""
     
     def __init__(self, csv_path: str):
         """初始化轉換器"""
@@ -31,9 +32,17 @@ class VocabularyConverter:
         self.terms = []
         self.corrections = {}  # 同音字修正字典
         self.alert_keywords = []  # 警報關鍵字
+        # 新增：用於統計的變數
+        self.stats = {
+            "categories": {},
+            "levels": {0: 0, 1: 0, 2: 0, 3: 0}
+        }
         
     def load_csv(self) -> None:
-        """載入 CSV 詞彙表"""
+        """載入 CSV 並進行初步統計"""
+        if not self.csv_path.exists():
+            raise FileNotFoundError(f"找不到詞彙表檔案: {self.csv_path}")
+        
         with open(self.csv_path, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
             for row in reader:
@@ -43,6 +52,12 @@ class VocabularyConverter:
                 
                 self.terms.append(row)
                 
+                # 統計類別與等級
+                cat = row['category']
+                lvl = int(row.get('alert_level', 0))
+                self.stats["categories"][cat] = self.stats["categories"].get(cat, 0) + 1
+                self.stats["levels"][lvl] = self.stats["levels"].get(lvl, 0) + 1
+
                 # 建立同音字修正字典
                 if row.get('common_error'):
                     for error in row['common_error'].split('|'):
@@ -190,6 +205,27 @@ class VocabularyConverter:
         print(f"\n✅ 警報關鍵字 JSON 已生成: {output_file}")
         print(f"   - Level 3 (緊急): {result['metadata']['level_3_count']} 個")
         print(f"   - Level 2 (重要): {result['metadata']['level_2_count']} 個")
+
+    def generate_statistics_report(self, output_dir: Path) -> None:
+        """移植舊版的統計報告生成邏輯"""
+        stats_path = output_dir / 'vocabulary_stats.txt'
+        
+        with open(stats_path, 'w', encoding='utf-8') as f:
+            f.write('='*60 + '\n')
+            f.write(f'詞彙表統計報告 - 來源: {self.csv_path.name}\n')
+            f.write('='*60 + '\n\n')
+            f.write(f'總詞彙數: {len(self.terms)}\n\n')
+            
+            f.write('類別分布:\n')
+            for cat, count in sorted(self.stats["categories"].items(), key=lambda x: x[1], reverse=True):
+                f.write(f'  • {cat:20s}: {count:3d} 個\n')
+            
+            f.write('\n告警等級分布:\n')
+            for lvl in range(4):
+                label = {0: "不告警", 1: "一般", 2: "重要", 3: "緊急"}[lvl]
+                f.write(f'  • 等級 {lvl} ({label}): {self.stats["levels"][lvl]:3d} 個\n')
+        
+        print(f"✅ 統計報告已生成: {stats_path}")
     
     def convert_all(self, output_dir: str = "vocabulary") -> None:
         """一次性生成所有格式"""
@@ -206,6 +242,7 @@ class VocabularyConverter:
         self.generate_google_phraseset(output_path / "google_phrases.json")
         self.generate_python_correction_dict(output_path / "radio_corrections.py")
         self.generate_alert_keywords_json(output_path / "alert_keywords.json")
+        self.generate_statistics_report(output_path) # 執行移植的統計功能
         
         print("\n" + "="*80)
         print("✅ 轉換完成！")
@@ -214,6 +251,7 @@ class VocabularyConverter:
         print(f"1. Google STT: 將 google_phrases.json 用於 batch_inference.py")
         print(f"2. 後處理: import radio_corrections.RADIO_CORRECTIONS")
         print(f"3. 警報系統: 將 alert_keywords.json 用於 real-time monitoring")
+        print(f"4. 統計報告表: 產出")
 
 
 def main():

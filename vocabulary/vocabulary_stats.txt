@@ -1,27 +1,22 @@
 ============================================================
-詞彙表統計報告
+詞彙表統計報告 - 來源: master_vocabulary_enhanced.csv
 ============================================================
 
-總詞彙數: 120
+總詞彙數: 139
 
 類別分布:
-  • number              :  30 個
-  • command             :  25 個
-  • station_code        :  18 個
-  • equipment           :  15 個
-  • status              :  13 個
-  • emergency           :  13 個
-  • role                :   4 個
-  • location            :   2 個
+  • station_code        :  40 個
+  • equipment           :  26 個
+  • number              :  26 個
+  • command             :  23 個
+  • location            :   9 個
+  • status              :   9 個
+  • emergency           :   3 個
+  • role                :   2 個
+  • direction           :   1 個
 
 告警等級分布:
-  • 等級 0 (不告警):   63 個
-  • 等級 1 (一般):     29 個
-  • 等級 2 (重要):     14 個
-  • 等級 3 (緊急):     14 個
-
-產生檔案:
-  1. google_phrases.json     (用途1: Google STT 辨識前優化)
-  2. correction_dict.py      (用途2: Python 辨識後修正)
-  3. alert_keywords.json     (用途3: Elasticsearch 告警)
-  4. vocabulary_stats.txt    (統計報告)
+  • 等級 0 (不告警):  98 個
+  • 等級 1 (一般):   7 個
+  • 等級 2 (重要):  27 個
+  • 等級 3 (緊急):   7 個
