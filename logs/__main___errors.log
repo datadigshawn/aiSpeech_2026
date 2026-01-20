@@ -319,3 +319,22 @@
 2026-01-18 16:11:18 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192609.wav): 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
 2026-01-18 16:11:23 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192724.wav): 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
 2026-01-18 16:11:28 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192930.wav): 404 models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-20 21:16:52 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192236.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:16:52 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192400.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:16:52 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192434.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:16:52 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192542.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:16:52 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192609.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:16:53 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192724.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:16:53 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192930.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:23:55 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192236.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:23:55 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192400.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:23:55 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192434.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:23:55 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192542.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:23:55 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192609.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:23:55 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192724.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:23:55 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192930.wav): [WinError 2] 系統找不到指定的檔案。
+2026-01-20 21:53:11 | [31mERROR[0m | __main__ | error:121 | 找不到 Google STT 模組: No module named 'radio_stt_config'
+2026-01-20 22:28:17 | [31mERROR[0m | __main__ | error:121 | 找不到 Google STT 模組: No module named 'google.cloud'
+2026-01-20 22:45:14 | [31mERROR[0m | __main__ | error:121 | 找不到 Google STT 模組: No module named 'google.cloud'
+2026-01-20 22:49:17 | [31mERROR[0m | __main__ | error:121 | 找不到 Google STT 模組: No module named 'google.cloud'
+2026-01-20 23:20:06 | [31mERROR[0m | __main__ | error:121 | 找不到 Google STT 模組: No module named 'radio_stt_config'

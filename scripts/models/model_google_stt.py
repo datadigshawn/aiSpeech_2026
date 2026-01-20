@@ -47,7 +47,19 @@ setup_credentials()
 from google.cloud.speech_v2 import SpeechClient
 from google.cloud.speech_v2.types import cloud_speech
 from google.api_core.client_options import ClientOptions
-from radio_stt_config import RadioSTTConfig
+
+# 導入 RadioSTTConfig（處理不同的導入情境）
+try:
+    # 嘗試相對導入（當作為模組導入時）
+    from .radio_stt_config import RadioSTTConfig
+except ImportError:
+    try:
+        # 嘗試絕對導入（從專案根目錄）
+        from scripts.models.radio_stt_config import RadioSTTConfig
+    except ImportError:
+        # 同目錄直接導入（當直接執行此檔案或在同目錄時）
+        import radio_stt_config
+        RadioSTTConfig = radio_stt_config.RadioSTTConfig
 
 try:
     from utils.logger import get_logger
@@ -224,12 +236,14 @@ class GoogleSTTModel:
             except Exception as e:
                 self.logger.warning(f"⚠️ 動態配置失敗，使用預設值: {e}")
                 self.model = model or "chirp_3"
-                self.location = location or "us"
+                # Chirp 模型需要使用 global 區域
+                self.location = location or ("global" if "chirp" in (model or "chirp_3") else "us")
                 self.api_endpoint = f"{self.location}-speech.googleapis.com"
                 self.config_manager = None
         else:
             self.model = model or "chirp_3"
-            self.location = location or "us"
+            # Chirp 模型需要使用 global 區域
+            self.location = location or ("global" if "chirp" in (model or "chirp_3") else "us")
             self.api_endpoint = f"{self.location}-speech.googleapis.com"
             self.config_manager = None
             self.logger.warning("⚠️ 手動配置模式（不建議）")
@@ -333,6 +347,23 @@ class GoogleSTTModel:
         try:
             # 準備音訊（必要時自動轉換）
             audio_content, sample_rate = self._prepare_audio(audio_file)
+            # ====================================================================
+            # 檢查音檔長度限制（V2 API 同步辨識最多 60 秒）
+            # ====================================================================
+            duration_seconds = len(audio_content) / (sample_rate * 2)  # LINEAR16 = 2 bytes per sample
+            if duration_seconds > 60:
+                error_msg = (
+                    f"音檔長度 {duration_seconds:.1f} 秒超過 60 秒限制。"
+                    f"請使用 batch_recognizer 或分段處理。"
+                )
+                self.logger.error(error_msg)
+                return {
+                    'transcript': '',
+                    'transcript_raw': '',
+                    'confidence': 0.0,
+                    'error': error_msg
+                }
+            
             
             # ====================================================================
             # 修正：正確的 recognizer 路徑格式
@@ -358,7 +389,7 @@ class GoogleSTTModel:
             language_code=self.language_code,
             phrases=phrases,  # 已載入的詞彙表
             enable_diarization=(self.model == 'chirp_2'),
-            sample_rate=audio_info.get('sample_rate', 16000)
+            sample_rate=sample_rate  # 使用 _prepare_audio 返回的 sample_rate
             )
             
             # 如果有詞彙表，使用 inline phrase_hints
