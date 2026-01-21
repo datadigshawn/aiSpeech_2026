@@ -1453,3 +1453,186 @@
 2026-01-20 23:20:06 | [32mINFO[0m | __main__ | info:113 | 使用測試案例模式: Test_02_TMRT
 2026-01-20 23:20:06 | [32mINFO[0m | __main__ | info:113 | ✅ 載入詞彙表: 178 個詞彙
 2026-01-20 23:20:06 | [31mERROR[0m | __main__ | error:121 | 找不到 Google STT 模組: No module named 'radio_stt_config'
+2026-01-21 11:46:30 | [32mINFO[0m | __main__ | info:113 | 自動載入詞彙表: /Users/apple/Projects/aiSpeech/vocabulary/google_phrases.json
+2026-01-21 11:46:30 | [32mINFO[0m | __main__ | info:113 | ✅ 載入詞彙表: 120 個詞彙
+2026-01-21 14:01:12 | [32mINFO[0m | __main__ | info:113 | 自動載入詞彙表: /Users/apple/Projects/aiSpeech/vocabulary/google_phrases.json
+2026-01-21 14:01:12 | [32mINFO[0m | __main__ | info:113 | ✅ 載入詞彙表: 120 個詞彙
+2026-01-21 14:01:20 | [32mINFO[0m | __main__ | info:113 | 使用原生 whisper 模組
+2026-01-21 14:01:30 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:01:30 | [32mINFO[0m | __main__ | info:113 | 批次推論引擎初始化完成
+2026-01-21 14:01:30 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:01:30 | [32mINFO[0m | __main__ | info:113 | 模型類型: whisper
+2026-01-21 14:01:30 | [32mINFO[0m | __main__ | info:113 | 輸入目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio
+2026-01-21 14:01:30 | [32mINFO[0m | __main__ | info:113 | 輸出目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/whisper_output
+2026-01-21 14:01:30 | [32mINFO[0m | __main__ | info:113 | 詞彙表: 120 個詞彙
+2026-01-21 14:01:30 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:01:30 | [32mINFO[0m | __main__ | info:113 | 找到 7 個音檔，開始處理...
+2026-01-21 14:03:01 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:03:01 | [32mINFO[0m | __main__ | info:113 | 批次推論完成
+2026-01-21 14:03:01 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:03:01 | [32mINFO[0m | __main__ | info:113 | 成功: 7/7
+2026-01-21 14:03:01 | [32mINFO[0m | __main__ | info:113 | 失敗: 0/7
+2026-01-21 14:03:01 | [32mINFO[0m | __main__ | info:113 | 結果已儲存: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/whisper_output
+2026-01-21 14:03:01 | [32mINFO[0m | __main__ | info:113 | 詳細 JSON: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/whisper_output/whisper_results_20260121_140301.json
+2026-01-21 14:03:01 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:47:28 | [32mINFO[0m | __main__ | info:113 | 使用測試案例模式: Test_02_TMRT
+2026-01-21 14:47:28 | [32mINFO[0m | __main__ | info:113 | 自動載入詞彙表: /Users/apple/Projects/aiSpeech/vocabulary/google_phrases.json
+2026-01-21 14:47:28 | [32mINFO[0m | __main__ | info:113 | ✅ 載入詞彙表: 120 個詞彙
+2026-01-21 14:47:36 | [32mINFO[0m | __main__ | info:113 | 初始化 Gemini: gemini-2.0-flash-exp
+2026-01-21 14:47:36 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:47:36 | [32mINFO[0m | __main__ | info:113 | 批次推論引擎初始化完成
+2026-01-21 14:47:36 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:47:36 | [32mINFO[0m | __main__ | info:113 | 模型類型: gemini
+2026-01-21 14:47:36 | [32mINFO[0m | __main__ | info:113 | Gemini 模型: gemini-2.0-flash-exp
+2026-01-21 14:47:36 | [32mINFO[0m | __main__ | info:113 | 輸入目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio
+2026-01-21 14:47:36 | [32mINFO[0m | __main__ | info:113 | 輸出目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/gemini_output
+2026-01-21 14:47:36 | [32mINFO[0m | __main__ | info:113 | 詞彙表: 120 個詞彙
+2026-01-21 14:47:36 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:47:36 | [32mINFO[0m | __main__ | info:113 | 找到 7 個音檔，開始處理...
+2026-01-21 14:47:37 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192236.wav): module 'google.generativeai' has no attribute 'upload_file'
+2026-01-21 14:47:37 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192400.wav): module 'google.generativeai' has no attribute 'upload_file'
+2026-01-21 14:47:37 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192434.wav): module 'google.generativeai' has no attribute 'upload_file'
+2026-01-21 14:47:37 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192542.wav): module 'google.generativeai' has no attribute 'upload_file'
+2026-01-21 14:47:37 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192609.wav): module 'google.generativeai' has no attribute 'upload_file'
+2026-01-21 14:47:37 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192724.wav): module 'google.generativeai' has no attribute 'upload_file'
+2026-01-21 14:47:37 | [31mERROR[0m | __main__ | error:121 | ❌ 處理失敗 (UltraLog06320251222192930.wav): module 'google.generativeai' has no attribute 'upload_file'
+2026-01-21 14:47:37 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:47:37 | [32mINFO[0m | __main__ | info:113 | 批次推論完成
+2026-01-21 14:47:37 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:47:37 | [32mINFO[0m | __main__ | info:113 | 成功: 0/7
+2026-01-21 14:47:37 | [32mINFO[0m | __main__ | info:113 | 失敗: 7/7
+2026-01-21 14:47:37 | [32mINFO[0m | __main__ | info:113 | 結果已儲存: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/gemini_output
+2026-01-21 14:47:37 | [32mINFO[0m | __main__ | info:113 | 詳細 JSON: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/gemini_output/gemini_results_20260121_144737.json
+2026-01-21 14:47:37 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:52:42 | [32mINFO[0m | __main__ | info:113 | 使用測試案例模式: Test_02_TMRT
+2026-01-21 14:52:42 | [32mINFO[0m | __main__ | info:113 | 自動載入詞彙表: /Users/apple/Projects/aiSpeech/vocabulary/google_phrases.json
+2026-01-21 14:52:42 | [32mINFO[0m | __main__ | info:113 | ✅ 載入詞彙表: 120 個詞彙
+2026-01-21 14:52:43 | [32mINFO[0m | __main__ | info:113 | 初始化 Gemini: gemini-2.0-flash-exp
+2026-01-21 14:52:43 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:52:43 | [32mINFO[0m | __main__ | info:113 | 批次推論引擎初始化完成
+2026-01-21 14:52:43 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:52:43 | [32mINFO[0m | __main__ | info:113 | 模型類型: gemini
+2026-01-21 14:52:43 | [32mINFO[0m | __main__ | info:113 | Gemini 模型: gemini-2.0-flash-exp
+2026-01-21 14:52:43 | [32mINFO[0m | __main__ | info:113 | 輸入目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio
+2026-01-21 14:52:43 | [32mINFO[0m | __main__ | info:113 | 輸出目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/gemini_output
+2026-01-21 14:52:43 | [32mINFO[0m | __main__ | info:113 | 詞彙表: 120 個詞彙
+2026-01-21 14:52:43 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:52:43 | [32mINFO[0m | __main__ | info:113 | 找到 7 個音檔，開始處理...
+2026-01-21 14:53:31 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:53:31 | [32mINFO[0m | __main__ | info:113 | 批次推論完成
+2026-01-21 14:53:31 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 14:53:31 | [32mINFO[0m | __main__ | info:113 | 成功: 7/7
+2026-01-21 14:53:31 | [32mINFO[0m | __main__ | info:113 | 失敗: 0/7
+2026-01-21 14:53:31 | [32mINFO[0m | __main__ | info:113 | 結果已儲存: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/gemini_output
+2026-01-21 14:53:31 | [32mINFO[0m | __main__ | info:113 | 詳細 JSON: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/gemini_output/gemini_results_20260121_145331.json
+2026-01-21 14:53:31 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 15:04:33 | [32mINFO[0m | __main__ | info:113 | 使用測試案例模式: Test_02_TMRT
+2026-01-21 15:04:33 | [32mINFO[0m | __main__ | info:113 | ✅ 載入詞彙表: 120 個詞彙
+2026-01-21 15:04:34 | [32mINFO[0m | __main__ | info:113 | 初始化 Google STT: chirp_3
+2026-01-21 15:04:34 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 15:04:34 | [32mINFO[0m | __main__ | info:113 | 批次推論引擎初始化完成
+2026-01-21 15:04:34 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 15:04:34 | [32mINFO[0m | __main__ | info:113 | 模型類型: google_stt
+2026-01-21 15:04:34 | [32mINFO[0m | __main__ | info:113 | STT 模型: chirp_3
+2026-01-21 15:04:34 | [32mINFO[0m | __main__ | info:113 | STT 區域: 自動
+2026-01-21 15:04:34 | [32mINFO[0m | __main__ | info:113 | 輸入目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio
+2026-01-21 15:04:34 | [32mINFO[0m | __main__ | info:113 | 輸出目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_output
+2026-01-21 15:04:34 | [32mINFO[0m | __main__ | info:113 | 詞彙表: 120 個詞彙
+2026-01-21 15:04:34 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 15:04:34 | [32mINFO[0m | __main__ | info:113 | 找到 7 個音檔，開始處理...
+2026-01-21 15:05:00 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 15:05:00 | [32mINFO[0m | __main__ | info:113 | 批次推論完成
+2026-01-21 15:05:00 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 15:05:00 | [32mINFO[0m | __main__ | info:113 | 成功: 7/7
+2026-01-21 15:05:00 | [32mINFO[0m | __main__ | info:113 | 失敗: 0/7
+2026-01-21 15:05:00 | [32mINFO[0m | __main__ | info:113 | 結果已儲存: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_output
+2026-01-21 15:05:00 | [32mINFO[0m | __main__ | info:113 | 詳細 JSON: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_output/google_stt_results_20260121_150500.json
+2026-01-21 15:05:00 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:08:47 | [32mINFO[0m | __main__ | info:113 | 使用測試案例模式: Test_02_TMRT
+2026-01-21 16:08:47 | [32mINFO[0m | __main__ | info:113 | ✅ 載入詞彙表: 120 個詞彙
+2026-01-21 16:08:48 | [32mINFO[0m | __main__ | info:113 | 初始化 Google STT: chirp_3
+2026-01-21 16:08:48 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:08:48 | [32mINFO[0m | __main__ | info:113 | 批次推論引擎初始化完成
+2026-01-21 16:08:48 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:08:48 | [32mINFO[0m | __main__ | info:113 | 模型類型: google_stt
+2026-01-21 16:08:48 | [32mINFO[0m | __main__ | info:113 | STT 模型: chirp_3
+2026-01-21 16:08:48 | [32mINFO[0m | __main__ | info:113 | STT 區域: 自動
+2026-01-21 16:08:48 | [32mINFO[0m | __main__ | info:113 | 輸入目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio
+2026-01-21 16:08:48 | [32mINFO[0m | __main__ | info:113 | 輸出目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_output
+2026-01-21 16:08:48 | [32mINFO[0m | __main__ | info:113 | 詞彙表: 120 個詞彙
+2026-01-21 16:08:48 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:08:48 | [32mINFO[0m | __main__ | info:113 | 找到 7 個音檔，開始處理...
+2026-01-21 16:09:12 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:09:12 | [32mINFO[0m | __main__ | info:113 | 批次推論完成
+2026-01-21 16:09:12 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:09:12 | [32mINFO[0m | __main__ | info:113 | 成功: 7/7
+2026-01-21 16:09:12 | [32mINFO[0m | __main__ | info:113 | 失敗: 0/7
+2026-01-21 16:09:12 | [32mINFO[0m | __main__ | info:113 | 結果已儲存: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_output
+2026-01-21 16:09:12 | [32mINFO[0m | __main__ | info:113 | 詳細 JSON: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_output/google_stt_results_20260121_160912.json
+2026-01-21 16:09:12 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:16:26 | [32mINFO[0m | __main__ | info:113 | 使用測試案例模式: Test_02_TMRT
+2026-01-21 16:16:26 | [32mINFO[0m | __main__ | info:113 | ✅ 載入詞彙表: 120 個詞彙
+2026-01-21 16:16:27 | [32mINFO[0m | __main__ | info:113 | 初始化 Google STT: chirp_3
+2026-01-21 16:16:27 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:16:27 | [32mINFO[0m | __main__ | info:113 | 批次推論引擎初始化完成
+2026-01-21 16:16:27 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:16:27 | [32mINFO[0m | __main__ | info:113 | 模型類型: google_stt
+2026-01-21 16:16:27 | [32mINFO[0m | __main__ | info:113 | STT 模型: chirp_3
+2026-01-21 16:16:27 | [32mINFO[0m | __main__ | info:113 | STT 區域: 自動
+2026-01-21 16:16:27 | [32mINFO[0m | __main__ | info:113 | 輸入目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio
+2026-01-21 16:16:27 | [32mINFO[0m | __main__ | info:113 | 輸出目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_output
+2026-01-21 16:16:27 | [32mINFO[0m | __main__ | info:113 | 詞彙表: 120 個詞彙
+2026-01-21 16:16:27 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:16:27 | [32mINFO[0m | __main__ | info:113 | 找到 7 個音檔，開始處理...
+2026-01-21 16:16:51 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:16:51 | [32mINFO[0m | __main__ | info:113 | 批次推論完成
+2026-01-21 16:16:51 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:16:51 | [32mINFO[0m | __main__ | info:113 | 成功: 7/7
+2026-01-21 16:16:51 | [32mINFO[0m | __main__ | info:113 | 失敗: 0/7
+2026-01-21 16:16:51 | [32mINFO[0m | __main__ | info:113 | 結果已儲存: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_output
+2026-01-21 16:16:51 | [32mINFO[0m | __main__ | info:113 | 詳細 JSON: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_output/google_stt_results_20260121_161651.json
+2026-01-21 16:16:51 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:55:11 | [32mINFO[0m | __main__ | info:113 | 使用測試案例模式: Test_02_TMRT
+2026-01-21 16:55:11 | [32mINFO[0m | __main__ | info:113 | ✅ 載入詞彙表: 120 個詞彙
+2026-01-21 16:55:12 | [32mINFO[0m | __main__ | info:113 | 初始化 Google STT: chirp_3
+2026-01-21 16:55:12 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:55:12 | [32mINFO[0m | __main__ | info:113 | 批次推論引擎初始化完成
+2026-01-21 16:55:12 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:55:12 | [32mINFO[0m | __main__ | info:113 | 模型類型: google_stt
+2026-01-21 16:55:12 | [32mINFO[0m | __main__ | info:113 | STT 模型: chirp_3
+2026-01-21 16:55:12 | [32mINFO[0m | __main__ | info:113 | STT 區域: 自動
+2026-01-21 16:55:12 | [32mINFO[0m | __main__ | info:113 | 輸入目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio
+2026-01-21 16:55:12 | [32mINFO[0m | __main__ | info:113 | 輸出目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_output
+2026-01-21 16:55:12 | [32mINFO[0m | __main__ | info:113 | 詞彙表: 120 個詞彙
+2026-01-21 16:55:12 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:55:12 | [32mINFO[0m | __main__ | info:113 | 找到 7 個音檔，開始處理...
+2026-01-21 16:55:39 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:55:39 | [32mINFO[0m | __main__ | info:113 | 批次推論完成
+2026-01-21 16:55:39 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 16:55:39 | [32mINFO[0m | __main__ | info:113 | 成功: 7/7
+2026-01-21 16:55:39 | [32mINFO[0m | __main__ | info:113 | 失敗: 0/7
+2026-01-21 16:55:39 | [32mINFO[0m | __main__ | info:113 | 結果已儲存: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_output
+2026-01-21 16:55:39 | [32mINFO[0m | __main__ | info:113 | 詳細 JSON: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_output/google_stt_results_20260121_165539.json
+2026-01-21 16:55:39 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | 自動載入詞彙表: /Users/apple/Projects/aiSpeech/vocabulary/google_phrases.json
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | ✅ 載入詞彙表: 120 個詞彙
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | 初始化 Google STT: chirp_3
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | 批次推論引擎初始化完成
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | 模型類型: google_stt
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | STT 模型: chirp_3
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | STT 區域: 自動
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | 輸入目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/source_audio
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | 輸出目錄: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_chirp_3_output
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | 詞彙表: 120 個詞彙
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 17:14:53 | [32mINFO[0m | __main__ | info:113 | 找到 7 個音檔，開始處理...
+2026-01-21 17:15:19 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 17:15:19 | [32mINFO[0m | __main__ | info:113 | 批次推論完成
+2026-01-21 17:15:19 | [32mINFO[0m | __main__ | info:113 | ============================================================
+2026-01-21 17:15:19 | [32mINFO[0m | __main__ | info:113 | 成功: 7/7
+2026-01-21 17:15:19 | [32mINFO[0m | __main__ | info:113 | 失敗: 0/7
+2026-01-21 17:15:19 | [32mINFO[0m | __main__ | info:113 | 結果已儲存: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_chirp_3_output
+2026-01-21 17:15:19 | [32mINFO[0m | __main__ | info:113 | 詳細 JSON: /Users/apple/Projects/aiSpeech/experiments/Test_02_TMRT/ASR_Evaluation/google_stt_chirp_3_output/google_stt_results_20260121_171519.json
+2026-01-21 17:15:19 | [32mINFO[0m | __main__ | info:113 | ============================================================

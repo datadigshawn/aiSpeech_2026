@@ -389,3 +389,38 @@
 2026-01-20 23:14:20 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
 2026-01-20 23:14:34 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 400 Audio can be of a maximum of 60 seconds.
 2026-01-20 23:14:36 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-21 15:04:40 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-21 15:04:43 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-21 15:04:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-21 15:04:50 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-21 15:04:58 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-21 15:04:58 | [31mERROR[0m | GoogleSTTModel | error:121 | 音檔長度 107.9 秒超過 60 秒限制。請使用 batch_recognizer 或分段處理。
+2026-01-21 15:05:00 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-21 16:08:53 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-21 16:08:56 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-21 16:09:00 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-21 16:09:03 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-21 16:09:09 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-21 16:09:10 | [31mERROR[0m | GoogleSTTModel | error:121 | 音檔長度 107.9 秒超過 60 秒限制。請使用 batch_recognizer 或分段處理。
+2026-01-21 16:09:12 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-21 16:16:32 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-21 16:16:35 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-21 16:16:39 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-21 16:16:42 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-21 16:16:48 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-21 16:16:49 | [31mERROR[0m | GoogleSTTModel | error:121 | 音檔長度 107.9 秒超過 60 秒限制。請使用 batch_recognizer 或分段處理。
+2026-01-21 16:16:51 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-21 16:55:17 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-21 16:55:20 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-21 16:55:24 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-21 16:55:28 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-21 16:55:36 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-21 16:55:36 | [31mERROR[0m | GoogleSTTModel | error:121 | 音檔長度 107.9 秒超過 60 秒限制。請使用 batch_recognizer 或分段處理。
+2026-01-21 16:55:39 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-21 17:14:59 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-21 17:15:02 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-21 17:15:06 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-21 17:15:09 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-21 17:15:16 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-21 17:15:16 | [31mERROR[0m | GoogleSTTModel | error:121 | 音檔長度 107.9 秒超過 60 秒限制。請使用 batch_recognizer 或分段處理。
+2026-01-21 17:15:19 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.

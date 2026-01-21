@@ -92,3 +92,18 @@
 2026-01-20 23:13:59 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用預設配置
 2026-01-20 23:13:59 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用主要區域: us
 2026-01-20 23:13:59 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | ✅ 配置完成: 模型=chirp_3, 區域=us, 端點=us-speech.googleapis.com
+2026-01-21 15:04:34 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用預設配置
+2026-01-21 15:04:34 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用主要區域: us
+2026-01-21 15:04:34 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | ✅ 配置完成: 模型=chirp_3, 區域=us, 端點=us-speech.googleapis.com
+2026-01-21 16:08:48 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用預設配置
+2026-01-21 16:08:48 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用主要區域: us
+2026-01-21 16:08:48 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | ✅ 配置完成: 模型=chirp_3, 區域=us, 端點=us-speech.googleapis.com
+2026-01-21 16:16:27 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用預設配置
+2026-01-21 16:16:27 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用主要區域: us
+2026-01-21 16:16:27 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | ✅ 配置完成: 模型=chirp_3, 區域=us, 端點=us-speech.googleapis.com
+2026-01-21 16:55:12 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用預設配置
+2026-01-21 16:55:12 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用主要區域: us
+2026-01-21 16:55:12 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | ✅ 配置完成: 模型=chirp_3, 區域=us, 端點=us-speech.googleapis.com
+2026-01-21 17:14:53 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用預設配置
+2026-01-21 17:14:53 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用主要區域: us
+2026-01-21 17:14:53 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | ✅ 配置完成: 模型=chirp_3, 區域=us, 端點=us-speech.googleapis.com

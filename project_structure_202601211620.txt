@@ -1,0 +1,1020 @@
+.
+├── __pycache__
+│   ├── config.cpython-310.pyc
+│   └── model.cpython-310.pyc
+├── 99temp
+│   ├── aiSpeech_structure_old.jpg
+│   ├── check_gcs_permission.py
+│   ├── draw.py
+│   ├── main.py
+│   ├── model.py
+│   └── train.py
+├── app_webInterface.py
+├── backup
+│   ├── 20260108
+│   │   ├── config.py
+│   │   ├── text_cleaner.py
+│   │   └── vad_preprocess.py
+│   └── 20260112
+│       └── model_google_stt.py
+├── config
+│   └── google_stt_config.json
+├── diagnose_google_stt_404.py
+├── docs
+├── experiments
+│   ├── Test_01_TMRT
+│   │   ├── ASR_Evaluation
+│   │   │   └── whisper_output
+│   │   ├── dataset_chunks
+│   │   ├── gemini_output
+│   │   ├── ground_truth
+│   │   ├── source_audio
+│   │   │   ├── UltraLog01720251211215234.m4a
+│   │   │   ├── UltraLog02020251211220219.m4a
+│   │   │   └── UltraLog02820251211221848.m4a
+│   │   ├── stt_output
+│   │   └── whisper_output
+│   └── Test_02_TMRT
+│       ├── ASR_Evaluation
+│       │   ├── chirp2_vad
+│       │   │   ├── google_stt_results_20260115_110715.json
+│       │   │   ├── UltraLog06320251222192236_chunk_001.txt
+│       │   │   ├── UltraLog06320251222192236_chunk_002.txt
+│       │   │   ├── UltraLog06320251222192236_chunk_003.txt
+│       │   │   ├── UltraLog06320251222192400_chunk_001.txt
+│       │   │   ├── UltraLog06320251222192434_chunk_001.txt
+│       │   │   ├── UltraLog06320251222192542_chunk_001.txt
+│       │   │   ├── UltraLog06320251222192542_chunk_002.txt
+│       │   │   ├── UltraLog06320251222192609_chunk_001.txt
+│       │   │   ├── UltraLog06320251222192609_chunk_002.txt
+│       │   │   ├── UltraLog06320251222192609_chunk_003.txt
+│       │   │   ├── UltraLog06320251222192609_chunk_004.txt
+│       │   │   ├── UltraLog06320251222192609_chunk_005.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_001.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_002.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_003.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_004.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_005.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_006.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_007.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_008.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_009.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_010.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_011.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_012.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_013.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_014.txt
+│       │   │   ├── UltraLog06320251222192724_chunk_015.txt
+│       │   │   └── UltraLog06320251222192930_chunk_001.txt
+│       │   ├── gemini_gemini_2_0_flash_exp_output
+│       │   │   ├── v1
+│       │   │   │   ├── UltraLog06320251222192236.txt
+│       │   │   │   ├── UltraLog06320251222192400.txt
+│       │   │   │   ├── UltraLog06320251222192434.txt
+│       │   │   │   ├── UltraLog06320251222192542.txt
+│       │   │   │   ├── UltraLog06320251222192609.txt
+│       │   │   │   ├── UltraLog06320251222192724.txt
+│       │   │   │   └── UltraLog06320251222192930.txt
+│       │   │   └── v2
+│       │   │       ├── UltraLog06320251222192236.txt
+│       │   │       ├── UltraLog06320251222192400.txt
+│       │   │       ├── UltraLog06320251222192434.txt
+│       │   │       ├── UltraLog06320251222192542.txt
+│       │   │       ├── UltraLog06320251222192609.txt
+│       │   │       ├── UltraLog06320251222192724.txt
+│       │   │       └── UltraLog06320251222192930.txt
+│       │   ├── gemini_output
+│       │   │   ├── gemini_results_20260121_144737.json
+│       │   │   ├── gemini_results_20260121_145331.json
+│       │   │   ├── UltraLog06320251222192236.txt
+│       │   │   ├── UltraLog06320251222192400.txt
+│       │   │   ├── UltraLog06320251222192434.txt
+│       │   │   ├── UltraLog06320251222192542.txt
+│       │   │   ├── UltraLog06320251222192609.txt
+│       │   │   ├── UltraLog06320251222192724.txt
+│       │   │   └── UltraLog06320251222192930.txt
+│       │   ├── google_gemini_output
+│       │   │   └── google_stt_results_20260115_163100.json
+│       │   ├── google_stt_output
+│       │   │   ├── google_stt_results_20260114_141323.json
+│       │   │   ├── google_stt_results_20260114_142332.json
+│       │   │   ├── google_stt_results_20260120_172615.json
+│       │   │   ├── google_stt_results_20260121_150500.json
+│       │   │   ├── google_stt_results_20260121_160912.json
+│       │   │   └── google_stt_results_20260121_161651.json
+│       │   ├── telephony_output
+│       │   │   ├── google_stt_results_20260114_144422.json
+│       │   │   ├── google_stt_results_20260114_145738.json
+│       │   │   ├── google_stt_results_20260114_150315.json
+│       │   │   ├── UltraLog06320251222192236.txt
+│       │   │   ├── UltraLog06320251222192400.txt
+│       │   │   ├── UltraLog06320251222192434.txt
+│       │   │   ├── UltraLog06320251222192542.txt
+│       │   │   ├── UltraLog06320251222192609.txt
+│       │   │   ├── UltraLog06320251222192724.txt
+│       │   │   └── UltraLog06320251222192930.txt
+│       │   ├── whisper_output
+│       │   │   ├── UltraLog06320251222192236.txt
+│       │   │   ├── UltraLog06320251222192400.txt
+│       │   │   ├── UltraLog06320251222192434.txt
+│       │   │   ├── UltraLog06320251222192542.txt
+│       │   │   ├── UltraLog06320251222192609.txt
+│       │   │   ├── UltraLog06320251222192724.txt
+│       │   │   ├── UltraLog06320251222192930.txt
+│       │   │   └── whisper_results_20260121_140301.json
+│       │   ├── 模式測試整理_20260114.txt
+│       │   └── 模式測試整理_20260121.txt
+│       ├── source_audio
+│       │   ├── UltraLog06320251222192236.wav
+│       │   ├── UltraLog06320251222192400.wav
+│       │   ├── UltraLog06320251222192434.wav
+│       │   ├── UltraLog06320251222192542.wav
+│       │   ├── UltraLog06320251222192609.wav
+│       │   ├── UltraLog06320251222192724.wav
+│       │   └── UltraLog06320251222192930.wav
+│       └── vad_chunks
+│           ├── UltraLog06320251222192236_chunk_001.wav
+│           ├── UltraLog06320251222192236_chunk_002.wav
+│           ├── UltraLog06320251222192236_chunk_003.wav
+│           ├── UltraLog06320251222192400_chunk_001.wav
+│           ├── UltraLog06320251222192434_chunk_001.wav
+│           ├── UltraLog06320251222192542_chunk_001.wav
+│           ├── UltraLog06320251222192542_chunk_002.wav
+│           ├── UltraLog06320251222192609_chunk_001.wav
+│           ├── UltraLog06320251222192609_chunk_002.wav
+│           ├── UltraLog06320251222192609_chunk_003.wav
+│           ├── UltraLog06320251222192609_chunk_004.wav
+│           ├── UltraLog06320251222192609_chunk_005.wav
+│           ├── UltraLog06320251222192724_chunk_001.wav
+│           ├── UltraLog06320251222192724_chunk_002.wav
+│           ├── UltraLog06320251222192724_chunk_003.wav
+│           ├── UltraLog06320251222192724_chunk_004.wav
+│           ├── UltraLog06320251222192724_chunk_005.wav
+│           ├── UltraLog06320251222192724_chunk_006.wav
+│           ├── UltraLog06320251222192724_chunk_007.wav
+│           ├── UltraLog06320251222192724_chunk_008.wav
+│           ├── UltraLog06320251222192724_chunk_009.wav
+│           ├── UltraLog06320251222192724_chunk_010.wav
+│           ├── UltraLog06320251222192724_chunk_011.wav
+│           ├── UltraLog06320251222192724_chunk_012.wav
+│           ├── UltraLog06320251222192724_chunk_013.wav
+│           ├── UltraLog06320251222192724_chunk_014.wav
+│           ├── UltraLog06320251222192724_chunk_015.wav
+│           ├── UltraLog06320251222192930_chunk_001.wav
+│           └── vad_report.json
+├── logs
+│   ├── __main___errors.log
+│   ├── __main__.log
+│   ├── gemini_errors.log
+│   ├── gemini.log
+│   ├── GoogleSTTConfigManager_errors.log
+│   ├── GoogleSTTConfigManager.log
+│   ├── GoogleSTTModel_errors.log
+│   ├── GoogleSTTModel.log
+│   ├── models
+│   │   ├── model_gemini_errors.log
+│   │   ├── model_gemini.log
+│   │   ├── model_google_stt_errors.log
+│   │   └── model_google_stt.log
+│   ├── test_module_errors.log
+│   ├── test_module.log
+│   ├── utils.google_stt_config_manager_errors.log
+│   ├── utils.google_stt_config_manager.log
+│   ├── utils.timestamp_manager_errors.log
+│   ├── utils.timestamp_manager.log
+│   ├── utils.vad_processor_errors.log
+│   └── utils.vad_processor.log
+├── project_structure_202601121530.txt
+├── project_structure_202601141116.txt
+├── project_structure.txt
+├── readme.md
+├── requirements_4mac.txt
+├── requirements.txt
+├── run_test02_google_stt.sh
+├── scripts
+│   ├── __pycache__
+│   │   ├── audio_splitter.cpython-310.pyc
+│   │   ├── evaluator.cpython-310.pyc
+│   │   ├── evaluator.cpython-312.pyc
+│   │   ├── model_whisper.cpython-310.pyc
+│   │   └── result_merger.cpython-310.pyc
+│   ├── audio_spiltter.py
+│   ├── audio_splitter.py
+│   ├── batch_inference_odd2.py
+│   ├── batch_inference_old.py
+│   ├── batch_inference.py
+│   ├── batch_inference.py.backup
+│   ├── evaluator.py
+│   ├── gemini_test.py
+│   ├── models
+│   │   ├── __pycache__
+│   │   │   ├── model_gemini.cpython-310.pyc
+│   │   │   ├── model_gemini.cpython-312.pyc
+│   │   │   ├── model_google_stt.cpython-310.pyc
+│   │   │   ├── model_google_stt.cpython-312.pyc
+│   │   │   ├── model_whisper.cpython-310.pyc
+│   │   │   ├── model_whisper.cpython-312.pyc
+│   │   │   └── radio_stt_config.cpython-310.pyc
+│   │   ├── _init_.py
+│   │   ├── model_gemini.py
+│   │   ├── model_google_stt.py
+│   │   ├── model_whisper_old.py
+│   │   ├── model_whisper.py
+│   │   └── radio_stt_config.py
+│   ├── result_marger.py
+│   ├── result_merger.py
+│   ├── run_speech_recognition.py
+│   ├── vad_preprocess.py
+│   └── 獨立程式（早期）
+│       ├── audio_input
+│       │   └── UltraLog06320251222220029.wav
+│       ├── to_gemini_test.py
+│       ├── transcripts_Gemini
+│       │   ├── UltraLog06320251222220029_完整逐字稿.txt
+│       │   ├── UltraLog06320251222220029_時間估算.txt
+│       │   └── UltraLog06320251222220029_純文字.txt
+│       ├── transcripts_output
+│       ├── voice_GCS_long.py
+│       ├── voice_GCS_str_txt.py
+│       ├── voice_GCS_V1.py
+│       ├── voice_local_whisper_largeV3.py
+│       ├── voice_local_whisper_medium.py
+│       ├── voice_local_whisper_turbo.py
+│       ├── voice_local_whisper.py
+│       ├── voice_long_5min_auto_gcs.py
+│       ├── voice_ultimate_enhanceModel.py
+│       ├── voice_upload_Gemini_1.5Pro.py
+│       ├── voice_upload_Gemini_2.0Flash.py
+│       ├── voice_upload_Gemini_2.0Flash＋time.py
+│       ├── voice_upload_v2_chirp3_timestamp.py
+│       ├── voice_uploadGCS_V2_chirp3.py
+│       └── whisper_fix.py
+├── tools
+│   ├── buildCSV.py
+│   ├── check env.py
+│   ├── diagnose_404_error_v2.py
+│   ├── diagnose_404_error.py
+│   ├── test modules.py
+│   └── test_google_stt_chirp3.py
+├── utils
+│   ├── __pycache__
+│   │   ├── config.cpython-310.pyc
+│   │   ├── config.cpython-312.pyc
+│   │   ├── google_stt_config_manager.cpython-310.pyc
+│   │   ├── logger.cpython-310.pyc
+│   │   ├── logger.cpython-312.pyc
+│   │   ├── text_cleaner.cpython-310.pyc
+│   │   ├── text_cleaner.cpython-312.pyc
+│   │   ├── timestamp_manager.cpython-310.pyc
+│   │   ├── timestamp_manager.cpython-312.pyc
+│   │   ├── vad_processor.cpython-310.pyc
+│   │   └── vad_processor.cpython-312.pyc
+│   ├── api_keys.json
+│   ├── config.py
+│   ├── diagnose_recognizers.py
+│   ├── google_stt_config_manager_odd.py
+│   ├── google_stt_config_manager.py
+│   ├── google-speech-key.json
+│   ├── logger.py
+│   ├── text_cleaner_original.py
+│   ├── text_cleaner.py
+│   ├── timestamp_manager.py
+│   └── vocabulary_generator.py
+├── vocabulary
+│   ├── alert_keywords.json
+│   ├── correction_dict.py
+│   ├── generate_vocabulary_files.py
+│   ├── google_phrases.json
+│   ├── master_vocabulaery說明.txt
+│   ├── master_vocabulary_backup.csv
+│   ├── master_vocabulary_enhanced.csv
+│   ├── master_vocabulary.csv
+│   ├── radio_corrections.py
+│   ├── vocabulary_converter.py
+│   └── vocabulary_stats.txt
+├── 強化語音辨識
+│   ├── IMPLEMENTATION_GUIDE.md
+│   ├── master_vocabulary_enhanced.csv
+│   ├── multi_model_ensemble.py
+│   ├── radio_stt_config.py
+│   ├── README.md
+│   ├── text_cleaner_enhanced.py
+│   ├── UPGRADE_GUIDE_STT.md
+│   └── vocabulary_converter.py
+├── 補充資料_無線電口呼表、捷運專業用語.docx
+├── 【語音原始檔】
+│   └── 01 通聯記錄
+│       ├── 公務手機
+│       │   └── ECPC手機
+│       │       ├── 臺中捷運_組長_楊耀賓_0963678115_2025_12_22_20_23_03_[0].mp3
+│       │       ├── 臺中捷運_組長_楊耀賓_0963678115_2025_12_22_20_34_03_[0].mp3
+│       │       ├── 臺中捷運_組長_楊耀賓_0963678115_2025_12_22_20_36_01_[1].mp3
+│       │       ├── 臺中捷運_組長_楊耀賓_0963678115_2025_12_22_21_02_01_[0].mp3
+│       │       ├── 臺中捷運_組長_楊耀賓_0963678115_2025_12_22_21_37_04_[0].mp3
+│       │       ├── 臺中捷運行控中心副主任蕭凱倫_0963677960_2025_12_22_19_31_04_[0].mp3
+│       │       ├── 臺中捷運行控中心副主任蕭凱倫_0963677960_2025_12_22_19_35_04_[0].mp3
+│       │       ├── 號誌1股_值班_0963678371_2025_12_22_19_25_05_[1].mp3
+│       │       ├── 號誌1股_值班_0963678371_2025_12_22_19_40_04_[1].mp3
+│       │       ├── 號誌1股_值班_0963678371_2025_12_22_20_07_00_[1].mp3
+│       │       ├── 號誌2股_值班_0963678332_2025_12_22_19_24_05_[1].mp3
+│       │       ├── 號誌2股_值班_0963678332_2025_12_22_19_26_03_[1].mp3
+│       │       ├── 號誌2股_值班_0963678332_2025_12_22_20_22_00_[1].mp3
+│       │       ├── 號誌3股（原系電1股）_值班_0963678367_2025_12_22_19_24_02_[1].mp3
+│       │       ├── 號誌3股（原系電1股）_值班_0963678367_2025_12_22_19_24_03_[1].mp3
+│       │       ├── 號誌3股（原系電1股）_值班_0963678367_2025_12_22_19_24_05_[1].mp3
+│       │       ├── 號誌3股（原系電1股）_值班_0963678367_2025_12_22_20_14_05_[1].mp3
+│       │       ├── 號誌3股（原系電1股）_值班_0963678367_2025_12_22_20_23_01_[1].mp3
+│       │       ├── 號誌3股（原系電1股）_值班_0963678367_2025_12_22_20_32_02_[1].mp3
+│       │       ├── 號誌3股（原系電1股）_值班_0963678367_2025_12_22_20_39_00_[1].mp3
+│       │       ├── 號誌楊耀賓_0972088963_2025_12_22_19_44_00_[1].mp3
+│       │       ├── 號誌楊耀賓_0972088963_2025_12_22_20_15_05_[1].mp3
+│       │       ├── 號誌楊耀賓_0972088963_2025_12_22_20_23_00_[1].mp3
+│       │       ├── 陳振溢組長_0963678059_2025_12_22_19_37_04_[1].mp3
+│       │       ├── 陳振溢組長_0963678059_2025_12_22_20_00_04_[1].mp3
+│       │       ├── 陳振溢組長_0963678059_2025_12_22_20_33_04_[1].mp3
+│       │       ├── 陳振溢組長_0963678059_2025_12_22_20_38_05_[1].mp3
+│       │       ├── 陳振溢組長_0963678059_2025_12_22_21_29_05_[1].mp3
+│       │       ├── 電力1股_值班_0963678580_2025_12_22_19_23_00_[1].mp3
+│       │       ├── 電力1股_值班_0963678580_2025_12_22_19_46_00_[1].mp3
+│       │       ├── 電力1股_值班_0963678580_2025_12_22_20_00_03_[1].mp3
+│       │       ├── 電力1股_值班_0963678580_2025_12_22_20_01_01_[1].mp3
+│       │       ├── 電力1股_值班_0963678580_2025_12_22_20_04_05_[1].mp3
+│       │       ├── 電力1股_值班_0963678580_2025_12_22_20_05_02_[1].mp3
+│       │       ├── 電力1股_值班_0963678580_2025_12_22_20_30_04_[0].mp3
+│       │       ├── 電力1股_值班_0963678580_2025_12_22_20_34_02_[1].mp3
+│       │       ├── 電力1股_值班_0963678580_2025_12_22_20_46_01_[1].mp3
+│       │       ├── 電力1股_值班_0963678580_2025_12_22_21_44_02_[0].mp3
+│       │       ├── 電力2股_值班_0963678529_2025_12_22_19_23_05_[1].mp3
+│       │       ├── 電力2股_值班_0963678529_2025_12_22_19_30_01_[0].mp3
+│       │       ├── 電力2股_值班_0963678529_2025_12_22_19_46_04_[1].mp3
+│       │       ├── 電力2股_值班_0963678529_2025_12_22_20_06_03_[1].mp3
+│       │       ├── 電力2股_值班_0963678529_2025_12_22_20_33_04_[1].mp3
+│       │       ├── 電力2股_值班_0963678529_2025_12_22_20_38_04_[1].mp3
+│       │       ├── 電力2股_股長白志華_0963678006_2025_12_22_19_27_01_[0].mp3
+│       │       ├── 電機陳振溢_0919092871_2025_12_22_20_14_03_[0].mp3
+│       │       ├── 電機陳振溢_0919092871_2025_12_22_20_29_03_[0].mp3
+│       │       ├── 電機陳振溢_0919092871_2025_12_22_20_42_04_[0].mp3
+│       │       └── 電機陳振溢_0919092871_2025_12_22_20_56_04_[0].mp3
+│       ├── 無線電
+│       │   ├── 席位1
+│       │   │   ├── 20251222(2100-2115).docx
+│       │   │   ├── UltraLog06320251222192236.wav
+│       │   │   ├── UltraLog06320251222192400.wav
+│       │   │   ├── UltraLog06320251222192434.wav
+│       │   │   ├── UltraLog06320251222192542.wav
+│       │   │   ├── UltraLog06320251222192609.wav
+│       │   │   ├── UltraLog06320251222192724.wav
+│       │   │   ├── UltraLog06320251222192930.wav
+│       │   │   ├── UltraLog06320251222193005.wav
+│       │   │   ├── UltraLog06320251222193110.wav
+│       │   │   ├── UltraLog06320251222193214.wav
+│       │   │   ├── UltraLog06320251222193307.wav
+│       │   │   ├── UltraLog06320251222193322.wav
+│       │   │   ├── UltraLog06320251222193349.wav
+│       │   │   ├── UltraLog06320251222193641.wav
+│       │   │   ├── UltraLog06320251222194333.wav
+│       │   │   ├── UltraLog06320251222194402.wav
+│       │   │   ├── UltraLog06320251222194433.wav
+│       │   │   ├── UltraLog06320251222194517.wav
+│       │   │   ├── UltraLog06320251222194612.wav
+│       │   │   ├── UltraLog06320251222194701.wav
+│       │   │   ├── UltraLog06320251222194854.wav
+│       │   │   ├── UltraLog06320251222195129.wav
+│       │   │   ├── UltraLog06320251222195155.wav
+│       │   │   ├── UltraLog06320251222195242.wav
+│       │   │   ├── UltraLog06320251222195413.wav
+│       │   │   ├── UltraLog06320251222195523.wav
+│       │   │   ├── UltraLog06320251222195917.wav
+│       │   │   ├── UltraLog06320251222200130雪.wav
+│       │   │   ├── UltraLog06320251222200202.wav
+│       │   │   ├── UltraLog06320251222200521.wav
+│       │   │   ├── UltraLog06320251222200616.wav
+│       │   │   ├── UltraLog06320251222200647.wav
+│       │   │   ├── UltraLog06320251222200740.wav
+│       │   │   ├── UltraLog06320251222200841.wav
+│       │   │   ├── UltraLog06320251222201004.wav
+│       │   │   ├── UltraLog06320251222201031.wav
+│       │   │   ├── UltraLog06320251222201105.wav
+│       │   │   ├── UltraLog06320251222201158.wav
+│       │   │   ├── UltraLog06320251222201237.wav
+│       │   │   ├── UltraLog06320251222201417.wav
+│       │   │   ├── UltraLog06320251222201453.wav
+│       │   │   ├── UltraLog06320251222201633.wav
+│       │   │   ├── UltraLog06320251222201713.wav
+│       │   │   ├── UltraLog06320251222202024.wav
+│       │   │   ├── UltraLog06320251222202256.wav
+│       │   │   ├── UltraLog06320251222202338.wav
+│       │   │   ├── UltraLog06320251222202441.wav
+│       │   │   ├── UltraLog06320251222202545.wav
+│       │   │   ├── UltraLog06320251222202600.wav
+│       │   │   ├── UltraLog06320251222202640.wav
+│       │   │   ├── UltraLog06320251222202713.wav
+│       │   │   ├── UltraLog06320251222202825.wav
+│       │   │   ├── UltraLog06320251222202855.wav
+│       │   │   ├── UltraLog06320251222202936.wav
+│       │   │   ├── UltraLog06320251222203045.wav
+│       │   │   ├── UltraLog06320251222203154.wav
+│       │   │   ├── UltraLog06320251222203408.wav
+│       │   │   ├── UltraLog06320251222203510.wav
+│       │   │   ├── UltraLog06320251222203547.wav
+│       │   │   ├── UltraLog06320251222203608.wav
+│       │   │   ├── UltraLog06320251222203643.wav
+│       │   │   ├── UltraLog06320251222203657.wav
+│       │   │   ├── UltraLog06320251222203712.wav
+│       │   │   ├── UltraLog06320251222203824.wav
+│       │   │   ├── UltraLog06320251222204235.wav
+│       │   │   ├── UltraLog06320251222204922.wav
+│       │   │   ├── UltraLog06320251222205002.wav
+│       │   │   ├── UltraLog06320251222205113.wav
+│       │   │   ├── UltraLog06320251222205153.wav
+│       │   │   ├── UltraLog06320251222205309.wav
+│       │   │   ├── UltraLog06320251222205432.wav
+│       │   │   ├── UltraLog06320251222205835.wav
+│       │   │   ├── UltraLog06320251222205905.wav
+│       │   │   ├── UltraLog06320251222205955.wav
+│       │   │   ├── UltraLog06320251222210249.wav
+│       │   │   ├── UltraLog06320251222210558.wav
+│       │   │   ├── UltraLog06320251222210935.wav
+│       │   │   ├── UltraLog06320251222211111.wav
+│       │   │   ├── UltraLog06320251222211146.wav
+│       │   │   ├── UltraLog06320251222211315.wav
+│       │   │   ├── UltraLog06320251222211338.wav
+│       │   │   ├── UltraLog06320251222211413.wav
+│       │   │   ├── UltraLog06320251222211732.wav
+│       │   │   ├── UltraLog06320251222211926.wav
+│       │   │   ├── UltraLog06320251222212016.wav
+│       │   │   ├── UltraLog06320251222212545.wav
+│       │   │   ├── UltraLog06320251222212820.wav
+│       │   │   ├── UltraLog06320251222212922.wav
+│       │   │   ├── UltraLog06320251222212951.wav
+│       │   │   ├── UltraLog06320251222213055.wav
+│       │   │   ├── UltraLog06320251222213142.wav
+│       │   │   ├── UltraLog06320251222213603.wav
+│       │   │   ├── UltraLog06320251222214009.wav
+│       │   │   ├── UltraLog06320251222214149.wav
+│       │   │   ├── UltraLog06320251222214247.wav
+│       │   │   ├── UltraLog06320251222214307.wav
+│       │   │   ├── UltraLog06320251222214440.wav
+│       │   │   ├── UltraLog06320251222214458.wav
+│       │   │   ├── UltraLog06320251222214620.wav
+│       │   │   ├── UltraLog06320251222214700.wav
+│       │   │   ├── UltraLog06320251222214722.wav
+│       │   │   ├── UltraLog06320251222214814.wav
+│       │   │   ├── UltraLog06320251222215148.wav
+│       │   │   ├── UltraLog06320251222215356.wav
+│       │   │   ├── UltraLog06320251222215450.wav
+│       │   │   ├── UltraLog06320251222215627.wav
+│       │   │   ├── UltraLog06320251222215655.wav
+│       │   │   ├── UltraLog06320251222215804.wav
+│       │   │   ├── UltraLog06320251222220029.wav
+│       │   │   ├── UltraLog06320251222220208.wav
+│       │   │   ├── UltraLog06320251222220235.wav
+│       │   │   ├── UltraLog06320251222220518.wav
+│       │   │   ├── UltraLog06320251222220549.wav
+│       │   │   └── USPlayer.html
+│       │   ├── 席位2
+│       │   │   ├── UltraLog06420251222192358.wav
+│       │   │   ├── UltraLog06420251222192749.wav
+│       │   │   ├── UltraLog06420251222192930.wav
+│       │   │   ├── UltraLog06420251222193005.wav
+│       │   │   ├── UltraLog06420251222193110.wav
+│       │   │   ├── UltraLog06420251222193210.wav
+│       │   │   ├── UltraLog06420251222194400.wav
+│       │   │   ├── UltraLog06420251222194433.wav
+│       │   │   ├── UltraLog06420251222194517.wav
+│       │   │   ├── UltraLog06420251222194808.wav
+│       │   │   ├── UltraLog06420251222194952.wav
+│       │   │   ├── UltraLog06420251222195024.wav
+│       │   │   ├── UltraLog06420251222195056.wav
+│       │   │   ├── UltraLog06420251222195127.wav
+│       │   │   ├── UltraLog06420251222195143.wav
+│       │   │   ├── UltraLog06420251222195507.wav
+│       │   │   ├── UltraLog06420251222195530.wav
+│       │   │   ├── UltraLog06420251222195906.wav
+│       │   │   ├── UltraLog06420251222200130.wav
+│       │   │   ├── UltraLog06420251222200242.wav
+│       │   │   ├── UltraLog06420251222200417.wav
+│       │   │   ├── UltraLog06420251222200457.wav
+│       │   │   ├── UltraLog06420251222200552.wav
+│       │   │   ├── UltraLog06420251222200718.wav
+│       │   │   ├── UltraLog06420251222200931.wav
+│       │   │   ├── UltraLog06420251222201109.wav
+│       │   │   ├── UltraLog06420251222201131.wav
+│       │   │   ├── UltraLog06420251222201232.wav
+│       │   │   ├── UltraLog06420251222201404.wav
+│       │   │   ├── UltraLog06420251222201434.wav
+│       │   │   ├── UltraLog06420251222201504.wav
+│       │   │   ├── UltraLog06420251222201611.wav
+│       │   │   ├── UltraLog06420251222201645.wav
+│       │   │   ├── UltraLog06420251222201816.wav
+│       │   │   ├── UltraLog06420251222201916.wav
+│       │   │   ├── UltraLog06420251222202036.wav
+│       │   │   ├── UltraLog06420251222202118.wav
+│       │   │   ├── UltraLog06420251222202255.wav
+│       │   │   ├── UltraLog06420251222202338.wav
+│       │   │   ├── UltraLog06420251222202440.wav
+│       │   │   ├── UltraLog06420251222202540.wav
+│       │   │   ├── UltraLog06420251222202640.wav
+│       │   │   ├── UltraLog06420251222202826.wav
+│       │   │   ├── UltraLog06420251222202913.wav
+│       │   │   ├── UltraLog06420251222202940.wav
+│       │   │   ├── UltraLog06420251222203017.wav
+│       │   │   ├── UltraLog06420251222203455.wav
+│       │   │   ├── UltraLog06420251222204258.wav
+│       │   │   ├── UltraLog06420251222204324.wav
+│       │   │   ├── UltraLog06420251222204356.wav
+│       │   │   ├── UltraLog06420251222204454.wav
+│       │   │   ├── UltraLog06420251222204907.wav
+│       │   │   ├── UltraLog06420251222205038.wav
+│       │   │   ├── UltraLog06420251222205412.wav
+│       │   │   ├── UltraLog06420251222205657.wav
+│       │   │   ├── UltraLog06420251222205844.wav
+│       │   │   ├── UltraLog06420251222210023.wav
+│       │   │   ├── UltraLog06420251222210211.wav
+│       │   │   ├── UltraLog06420251222210707.wav
+│       │   │   ├── UltraLog06420251222210832.wav
+│       │   │   ├── UltraLog06420251222210844.wav
+│       │   │   ├── UltraLog06420251222210956.wav
+│       │   │   ├── UltraLog06420251222211054.wav
+│       │   │   ├── UltraLog06420251222211139.wav
+│       │   │   ├── UltraLog06420251222211447.wav
+│       │   │   ├── UltraLog06420251222211621.wav
+│       │   │   ├── UltraLog06420251222211723.wav
+│       │   │   ├── UltraLog06420251222211804.wav
+│       │   │   ├── UltraLog06420251222211834.wav
+│       │   │   ├── UltraLog06420251222211936.wav
+│       │   │   ├── UltraLog06420251222212040.wav
+│       │   │   ├── UltraLog06420251222212127.wav
+│       │   │   ├── UltraLog06420251222212228.wav
+│       │   │   ├── UltraLog06420251222212251.wav
+│       │   │   ├── UltraLog06420251222212334.wav
+│       │   │   ├── UltraLog06420251222212436.wav
+│       │   │   ├── UltraLog06420251222212502.wav
+│       │   │   ├── UltraLog06420251222212625.wav
+│       │   │   ├── UltraLog06420251222212704.wav
+│       │   │   ├── UltraLog06420251222212747.wav
+│       │   │   ├── UltraLog06420251222212842.wav
+│       │   │   ├── UltraLog06420251222212934.wav
+│       │   │   ├── UltraLog06420251222213026.wav
+│       │   │   ├── UltraLog06420251222213142.wav
+│       │   │   ├── UltraLog06420251222213536.wav
+│       │   │   ├── UltraLog06420251222213613.wav
+│       │   │   ├── UltraLog06420251222213632.wav
+│       │   │   ├── UltraLog06420251222213732.wav
+│       │   │   ├── UltraLog06420251222214051.wav
+│       │   │   ├── UltraLog06420251222214201.wav
+│       │   │   ├── UltraLog06420251222214339.wav
+│       │   │   ├── UltraLog06420251222214430.wav
+│       │   │   ├── UltraLog06420251222214541.wav
+│       │   │   ├── UltraLog06420251222214728.wav
+│       │   │   ├── UltraLog06420251222214953.wav
+│       │   │   ├── UltraLog06420251222215052.wav
+│       │   │   ├── UltraLog06420251222215203.wav
+│       │   │   ├── UltraLog06420251222215257.wav
+│       │   │   ├── UltraLog06420251222215611.wav
+│       │   │   ├── UltraLog06420251222215857.wav
+│       │   │   ├── UltraLog06420251222215939.wav
+│       │   │   ├── UltraLog06420251222220029.wav
+│       │   │   ├── UltraLog06420251222220114.wav
+│       │   │   ├── UltraLog06420251222220229.wav
+│       │   │   ├── UltraLog06420251222220329.wav
+│       │   │   ├── UltraLog06420251222220808.wav
+│       │   │   ├── UltraLog06420251222220837.wav
+│       │   │   ├── UltraLog06420251222220849.wav
+│       │   │   ├── UltraLog06420251222221102.wav
+│       │   │   └── USPlayer.html
+│       │   ├── 席位4
+│       │   │   ├── UltraLog06620251222195751.wav
+│       │   │   ├── UltraLog06620251222200216.wav
+│       │   │   ├── UltraLog06620251222200354.wav
+│       │   │   ├── UltraLog06620251222203225.wav
+│       │   │   ├── UltraLog06620251222203344.wav
+│       │   │   ├── UltraLog06620251222203531.wav
+│       │   │   ├── UltraLog06620251222203623.wav
+│       │   │   ├── UltraLog06620251222203705.wav
+│       │   │   ├── UltraLog06620251222204504.wav
+│       │   │   ├── UltraLog06620251222204611.wav
+│       │   │   ├── UltraLog06620251222204755.wav
+│       │   │   ├── UltraLog06620251222204829.wav
+│       │   │   ├── UltraLog06620251222204916.wav
+│       │   │   ├── UltraLog06620251222204931.wav
+│       │   │   ├── UltraLog06620251222205550.wav
+│       │   │   ├── UltraLog06620251222205632.wav
+│       │   │   ├── UltraLog06620251222205727.wav
+│       │   │   ├── UltraLog06620251222210049.wav
+│       │   │   ├── UltraLog06620251222210127.wav
+│       │   │   ├── UltraLog06620251222210350.wav
+│       │   │   ├── UltraLog06620251222210419.wav
+│       │   │   ├── UltraLog06620251222210432.wav
+│       │   │   ├── UltraLog06620251222210500.wav
+│       │   │   ├── UltraLog06620251222210535.wav
+│       │   │   ├── UltraLog06620251222210709.wav
+│       │   │   ├── UltraLog06620251222210852.wav
+│       │   │   ├── UltraLog06620251222211836.wav
+│       │   │   ├── UltraLog06620251222212111.wav
+│       │   │   ├── UltraLog06620251222212329.wav
+│       │   │   ├── UltraLog06620251222212441.wav
+│       │   │   ├── UltraLog06620251222212913.wav
+│       │   │   ├── UltraLog06620251222213211.wav
+│       │   │   ├── UltraLog06620251222214008.wav
+│       │   │   ├── UltraLog06620251222214040.wav
+│       │   │   ├── UltraLog06620251222214153.wav
+│       │   │   ├── UltraLog06620251222220713.wav
+│       │   │   └── USPlayer.html
+│       │   ├── 席位6
+│       │   │   ├── UltraLog06820251222192236.wav
+│       │   │   ├── UltraLog06820251222192400.wav
+│       │   │   ├── UltraLog06820251222192435.wav
+│       │   │   ├── UltraLog06820251222192543.wav
+│       │   │   ├── UltraLog06820251222192609.wav
+│       │   │   ├── UltraLog06820251222192726.wav
+│       │   │   ├── UltraLog06820251222192930.wav
+│       │   │   ├── UltraLog06820251222193005.wav
+│       │   │   ├── UltraLog06820251222193110.wav
+│       │   │   ├── UltraLog06820251222193210.wav
+│       │   │   ├── UltraLog06820251222193913.wav
+│       │   │   ├── UltraLog06820251222193951.wav
+│       │   │   ├── UltraLog06820251222194047.wav
+│       │   │   ├── UltraLog06820251222194117.wav
+│       │   │   ├── UltraLog06820251222194129.wav
+│       │   │   ├── UltraLog06820251222194333.wav
+│       │   │   ├── UltraLog06820251222194402.wav
+│       │   │   ├── UltraLog06820251222194433.wav
+│       │   │   ├── UltraLog06820251222194518.wav
+│       │   │   ├── UltraLog06820251222194538.wav
+│       │   │   ├── UltraLog06820251222194819.wav
+│       │   │   ├── UltraLog06820251222194952.wav
+│       │   │   ├── UltraLog06820251222195025.wav
+│       │   │   ├── UltraLog06820251222195056.wav
+│       │   │   ├── UltraLog06820251222195128.wav
+│       │   │   ├── UltraLog06820251222195143.wav
+│       │   │   ├── UltraLog06820251222195507.wav
+│       │   │   ├── UltraLog06820251222195530.wav
+│       │   │   ├── UltraLog06820251222195905.wav
+│       │   │   ├── UltraLog06820251222200131.wav
+│       │   │   ├── UltraLog06820251222200243.wav
+│       │   │   ├── UltraLog06820251222200417.wav
+│       │   │   ├── UltraLog06820251222200458.wav
+│       │   │   ├── UltraLog06820251222200552.wav
+│       │   │   ├── UltraLog06820251222200718.wav
+│       │   │   ├── UltraLog06820251222200931.wav
+│       │   │   ├── UltraLog06820251222201110.wav
+│       │   │   ├── UltraLog06820251222201132.wav
+│       │   │   ├── UltraLog06820251222201232.wav
+│       │   │   ├── UltraLog06820251222201435.wav
+│       │   │   ├── UltraLog06820251222201505.wav
+│       │   │   ├── UltraLog06820251222201611.wav
+│       │   │   ├── UltraLog06820251222201646.wav
+│       │   │   ├── UltraLog06820251222201816.wav
+│       │   │   ├── UltraLog06820251222201916.wav
+│       │   │   ├── UltraLog06820251222202040.wav
+│       │   │   ├── UltraLog06820251222202118.wav
+│       │   │   ├── UltraLog06820251222202255.wav
+│       │   │   ├── UltraLog06820251222202338.wav
+│       │   │   ├── UltraLog06820251222202441.wav
+│       │   │   ├── UltraLog06820251222202540.wav
+│       │   │   ├── UltraLog06820251222202640.wav
+│       │   │   ├── UltraLog06820251222202827.wav
+│       │   │   ├── UltraLog06820251222202913.wav
+│       │   │   ├── UltraLog06820251222202940.wav
+│       │   │   ├── UltraLog06820251222203017.wav
+│       │   │   ├── UltraLog06820251222203455.wav
+│       │   │   ├── UltraLog06820251222204259.wav
+│       │   │   ├── UltraLog06820251222204324.wav
+│       │   │   ├── UltraLog06820251222204356.wav
+│       │   │   ├── UltraLog06820251222204455.wav
+│       │   │   ├── UltraLog06820251222204911.wav
+│       │   │   ├── UltraLog06820251222205038.wav
+│       │   │   ├── UltraLog06820251222205412.wav
+│       │   │   ├── UltraLog06820251222205657.wav
+│       │   │   ├── UltraLog06820251222205844.wav
+│       │   │   ├── UltraLog06820251222210023.wav
+│       │   │   ├── UltraLog06820251222210212.wav
+│       │   │   ├── UltraLog06820251222210707.wav
+│       │   │   ├── UltraLog06820251222210845.wav
+│       │   │   ├── UltraLog06820251222210956.wav
+│       │   │   ├── UltraLog06820251222211054.wav
+│       │   │   ├── UltraLog06820251222211140.wav
+│       │   │   ├── UltraLog06820251222211447.wav
+│       │   │   ├── UltraLog06820251222211621.wav
+│       │   │   ├── UltraLog06820251222211723.wav
+│       │   │   ├── UltraLog06820251222211805.wav
+│       │   │   ├── UltraLog06820251222211840.wav
+│       │   │   ├── UltraLog06820251222211937.wav
+│       │   │   ├── UltraLog06820251222212041.wav
+│       │   │   ├── UltraLog06820251222212128.wav
+│       │   │   ├── UltraLog06820251222212211.wav
+│       │   │   ├── UltraLog06820251222212229.wav
+│       │   │   ├── UltraLog06820251222212251.wav
+│       │   │   ├── UltraLog06820251222212308.wav
+│       │   │   ├── UltraLog06820251222212339.wav
+│       │   │   ├── UltraLog06820251222212437.wav
+│       │   │   ├── UltraLog06820251222212508.wav
+│       │   │   ├── UltraLog06820251222212625.wav
+│       │   │   ├── UltraLog06820251222212705.wav
+│       │   │   ├── UltraLog06820251222212748.wav
+│       │   │   ├── UltraLog06820251222212843.wav
+│       │   │   ├── UltraLog06820251222212934.wav
+│       │   │   ├── UltraLog06820251222213026.wav
+│       │   │   ├── UltraLog06820251222213143.wav
+│       │   │   ├── UltraLog06820251222213536.wav
+│       │   │   ├── UltraLog06820251222213632.wav
+│       │   │   ├── UltraLog06820251222213733.wav
+│       │   │   ├── UltraLog06820251222213756.wav
+│       │   │   ├── UltraLog06820251222214052.wav
+│       │   │   ├── UltraLog06820251222214201.wav
+│       │   │   ├── UltraLog06820251222214339.wav
+│       │   │   ├── UltraLog06820251222214431.wav
+│       │   │   ├── UltraLog06820251222214541.wav
+│       │   │   ├── UltraLog06820251222214558.wav
+│       │   │   ├── UltraLog06820251222214728.wav
+│       │   │   ├── UltraLog06820251222214953.wav
+│       │   │   ├── UltraLog06820251222215053.wav
+│       │   │   ├── UltraLog06820251222215203.wav
+│       │   │   ├── UltraLog06820251222215259.wav
+│       │   │   ├── UltraLog06820251222215611.wav
+│       │   │   ├── UltraLog06820251222215627.wav
+│       │   │   ├── UltraLog06820251222215857.wav
+│       │   │   ├── UltraLog06820251222215939.wav
+│       │   │   ├── UltraLog06820251222220030.wav
+│       │   │   ├── UltraLog06820251222220114.wav
+│       │   │   ├── UltraLog06820251222220230.wav
+│       │   │   ├── UltraLog06820251222220329.wav
+│       │   │   ├── UltraLog06820251222220720.wav
+│       │   │   ├── UltraLog06820251222220849.wav
+│       │   │   ├── UltraLog06820251222221103.wav
+│       │   │   ├── UltraLog06820251222221220.wav
+│       │   │   ├── UltraLog06820251222221510.wav
+│       │   │   ├── UltraLog06820251222221547.wav
+│       │   │   ├── UltraLog06820251222221630.wav
+│       │   │   └── USPlayer.html
+│       │   ├── 席位9
+│       │   │   ├── UltraLog05420251222193147.wav
+│       │   │   ├── UltraLog05420251222193214.wav
+│       │   │   ├── UltraLog05420251222193307.wav
+│       │   │   ├── UltraLog05420251222193322.wav
+│       │   │   ├── UltraLog05420251222193349.wav
+│       │   │   ├── UltraLog05420251222193641.wav
+│       │   │   ├── UltraLog05420251222194338.wav
+│       │   │   ├── UltraLog05420251222194441.wav
+│       │   │   ├── UltraLog05420251222194612.wav
+│       │   │   ├── UltraLog05420251222194701.wav
+│       │   │   ├── UltraLog05420251222194854.wav
+│       │   │   ├── UltraLog05420251222195129.wav
+│       │   │   ├── UltraLog05420251222195155.wav
+│       │   │   ├── UltraLog05420251222195242.wav
+│       │   │   ├── UltraLog05420251222195413.wav
+│       │   │   ├── UltraLog05420251222195523.wav
+│       │   │   ├── UltraLog05420251222195917.wav
+│       │   │   ├── UltraLog05420251222200013.wav
+│       │   │   ├── UltraLog05420251222200048.wav
+│       │   │   ├── UltraLog05420251222200202.wav
+│       │   │   ├── UltraLog05420251222200521.wav
+│       │   │   ├── UltraLog05420251222200616.wav
+│       │   │   ├── UltraLog05420251222200647.wav
+│       │   │   ├── UltraLog05420251222200740.wav
+│       │   │   ├── UltraLog05420251222200841.wav
+│       │   │   ├── UltraLog05420251222201005.wav
+│       │   │   ├── UltraLog05420251222201031.wav
+│       │   │   ├── UltraLog05420251222201105.wav
+│       │   │   ├── UltraLog05420251222201159.wav
+│       │   │   ├── UltraLog05420251222201238.wav
+│       │   │   ├── UltraLog05420251222201417.wav
+│       │   │   ├── UltraLog05420251222201453.wav
+│       │   │   ├── UltraLog05420251222201633.wav
+│       │   │   ├── UltraLog05420251222201713.wav
+│       │   │   ├── UltraLog05420251222202024.wav
+│       │   │   ├── UltraLog05420251222202257.wav
+│       │   │   ├── UltraLog05420251222202338.wav
+│       │   │   ├── UltraLog05420251222202441.wav
+│       │   │   ├── UltraLog05420251222202545.wav
+│       │   │   ├── UltraLog05420251222202600.wav
+│       │   │   ├── UltraLog05420251222202641.wav
+│       │   │   ├── UltraLog05420251222202714.wav
+│       │   │   ├── UltraLog05420251222202825.wav
+│       │   │   ├── UltraLog05420251222202854.wav
+│       │   │   ├── UltraLog05420251222202935.wav
+│       │   │   ├── UltraLog05420251222203045.wav
+│       │   │   ├── UltraLog05420251222203154.wav
+│       │   │   ├── UltraLog05420251222203408.wav
+│       │   │   ├── UltraLog05420251222203510.wav
+│       │   │   ├── UltraLog05420251222203547.wav
+│       │   │   ├── UltraLog05420251222203607.wav
+│       │   │   ├── UltraLog05420251222203641.wav
+│       │   │   ├── UltraLog05420251222203657.wav
+│       │   │   ├── UltraLog05420251222203712.wav
+│       │   │   ├── UltraLog05420251222203824.wav
+│       │   │   ├── UltraLog05420251222204235.wav
+│       │   │   ├── UltraLog05420251222204922.wav
+│       │   │   ├── UltraLog05420251222205002.wav
+│       │   │   ├── UltraLog05420251222205113.wav
+│       │   │   ├── UltraLog05420251222205134.wav
+│       │   │   ├── UltraLog05420251222205153.wav
+│       │   │   ├── UltraLog05420251222205309.wav
+│       │   │   ├── UltraLog05420251222205433.wav
+│       │   │   ├── UltraLog05420251222205835.wav
+│       │   │   ├── UltraLog05420251222205906.wav
+│       │   │   ├── UltraLog05420251222205955.wav
+│       │   │   ├── UltraLog05420251222210249.wav
+│       │   │   ├── UltraLog05420251222210558.wav
+│       │   │   ├── UltraLog05420251222210935.wav
+│       │   │   ├── UltraLog05420251222211111.wav
+│       │   │   ├── UltraLog05420251222211147.wav
+│       │   │   ├── UltraLog05420251222211315.wav
+│       │   │   ├── UltraLog05420251222211338.wav
+│       │   │   ├── UltraLog05420251222211413.wav
+│       │   │   ├── UltraLog05420251222211732.wav
+│       │   │   ├── UltraLog05420251222211926.wav
+│       │   │   ├── UltraLog05420251222212017.wav
+│       │   │   ├── UltraLog05420251222212545.wav
+│       │   │   ├── UltraLog05420251222212820.wav
+│       │   │   ├── UltraLog05420251222212922.wav
+│       │   │   ├── UltraLog05420251222212951.wav
+│       │   │   ├── UltraLog05420251222213055.wav
+│       │   │   ├── UltraLog05420251222213141.wav
+│       │   │   ├── UltraLog05420251222213603.wav
+│       │   │   ├── UltraLog05420251222214009.wav
+│       │   │   ├── UltraLog05420251222214121.wav
+│       │   │   ├── UltraLog05420251222214149.wav
+│       │   │   ├── UltraLog05420251222214247.wav
+│       │   │   ├── UltraLog05420251222214307.wav
+│       │   │   ├── UltraLog05420251222214440.wav
+│       │   │   ├── UltraLog05420251222214458.wav
+│       │   │   ├── UltraLog05420251222214619.wav
+│       │   │   ├── UltraLog05420251222214700.wav
+│       │   │   ├── UltraLog05420251222214722.wav
+│       │   │   ├── UltraLog05420251222214814.wav
+│       │   │   ├── UltraLog05420251222215148.wav
+│       │   │   ├── UltraLog05420251222215356.wav
+│       │   │   ├── UltraLog05420251222215450.wav
+│       │   │   ├── UltraLog05420251222215629.wav
+│       │   │   ├── UltraLog05420251222215655.wav
+│       │   │   ├── UltraLog05420251222215804.wav
+│       │   │   ├── UltraLog05420251222220028.wav
+│       │   │   ├── UltraLog05420251222220208.wav
+│       │   │   ├── UltraLog05420251222220235.wav
+│       │   │   ├── UltraLog05420251222220518.wav
+│       │   │   ├── UltraLog05420251222220549.wav
+│       │   │   ├── UltraLog05420251222220702.wav
+│       │   │   ├── UltraLog05420251222220911.wav
+│       │   │   ├── UltraLog05420251222221105.wav
+│       │   │   ├── UltraLog05420251222221135.wav
+│       │   │   ├── UltraLog05420251222221246.wav
+│       │   │   ├── UltraLog05420251222221316.wav
+│       │   │   ├── UltraLog05420251222221342.wav
+│       │   │   ├── UltraLog05420251222221500.wav
+│       │   │   ├── UltraLog05420251222221641.wav
+│       │   │   ├── UltraLog05420251222221758.wav
+│       │   │   ├── UltraLog05420251222221859.wav
+│       │   │   ├── UltraLog05420251222222110.wav
+│       │   │   └── USPlayer.html
+│       │   └── 逐字稿-席位1 ing
+│       │       ├── 20251222(晚上9點開始)未完成.docx
+│       │       ├── 20251222逐字稿 200130-201453完成.docx
+│       │       ├── 20251222逐字稿 201633-205955未完成.docx
+│       │       ├── 20251222逐字稿192236-195917.pdf
+│       │       ├── 20251222逐字稿192236-195917完成.docx
+│       │       ├── 20251222逐字稿220029-220549完成.docx
+│       │       └── 給志霖
+│       │           ├── UltraLog06320251222201633.wav
+│       │           ├── UltraLog06320251222201713.wav
+│       │           ├── UltraLog06320251222202024.wav
+│       │           ├── UltraLog06320251222202256.wav
+│       │           ├── UltraLog06320251222202338.wav
+│       │           ├── UltraLog06320251222202441.wav
+│       │           ├── UltraLog06320251222202545.wav
+│       │           ├── UltraLog06320251222202600.wav
+│       │           ├── UltraLog06320251222202640.wav
+│       │           ├── UltraLog06320251222202713.wav
+│       │           ├── UltraLog06320251222202825.wav
+│       │           ├── UltraLog06320251222202855.wav
+│       │           ├── UltraLog06320251222202936.wav
+│       │           ├── UltraLog06320251222203045.wav
+│       │           ├── UltraLog06320251222203154.wav
+│       │           ├── UltraLog06320251222203408.wav
+│       │           ├── UltraLog06320251222203510.wav
+│       │           ├── UltraLog06320251222203547.wav
+│       │           ├── UltraLog06320251222203608.wav
+│       │           ├── UltraLog06320251222203643.wav
+│       │           ├── UltraLog06320251222203657.wav
+│       │           ├── UltraLog06320251222203712.wav
+│       │           ├── UltraLog06320251222203824.wav
+│       │           ├── UltraLog06320251222204235.wav
+│       │           ├── UltraLog06320251222204922.wav
+│       │           ├── UltraLog06320251222205002.wav
+│       │           ├── UltraLog06320251222205113.wav
+│       │           ├── UltraLog06320251222205153.wav
+│       │           ├── UltraLog06320251222205309.wav
+│       │           ├── UltraLog06320251222205432.wav
+│       │           ├── UltraLog06320251222205835.wav
+│       │           ├── UltraLog06320251222205905.wav
+│       │           ├── UltraLog06320251222205955.wav
+│       │           ├── UltraLog06320251222210249.wav
+│       │           ├── UltraLog06320251222210558.wav
+│       │           ├── UltraLog06320251222210935.wav
+│       │           ├── UltraLog06320251222211111.wav
+│       │           ├── UltraLog06320251222211146.wav
+│       │           ├── UltraLog06320251222211315.wav
+│       │           ├── UltraLog06320251222211338.wav
+│       │           ├── UltraLog06320251222211413.wav
+│       │           ├── UltraLog06320251222211732.wav
+│       │           ├── UltraLog06320251222211926.wav
+│       │           ├── UltraLog06320251222212016.wav
+│       │           ├── UltraLog06320251222212545.wav
+│       │           ├── UltraLog06320251222212820.wav
+│       │           ├── UltraLog06320251222212922.wav
+│       │           ├── UltraLog06320251222212951.wav
+│       │           ├── UltraLog06320251222213055.wav
+│       │           ├── UltraLog06320251222213142.wav
+│       │           ├── UltraLog06320251222213603.wav
+│       │           ├── UltraLog06320251222214009.wav
+│       │           ├── UltraLog06320251222214149.wav
+│       │           ├── UltraLog06320251222214247.wav
+│       │           ├── UltraLog06320251222214307.wav
+│       │           ├── UltraLog06320251222214440.wav
+│       │           ├── UltraLog06320251222214458.wav
+│       │           ├── UltraLog06320251222214620.wav
+│       │           ├── UltraLog06320251222214700.wav
+│       │           ├── UltraLog06320251222214722.wav
+│       │           ├── UltraLog06320251222214814.wav
+│       │           ├── UltraLog06320251222215148.wav
+│       │           ├── UltraLog06320251222215356.wav
+│       │           ├── UltraLog06320251222215450.wav
+│       │           ├── UltraLog06320251222215627.wav
+│       │           ├── UltraLog06320251222215655.wav
+│       │           ├── UltraLog06320251222215804.wav
+│       │           ├── UltraLog06320251222220029.wav
+│       │           ├── UltraLog06320251222220208.wav
+│       │           ├── UltraLog06320251222220235.wav
+│       │           ├── UltraLog06320251222220518.wav
+│       │           └── UltraLog06320251222220549.wav
+│       └── 自動電話
+│           ├── 700001
+│           │   ├── UltraLog00120251222202239.wav
+│           │   ├── UltraLog01420251222222359.wav
+│           │   ├── UltraLog02620251222211038.wav
+│           │   └── USPlayer.html
+│           ├── 700002
+│           │   ├── UltraLog00320251222215627.wav
+│           │   ├── UltraLog00320251222221753.wav
+│           │   ├── UltraLog00320251222224138.wav
+│           │   ├── UltraLog00620251222215645.wav
+│           │   ├── UltraLog00820251222215701.wav
+│           │   ├── UltraLog01120251222210141.wav
+│           │   ├── UltraLog02520251222223702.wav
+│           │   ├── UltraLog02720251222223736.wav
+│           │   ├── UltraLog02820251222194158.wav
+│           │   └── USPlayer.html
+│           ├── 700003
+│           │   ├── UltraLog00120251222223945.wav
+│           │   ├── UltraLog00220251222221736.wav
+│           │   ├── UltraLog00220251222224102.wav
+│           │   ├── UltraLog00320251222194302.wav
+│           │   ├── UltraLog01320251222212248.wav
+│           │   ├── UltraLog02120251222212733.wav
+│           │   ├── UltraLog02720251222213116.wav
+│           │   ├── UltraLog02720251222221512.wav
+│           │   ├── UltraLog02920251222213242.wav
+│           │   └── USPlayer.html
+│           ├── 700004
+│           │   ├── UltraLog00520251222221922.wav
+│           │   ├── UltraLog00920251222205945.wav
+│           │   ├── UltraLog01020251222210057.wav
+│           │   ├── UltraLog01120251222215830.wav
+│           │   ├── UltraLog01220251222222344.wav
+│           │   ├── UltraLog01620251222203404.wav
+│           │   ├── UltraLog01720251222201152.wav
+│           │   ├── UltraLog02020251222212714.wav
+│           │   ├── UltraLog02020251222223115.wav
+│           │   ├── UltraLog02120251222201412.wav
+│           │   ├── UltraLog02120251222203832.wav
+│           │   ├── UltraLog02420251222210948.wav
+│           │   ├── UltraLog02620251222193600.wav
+│           │   ├── UltraLog02920251222194205.wav
+│           │   └── USPlayer.html
+│           ├── 700005
+│           │   ├── UltraLog00220251222213337.wav
+│           │   ├── UltraLog00220251222215433.wav
+│           │   ├── UltraLog00320251222202338.wav
+│           │   ├── UltraLog00420251222211300.wav
+│           │   ├── UltraLog00820251222205747.wav
+│           │   ├── UltraLog00820251222213835.wav
+│           │   ├── UltraLog00920251222215746.wav
+│           │   ├── UltraLog01020251222212218.wav
+│           │   ├── UltraLog01220251222210304.wav
+│           │   ├── UltraLog01220251222215957.wav
+│           │   ├── UltraLog01420251222220051.wav
+│           │   ├── UltraLog01620251222200952.wav
+│           │   ├── UltraLog01920251222222647.wav
+│           │   ├── UltraLog02520251222212948.wav
+│           │   ├── UltraLog02620251222204026.wav
+│           │   ├── UltraLog02620251222213004.wav
+│           │   └── USPlayer.html
+│           └── 700006
+│               ├── UltraLog00620251222221943.wav
+│               ├── UltraLog02520251222193327.wav
+│               ├── UltraLog02720251222193635.wav
+│               └── USPlayer.html
+└── 語音測試稿文本.docx
+
+65 directories, 953 files
