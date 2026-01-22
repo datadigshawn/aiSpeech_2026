@@ -107,3 +107,21 @@
 2026-01-21 17:14:53 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用預設配置
 2026-01-21 17:14:53 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用主要區域: us
 2026-01-21 17:14:53 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | ✅ 配置完成: 模型=chirp_3, 區域=us, 端點=us-speech.googleapis.com
+2026-01-22 22:13:21 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用預設配置
+2026-01-22 22:13:21 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用主要區域: us
+2026-01-22 22:13:21 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | ✅ 配置完成: 模型=chirp_3, 區域=us, 端點=us-speech.googleapis.com
+2026-01-22 22:14:38 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用預設配置
+2026-01-22 22:14:38 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用主要區域: us
+2026-01-22 22:14:38 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | ✅ 配置完成: 模型=chirp_3, 區域=us, 端點=us-speech.googleapis.com
+2026-01-23 00:21:47 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用預設配置
+2026-01-23 00:21:47 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用主要區域: us
+2026-01-23 00:21:47 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | ✅ 配置完成: 模型=chirp_3, 區域=us, 端點=us-speech.googleapis.com
+2026-01-23 01:18:22 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用預設配置
+2026-01-23 01:18:22 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用主要區域: us
+2026-01-23 01:18:22 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | ✅ 配置完成: 模型=chirp_3, 區域=us, 端點=us-speech.googleapis.com
+2026-01-23 01:21:58 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用預設配置
+2026-01-23 01:21:58 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用主要區域: us
+2026-01-23 01:21:58 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | ✅ 配置完成: 模型=chirp_3, 區域=us, 端點=us-speech.googleapis.com
+2026-01-23 01:22:46 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用預設配置
+2026-01-23 01:22:46 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | 使用主要區域: us
+2026-01-23 01:22:46 | [32mINFO[0m | GoogleSTTConfigManager | info:113 | ✅ 配置完成: 模型=chirp_3, 區域=us, 端點=us-speech.googleapis.com

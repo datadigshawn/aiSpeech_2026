@@ -113,6 +113,7 @@ class AudioConverter:
         output_path: str = None,
         target_sample_rate: int = 16000
     ) -> str:
+        import shutil  # 匯入工具
         """
         將音訊轉換為 LINEAR16 PCM 格式
         
@@ -128,23 +129,39 @@ class AudioConverter:
             # 建立臨時檔案
             fd, output_path = tempfile.mkstemp(suffix='.wav')
             os.close(fd)
-        
-        # 使用 ffmpeg 轉換
+
+        # 動態尋找 ffmpeg 路徑
+        # 在 Windows 會找到 C:\...\ffmpeg.exe
+        # 在 Mac 會找到 /usr/local/bin/ffmpeg 或 /opt/homebrew/bin/ffmpeg
+        ffmpeg_bin = shutil.which('ffmpeg')
+
+        if not ffmpeg_bin:
+            raise RuntimeError(
+                "找不到 ffmpeg 指令。請確保已安裝 ffmpeg 並且已加入系統 PATH。\n"
+                "Windows: choco install ffmpeg\n"
+                "Mac: brew install ffmpeg"
+            )
+
+
+        # 使用找到的完整路徑執行 ffmpeg 轉換
         cmd = [
-            'ffmpeg', '-y',
+            ffmpeg_bin, '-y',
             '-i', input_path,
-            '-acodec', 'pcm_s16le',  # LINEAR16 (16-bit signed little-endian)
-            '-ar', str(target_sample_rate),  # 取樣率
-            '-ac', '1',  # 單聲道
+            '-acodec', 'pcm_s16le',
+            '-ar', str(target_sample_rate),
+            '-ac', '1',
             output_path
         ]
         
         try:
+            # 加入 shell=os.name == 'nt' 只在 Windows 使用 shell 模式以增加相容性
             result = subprocess.run(
                 cmd,
                 capture_output=True,
                 text=True,
-                timeout=60
+                timeout=60,
+                shell=(os.name == 'nt')   
+                # 這是一個小技巧。os.name == 'nt' 在 Windows 會回傳 True，在 Mac/Linux 回傳 False。這確保了 Windows 能透過 Shell 找到 Chocolatey 的路徑，而 Mac 則保持標準的安全呼叫方式。
             )
             
             if result.returncode != 0:
@@ -280,6 +297,7 @@ class GoogleSTTModel:
         Returns:
             Tuple[bytes, int]: (音訊資料, 取樣率)
         """
+        # 在跨平台開發中，務必多使用 pathlib 或 os.path.join，避免手寫 \ (Windows) 或 / (Mac)，這樣兩邊運行才不會因為路徑字串解析錯誤而崩潰。
         audio_path = Path(audio_file)
         
         if self.auto_convert_audio:
@@ -598,7 +616,7 @@ def test_google_stt():
     try:
         model = GoogleSTTModel(
             model="chirp_3",
-            location="us",
+            location="us-central1",
             auto_convert_audio=True
         )
         model.print_config_info()

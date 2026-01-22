@@ -424,3 +424,45 @@
 2026-01-21 17:15:16 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
 2026-01-21 17:15:16 | [31mERROR[0m | GoogleSTTModel | error:121 | 音檔長度 107.9 秒超過 60 秒限制。請使用 batch_recognizer 或分段處理。
 2026-01-21 17:15:19 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-22 22:13:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-22 22:13:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-22 22:13:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-22 22:13:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-22 22:13:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-22 22:13:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-22 22:13:21 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-22 22:14:38 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-22 22:14:38 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-22 22:14:38 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-22 22:14:38 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-22 22:14:38 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-22 22:14:38 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-22 22:14:38 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-23 00:21:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-23 00:21:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-23 00:21:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-23 00:21:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-23 00:21:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-23 00:21:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192724.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-23 00:21:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 找不到 ffmpeg，請安裝 ffmpeg
+2026-01-23 01:18:28 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-23 01:18:31 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-23 01:18:35 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-23 01:18:37 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-23 01:18:44 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-23 01:18:44 | [31mERROR[0m | GoogleSTTModel | error:121 | 音檔長度 107.9 秒超過 60 秒限制。請使用 batch_recognizer 或分段處理。
+2026-01-23 01:18:47 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-23 01:22:03 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-23 01:22:06 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-23 01:22:10 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-23 01:22:13 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-23 01:22:20 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-23 01:22:20 | [31mERROR[0m | GoogleSTTModel | error:121 | 音檔長度 107.9 秒超過 60 秒限制。請使用 batch_recognizer 或分段處理。
+2026-01-23 01:22:23 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
+2026-01-23 01:22:51 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192236.wav): 404 Requested entity was not found.
+2026-01-23 01:22:53 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192400.wav): 404 Requested entity was not found.
+2026-01-23 01:22:57 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192434.wav): 404 Requested entity was not found.
+2026-01-23 01:23:00 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192542.wav): 404 Requested entity was not found.
+2026-01-23 01:23:07 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192609.wav): 404 Requested entity was not found.
+2026-01-23 01:23:07 | [31mERROR[0m | GoogleSTTModel | error:121 | 音檔長度 107.9 秒超過 60 秒限制。請使用 batch_recognizer 或分段處理。
+2026-01-23 01:23:09 | [31mERROR[0m | GoogleSTTModel | error:121 | ❌ 辨識失敗 (UltraLog06320251222192930.wav): 404 Requested entity was not found.
